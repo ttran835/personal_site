@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+## Ignore config & Env files 
+.config 
+.env
+
+## Ignore node_modules 
+.node_modules
+
 # User-specific files
 *.suo
 *.user
