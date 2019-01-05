@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
 const mainRoute = require('./routes/mainRoutes');
+const db = require('../database/index');
 
 //models
 const personalNotes = require('../database/model/personalNotes');
