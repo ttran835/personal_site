@@ -32,9 +32,14 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[name]__[local]--[hash:base64]',
+              localIdentName: '[path]__[name]__[local]--[hash:base64]',
             },
           },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
           {
             loader: 'postcss-loader', // Run postcss actions
             options: {
