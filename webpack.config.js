@@ -35,6 +35,18 @@ module.exports = {
               localIdentName: '[name]__[local]--[hash:base64]',
             },
           },
+          {
+            loader: 'postcss-loader', // Run postcss actions
+            options: {
+              plugins: function() {
+                // postcss plugins, can be exported to postcss.config.js
+                return [require('autoprefixer')];
+              },
+            },
+          },
+          {
+            loader: 'sass-loader', // compiles Sass to CSS
+          },
         ],
       },
       {
@@ -49,8 +61,8 @@ module.exports = {
   // this is used to proxy ports
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.HOSTNAME': JSON.stringify(process.env.USERNAME),
-      'process.env.PORT': JSON.stringify(process.env.PORT),
+      // 'process.env.HOSTNAME': JSON.stringify(process.env.USERNAME),
+      // 'process.env.PORT': JSON.stringify(process.env.PORT),
     }),
   ],
 };
