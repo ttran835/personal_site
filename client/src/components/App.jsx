@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'bootstrap';
 
 export default class App extends Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container-fluid">
         <h1>Hello from React</h1>
       </div>
     );
