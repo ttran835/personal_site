@@ -1,4 +1,7 @@
-$body-bg: #000;
-$body-color: #111;
+$body-bg: #fff;
 
+//react module scss import
+@import '../scss/components/App.scss';
+
+//import for b4
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
