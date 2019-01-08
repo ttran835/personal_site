@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar/NavBar';
+import NavBar from './grabber/NavBar';
+import Headline from './grabber/Headline';
 import 'bootstrap';
 
 export default class App extends Component {
@@ -10,9 +11,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <h1>Hello from React</h1>
-        <NavBar className="navbar navbar-expand-lg navbar-light bg-light" />
+      <div>
+        <NavBar />
+        <Headline />
       </div>
     );
   }

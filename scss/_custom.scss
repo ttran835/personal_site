@@ -1,7 +1,8 @@
-$body-bg: #fff;
+$body-bg: coral;
 
 //react module scss import
 @import '../scss/components/App.scss';
+@import './components/NavBar.scss';
 
 //import for b4
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
