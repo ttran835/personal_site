@@ -5,4 +5,4 @@ Code base is currently being worked on at this time: Initialized date Jan 4th 20
 
 ## Tech Stack
 
-Javascript | ES6 | ReacJS | Bootstrap | Express | NodeJS
+Javascript | ES6 | ReacJS | Bootstrap4 | Express | NodeJS | SCSS | CSS 
