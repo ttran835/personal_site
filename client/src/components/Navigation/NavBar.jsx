@@ -4,7 +4,7 @@ import 'reactstrap';
 
 export default function NavBar(props) {
   return (
-    <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav className="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
       <button
         className="navbar-toggler navbar-toggler-right"
         type="button"
