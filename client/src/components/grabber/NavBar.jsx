@@ -17,7 +17,7 @@ export default function NavBar(props) {
         <span className="navbar-toggler-icon" />
       </button>
       <a className="navbar-brand" href="#">
-        TIM TRAN
+        TEST NAV
       </a>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">

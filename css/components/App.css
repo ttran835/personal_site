@@ -1,0 +1,11 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 900;
+  position: absolute;
+  top: 400px;
+  right: 150px;
+  bottom: 370px;
+  left: 150px; }

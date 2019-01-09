@@ -1,1 +1,18 @@
 $body-color: #000;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
+
+$black: #000;
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: $font-family-monospace;
+  font-weight: 900;
+  position: absolute;
+  top: 400px;
+  right: 150px;
+  bottom: 370px;
+  left: 150px;
+}

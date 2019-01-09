@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './grabber/NavBar';
 import Headline from './grabber/Headline';
+import styles from '../../../css/components/App.css';
 import 'bootstrap';
 
 export default class App extends Component {
@@ -11,9 +12,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main">
         <NavBar />
-        <Headline />
+        <div className={`${styles.title} container-fluid`}>
+          <Headline />
+        </div>
       </div>
     );
   }
