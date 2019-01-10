@@ -5,6 +5,12 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 
 $black: #000;
 
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .title {
   z-index: -10;
 
@@ -61,7 +67,7 @@ $black: #000;
   text-shadow: 0 0 5px #000;
 }
 
-.information {
+.aboutMeContainer {
 }
 .aboutMe {
   background-color: $body-bg-color;

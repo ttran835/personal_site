@@ -1,3 +1,8 @@
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
 .title {
   z-index: -10;
   /* The height needs to be set to a fixed value for the effect to work.
@@ -44,9 +49,6 @@
   align-items: center;
   justify-content: center;
   text-shadow: 0 0 5px #000; }
-
-.aboutMe {
-  background-color: #fff; }
 
 .aboutMe {
   background-color: #fff; }
@@ -6973,6 +6975,11 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
 
 .title {
   z-index: -10;

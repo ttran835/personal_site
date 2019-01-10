@@ -1,3 +1,8 @@
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
 .title {
   z-index: -10;
   /* The height needs to be set to a fixed value for the effect to work.

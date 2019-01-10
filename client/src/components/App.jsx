@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import NavBar from './Navigation/NavBar';
 import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
+import Articles from '../components/About/Articles';
 
 //styles
 import styles from '../../../css/components/App.css';
@@ -27,9 +28,14 @@ export default class App extends Component {
           >
             <Headline />
           </div>
-          <div className={`${styles.information}`}>
+
+          <div className={`${styles.aboutMeContainer}`}>
             <div className={`${styles.aboutMe} container-fluid px-0`}>
               <AboutMe />
+            </div>
+            <div className="articles">
+              <h2 className={styles.headings2}> ARTICLES </h2>
+              <Articles />
             </div>
 
             <footer>

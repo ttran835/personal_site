@@ -12,43 +12,7 @@ export default function About(props) {
           version control to deliver sleek and intuitive User Interface in a
           market where consumers are in constant demand for better web browsing
           experiences. I am also experience with working in a team using Agile
-          method with effective communication to ensure deliverable are met. I
-          am a Software Engineer who is experienced with using ES6, Javascript,
-          React, CSS, Foundation 6, Bootstrap, and Github for version control to
-          deliver sleek and intuitive User Interface in a market where consumers
-          are in constant demand for better web browsing experiences. I am also
-          experience with working in a team using Agile method with effective
-          communication to ensure deliverable are met. I am a Software Engineer
-          who is experienced with using ES6, Javascript, React, CSS, Foundation
-          6, Bootstrap, and Github for version control to deliver sleek and
-          intuitive User Interface in a market where consumers are in constant
-          demand for better web browsing experiences. I am also experience with
-          working in a team using Agile method with effective communication to
-          ensure deliverable are met. I am a Software Engineer who is
-          experienced with using ES6, Javascript, React, CSS, Foundation 6,
-          Bootstrap, and Github for version control to deliver sleek and
-          intuitive User Interface in a market where consumers are in constant
-          demand for better web browsing experiences. I am also experience with
-          working in a team using Agile method with effective communication to
-          ensure deliverable are met. I am a Software Engineer who is
-          experienced with using ES6, Javascript, React, CSS, Foundation 6,
-          Bootstrap, and Github for version control to deliver sleek and
-          intuitive User Interface in a market where consumers are in constant
-          demand for better web browsing experiences. I am also experience with
-          working in a team using Agile method with effective communication to
-          ensure deliverable are met. I am a Software Engineer who is
-          experienced with using ES6, Javascript, React, CSS, Foundation 6,
-          Bootstrap, and Github for version control to deliver sleek and
-          intuitive User Interface in a market where consumers are in constant
-          demand for better web browsing experiences. I am also experience with
-          working in a team using Agile method with effective communication to
-          ensure deliverable are met. I am a Software Engineer who is
-          experienced with using ES6, Javascript, React, CSS, Foundation 6,
-          Bootstrap, and Github for version control to deliver sleek and
-          intuitive User Interface in a market where consumers are in constant
-          demand for better web browsing experiences. I am also experience with
-          working in a team using Agile method with effective communication to
-          ensure deliverable are met.
+          method with effective communication to ensure deliverable are met.
         </p>
         <a href="https://www.linkedin.com/in/timtran835/" class="card-link">
           LinkedIn
