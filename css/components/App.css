@@ -50,5 +50,8 @@
   justify-content: center;
   text-shadow: 0 0 5px #000; }
 
+.aboutMeContainer {
+  width: 100%; }
+
 .aboutMe {
   background-color: #fff; }

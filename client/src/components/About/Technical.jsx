@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from '../../../../css/components/Technical.css';
+// import Resume from '../../Resume.pdf';
 
 export default function Technical(props) {
   return (
     <div className={`card text-center ${styles.bg}`}>
       <div className="card-block">
-        <h3 className="card-title">TECHNICAL EXPERIENCE</h3>
+        <h3 className="card-title">EXPERTISE</h3>
         <h4 className="card-subtitle mb-2 text-muted">Front End</h4>
         <p className="card-text">
           ReactJS/Redux | jQuery | CSS | SCSS | AngularJS | Zurb Foundation |
@@ -21,6 +22,16 @@ export default function Technical(props) {
         <p className="card-text">
           Docker | AWS | EC2 | New Relics | LoaderIO | GitHub
         </p>
+
+        <a
+          href="https://s3.amazonaws.com/resume-tim/Resume.pdf"
+          type="pdf"
+          rel="resume"
+          target="_blank"
+          className="card-link"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );

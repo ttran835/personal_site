@@ -50,11 +50,20 @@
   justify-content: center;
   text-shadow: 0 0 5px #000; }
 
+.aboutMeContainer {
+  width: 100%; }
+
 .aboutMe {
   background-color: #fff; }
 
+.noBorder {
+  border-bottom: none; }
+
 .bg {
   background-color: #f5efef; }
+
+.noBorder {
+  border-bottom: none; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
@@ -7030,6 +7039,9 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   justify-content: center;
   text-shadow: 0 0 5px #000; }
+
+.aboutMeContainer {
+  width: 100%; }
 
 .aboutMe {
   background-color: #fff; }

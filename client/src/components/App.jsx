@@ -33,10 +33,10 @@ export default class App extends Component {
             <div className={`${styles.aboutMe} container-fluid px-0`}>
               <AboutMe />
             </div>
-            <div className="articles">
+            {/* <div className="articles">
               <h2 className={styles.headings2}> ARTICLES </h2>
               <Articles />
-            </div>
+            </div> */}
 
             <footer>
               <div>All Footer information</div>
