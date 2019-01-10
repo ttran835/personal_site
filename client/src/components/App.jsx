@@ -23,9 +23,10 @@ export default class App extends Component {
         <div className={`${styles.title} `}>
           <div
             className={`container-fluid px-0 ${styles.section} ${
-              styles.background1
-            } ${styles.paralax}`}
+              styles.paralax
+            } ${styles.background1}`}
           >
+            <img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
             <Headline />
           </div>
 
@@ -37,6 +38,7 @@ export default class App extends Component {
               <h2 className={styles.headings2}> ARTICLES </h2>
               <Articles />
             </div> */}
+            <div />
 
             <footer>
               <div>All Footer information</div>

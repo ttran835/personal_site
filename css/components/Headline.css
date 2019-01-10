@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-weight: 900;
-  height: 858px; }
+  height: 858px;
+  position: absolute;
+  width: 100%; }
 
 .heading1 {
   position: absolute;
