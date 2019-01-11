@@ -12,17 +12,21 @@ export default function HrProjects(props) {
             alt="Card image cap"
           />
           <div className="card-block">
-            <h4 className="card-title">Card title</h4>
+            <h4 className="card-title">Shoedidas</h4>
             <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A project done with colleagues at Hack Reactor. The primary goal
+              of the project is for our recreate the Adidas' product page from
+              scratch as of December 2018.
+              <br />
+              See GitHub for more details.
             </p>
+
             <a
               href="https://github.com/ttran835/Tim---Module"
               target="_blank"
               className="btn btn-primary"
             >
-              View Project Code
+              View GitHub
             </a>
           </div>
         </div>
@@ -47,7 +51,7 @@ export default function HrProjects(props) {
               bulk of the card's content.
             </p>
             <a href="#" target="_blank" className="btn btn-primary">
-              View Project Code
+              View GitHub
             </a>
           </div>
         </div>
@@ -60,17 +64,20 @@ export default function HrProjects(props) {
           />
 
           <div className="card-block">
-            <h4 className="card-title">Card title</h4>
+            <h4 className="card-title">Frontier Realty</h4>
             <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              This is a personal project used to mock up a realestate website
+              for Frontier Realty, a real estate agency operated locally in
+              Westminster, Huntington Beach, and Fountain Valley area.
+              <br />
+              See GitHub for more details.
             </p>
             <a
               href="https://github.com/ttran835/sample_jack"
               target="_blank"
               className="btn btn-primary"
             >
-              View Project Code
+              View GitHub
             </a>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function Technical(props) {
         </p>
 
         <a
-          href="https://s3.amazonaws.com/resume-tim/Resume.pdf"
+          href=""
           type="pdf"
           rel="resume"
           target="_blank"
