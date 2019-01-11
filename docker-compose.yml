@@ -7,10 +7,10 @@ services:
       - ./docker/data/db:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: example
+      POSTGRES_PASSWORD: timtran
       POSTGRES_DB: personalsite
     ports:
-      - '5432:5432'
+      - '3003:5432'
 
   app:
     container_name: tim
