@@ -24,7 +24,7 @@ export default class App extends Component {
 
     return (
       <div className="main">
-        <NavBar />
+        {/* <NavBar /> */}
         <div className={`${styles.title} `}>
           <div
             className={`container-fluid px-0 ${styles.section} ${
@@ -34,6 +34,13 @@ export default class App extends Component {
             <img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
             <Headline />
           </div>
+          <figcaption class="figure-caption">
+            Photo By{' '}
+            <a href="https://www.pexels.com/@cookiecutter?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">
+              veeterzy
+            </a>{' '}
+            from Pexels
+          </figcaption>
 
           <div className={`${styles.aboutMeContainer}`}>
             <div className={`${styles.aboutMe} container-fluid px-0`}>
