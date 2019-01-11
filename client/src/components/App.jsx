@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Axios from 'axios';
 //modules
 import NavBar from './Navigation/NavBar';
 import Headline from './Navigation/Headline';
@@ -15,6 +15,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    Axios.defaults.baseURL = '';
   }
 
   render() {
