@@ -5,7 +5,8 @@
 
 ## Ignore config & Env files 
 .config 
-# .env
+.env
+bundle.js
 
 ## Ignore node_modules 
 .node_modules
