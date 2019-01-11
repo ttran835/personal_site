@@ -9,7 +9,8 @@
     "react-dev": "webpack -w",
     "start": "nodemon server/server.js",
     "seed": "nodemon database/seed/seed.js",
-    "scss": "node-sass --watch scss -o css"
+    "scss-dev": "node-sass --watch scss -o css",
+    "scss": "node-sass scss -o css"
   },
   "dependencies": {
     "autoprefixer": "^9.4.4",
