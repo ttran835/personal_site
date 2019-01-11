@@ -3,9 +3,13 @@ import Technical from './Technical';
 import styles from '../../../../css/components/AboutMe.css';
 
 export default function About(props) {
+  const cardBgStyle = {
+    backgroundColor: '#e3e2e0',
+  };
+
   return (
     <div className={`card text-center ${styles.noBorder}`}>
-      <div className="card-block">
+      <div className="card-block" style={cardBgStyle}>
         <h2 className="card-title">Tim Tran</h2>
         <h4 className="card-subtitle mb-2 text-muted">Software Engineer</h4>
         <p className="card-text">

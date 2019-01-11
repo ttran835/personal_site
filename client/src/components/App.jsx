@@ -5,6 +5,7 @@ import NavBar from './Navigation/NavBar';
 import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
 import Articles from '../components/About/Articles';
+import HrProjects from '../components/Projects/HR/HrProjects';
 
 //styles
 import styles from '../../../css/components/App.css';
@@ -17,6 +18,10 @@ export default class App extends Component {
   }
 
   render() {
+    const cardBgStyle = {
+      backgroundColor: '#e3e2e0',
+    };
+
     return (
       <div className="main">
         <NavBar />
@@ -38,12 +43,15 @@ export default class App extends Component {
               <h2 className={styles.headings2}> ARTICLES </h2>
               <Articles />
             </div> */}
-            <div />
-
-            <footer>
-              <div>All Footer information</div>
-            </footer>
           </div>
+          <div className={`container-fluid `} style={cardBgStyle}>
+            <h3 className={styles.projects}>MY PROJECTS</h3>
+            <HrProjects />
+          </div>
+
+          <footer>
+            <div>All Footer information</div>
+          </footer>
         </div>
       </div>
     );

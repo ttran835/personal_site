@@ -55,14 +55,24 @@
 .aboutMe {
   background-color: #fff; }
 
+.projects {
+  text-align: center; }
+
 .noBorder {
   border-bottom: none; }
 
 .bg {
-  background-color: #f5efef; }
+  background-color: #b0c9cbad; }
 
 .noBorder {
   border-bottom: none; }
+
+.imgBg {
+  background-color: #000; }
+
+.cardMargin {
+  margin-bottom: 3rem;
+  background-color: #b0c9cbad; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
@@ -7043,6 +7053,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .aboutMe {
   background-color: #fff; }
+
+.projects {
+  text-align: center; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
