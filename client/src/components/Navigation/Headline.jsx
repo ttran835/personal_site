@@ -6,7 +6,12 @@ export default function Headline(props) {
     <div className={`jumbotron jumbotron-fluid ${styles.title}`}>
       <div className="container">
         <p className="lead">Hello I'm</p>
-        <h1 className="display-3">Tim Tran</h1>
+
+        <h1 className="display-3">Test Name</h1>
+        <h4 className="card-subtitle mb-2 text-muted">
+          {' '}
+          And I'm Software Engineer
+        </h4>
       </div>
     </div>
   );

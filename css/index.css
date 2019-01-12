@@ -61,17 +61,27 @@
 .noBorder {
   border-bottom: none; }
 
+.paragraphWidth {
+  margin-bottom: 6rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  text-align: justify; }
+
 .bg {
   background-color: #b0c9cbad; }
 
 .noBorder {
   border-bottom: none; }
 
+.paragraphWidth {
+  margin-bottom: 6rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  text-align: justify; }
+
 .imgBg {
   background-color: #000; }
 
 .cardMargin {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   background-color: #b0c9cbad; }
 
 /*!

@@ -5,7 +5,7 @@ import styles from '../../../../css/components/Technical.css';
 export default function Technical(props) {
   return (
     <div className={`card text-center ${styles.bg}`}>
-      <div className="card-block">
+      <div className=" col-md-6 offset-md-3 card-block">
         <h3 className="card-title">EXPERTISE</h3>
         <h4 className="card-subtitle mb-2 text-muted">Front End</h4>
         <p className="card-text">

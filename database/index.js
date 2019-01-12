@@ -6,7 +6,8 @@ const db = new Sequelize(
   process.env.DATABASE_USER,
   process.env.DATABASE_PASSWORD,
   {
-    host: 'personalSiteDB',
+    // host: 'personalSiteDB',
+    host: process.env.HOST,
     dialect: 'postgres',
   }
 );

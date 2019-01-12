@@ -10,9 +10,12 @@ export default function About(props) {
   return (
     <div className={`card text-center ${styles.noBorder}`}>
       <div className="card-block" style={cardBgStyle}>
-        <h2 className="card-title">Tim Tran</h2>
-        <h4 className="card-subtitle mb-2 text-muted">Software Engineer</h4>
-        <p className="card-text">
+        <h2 className="card-title">About Me</h2>
+        <p
+          className={` col-md-6 offset-md-3 card-text  ${
+            styles.paragraphWidth
+          }`}
+        >
           I am a dedicated and experienced Software Engineer, who is passionate
           about developing sleek and intuitive User Interface in a market where
           consuers are in constant demand for better web browsing experience. I
@@ -25,21 +28,6 @@ export default function About(props) {
         </p>
 
         <Technical />
-
-        <a
-          href="https://www.linkedin.com/in/timtran835/"
-          target="_blank"
-          className="card-link"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/ttran835"
-          target="_blank"
-          className="card-link"
-        >
-          GitHub
-        </a>
       </div>
     </div>
   );

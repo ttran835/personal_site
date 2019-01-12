@@ -3,7 +3,7 @@ import styles from '../../../../../css/components/HrProjects.css';
 
 export default function HrProjects(props) {
   return (
-    <div class="row">
+    <div class="row container-fluid ">
       <div class="col-md-6 offset-md-3">
         <div className={`card ${styles.cardMargin}`}>
           <img

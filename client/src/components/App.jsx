@@ -6,6 +6,7 @@ import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
 import Articles from '../components/About/Articles';
 import HrProjects from '../components/Projects/HR/HrProjects';
+import Footer from '../components/Footer/Footer';
 
 //styles
 import styles from '../../../css/components/App.css';
@@ -60,6 +61,7 @@ export default class App extends Component {
 
           <footer>
             <div>All Footer information</div>
+            <Footer />
           </footer>
         </div>
       </div>
