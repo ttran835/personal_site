@@ -17,9 +17,8 @@ export default function HrProjects(props) {
               A project done with colleagues at Hack Reactor. The primary goal
               of the project is for our recreate the Adidas' product page from
               scratch as of December 2018.
-              <br />
-              See GitHub for more details.
             </p>
+            <p>See GitHub for more details.</p>
 
             <a
               href="https://github.com/ttran835/Tim---Module"
@@ -28,6 +27,14 @@ export default function HrProjects(props) {
             >
               View GitHub
             </a>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModalLong"
+            >
+              Launch demo modal
+            </button>
           </div>
         </div>
 
@@ -69,9 +76,8 @@ export default function HrProjects(props) {
               This is a personal project used to mock up a realestate website
               for Frontier Realty, a real estate agency operated locally in
               Westminster, Huntington Beach, and Fountain Valley area.
-              <br />
-              See GitHub for more details.
             </p>
+            <p>See GitHub for more details.</p>
             <a
               href="https://github.com/ttran835/sample_jack"
               target="_blank"
