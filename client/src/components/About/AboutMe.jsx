@@ -16,15 +16,9 @@ export default function About(props) {
             styles.paragraphWidth
           }`}
         >
-          I am a dedicated and experienced Software Engineer, who is passionate
-          about developing sleek and intuitive User Interface in a market where
-          consuers are in constant demand for better web browsing experience. I
-          am a Software Engineer who is experienced with using ES6, Javascript,
-          React, CSS, Foundation 6, Bootstrap, and Github for version control to
-          deliver sleek and intuitive User Interface in a market where consumers
-          are in constant demand for better web browsing experiences. I am also
-          experience with working in a team using Agile method with effective
-          communication to ensure deliverable are met.
+          This is where the about me section will go, for now it will just be
+          some text to fill the place of it in order to resize and making sure
+          that the information looks okay when the actual thing.
         </p>
 
         <Technical />
