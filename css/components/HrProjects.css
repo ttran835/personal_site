@@ -4,3 +4,12 @@
 .cardMargin {
   margin-bottom: 4rem;
   background-color: #b0c9cbad; }
+
+.popUpModal {
+  z-index: 100;
+  position: fixed;
+  left: 34%;
+  top: 180%; }
+
+.popUpModalHidden {
+  visibility: hidden; }

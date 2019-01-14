@@ -6,6 +6,7 @@ import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
 import Articles from '../components/About/Articles';
 import HrProjects from '../components/Projects/HR/HrProjects';
+import Shoedidas from './Projects/HR/Projects/Shoedidas';
 import Footer from '../components/Footer/Footer';
 
 //styles
@@ -15,9 +16,19 @@ import 'bootstrap';
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      toRenderModal: 'hidden',
+    };
 
+    this.toHelpRender = this.toHelpRender.bind(this);
     Axios.defaults.baseURL = '';
+  }
+
+  toHelpRender(e) {
+    let id = e.target.id;
+    this.setState({
+      modalToRender: id,
+    });
   }
 
   render() {
@@ -27,6 +38,11 @@ export default class App extends Component {
 
     return (
       <div className="main">
+        {this.state.modalToRender === 'shoedidas' ? (
+          <div className={styles.popUpModal}>
+            <Shoedidas toHelpRender={this.toHelpRender} />
+          </div>
+        ) : null}
         {/* <NavBar /> */}
         <div className={`${styles.title} `}>
           <div
@@ -56,7 +72,7 @@ export default class App extends Component {
           </div>
           <div className={`container-fluid `} style={cardBgStyle}>
             <h3 className={styles.projects}>MY PROJECTS</h3>
-            <HrProjects />
+            <HrProjects toHelpRender={this.toHelpRender} />
           </div>
 
           <footer>

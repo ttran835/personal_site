@@ -13,7 +13,7 @@
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px; }
+  perspective: 1px; }
 
 .paralax {
   /* Display and position the pseudo-element */
@@ -26,7 +26,7 @@
   /* Move the pseudo-element back away from the camera,
      * then scale it back up to fill the viewport.
      * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
+  transform: translateZ(-1px) scale(2);
   /* Force the background image to fill the whole element. */
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */
@@ -58,6 +58,12 @@
 .projects {
   text-align: center; }
 
+.popUpModal {
+  position: fixed;
+  z-index: 1;
+  left: 30rem;
+  bottom: 15rem; }
+
 .noBorder {
   border-bottom: none; }
 
@@ -83,6 +89,15 @@
 .cardMargin {
   margin-bottom: 4rem;
   background-color: #b0c9cbad; }
+
+.popUpModal {
+  position: fixed;
+  z-index: 1;
+  left: 30rem;
+  bottom: 15rem; }
+
+.popUpModalHidden {
+  visibility: hidden; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
@@ -7022,7 +7037,7 @@ a.text-dark:hover, a.text-dark:focus {
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px; }
+  perspective: 1px; }
 
 .paralax {
   /* Display and position the pseudo-element */
@@ -7035,7 +7050,7 @@ a.text-dark:hover, a.text-dark:focus {
   /* Move the pseudo-element back away from the camera,
      * then scale it back up to fill the viewport.
      * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
+  transform: translateZ(-1px) scale(2);
   /* Force the background image to fill the whole element. */
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */
@@ -7066,6 +7081,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .projects {
   text-align: center; }
+
+.popUpModal {
+  position: fixed;
+  z-index: 1;
+  left: 30rem;
+  bottom: 15rem; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
