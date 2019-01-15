@@ -5,8 +5,12 @@ import NavBar from './Navigation/NavBar';
 import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
 import Articles from '../components/About/Articles';
+
+//projects
 import HrProjects from '../components/Projects/HR/HrProjects';
 import Shoedidas from './Projects/HR/Projects/Shoedidas';
+import FrontierRealty from './Projects/HR/Projects/FrontierRealty';
+
 import Footer from '../components/Footer/Footer';
 
 //styles
@@ -20,15 +24,7 @@ export default class App extends Component {
       toRenderModal: 'hidden',
     };
 
-    this.toHelpRender = this.toHelpRender.bind(this);
     Axios.defaults.baseURL = '';
-  }
-
-  toHelpRender(e) {
-    let id = e.target.id;
-    this.setState({
-      modalToRender: id,
-    });
   }
 
   render() {
@@ -36,13 +32,10 @@ export default class App extends Component {
       backgroundColor: '#e3e2e0',
     };
 
+    //to Render Projects
+
     return (
-      <div className="main">
-        {this.state.modalToRender === 'shoedidas' ? (
-          <div className={styles.popUpModal}>
-            <Shoedidas toHelpRender={this.toHelpRender} />
-          </div>
-        ) : null}
+      <div className="main container-fluid px-0">
         {/* <NavBar /> */}
         <div className={`${styles.title} `}>
           <div
@@ -74,7 +67,6 @@ export default class App extends Component {
             <h3 className={styles.projects}>MY PROJECTS</h3>
             <HrProjects toHelpRender={this.toHelpRender} />
           </div>
-
           <footer>
             <div>All Footer information</div>
             <Footer />

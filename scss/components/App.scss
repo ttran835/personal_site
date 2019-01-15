@@ -78,8 +78,9 @@ $black: #000;
 }
 
 .popUpModal {
-  position: fixed;
   z-index: 1;
-  left: 30rem;
-  bottom: 15rem;
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem;
 }

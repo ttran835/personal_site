@@ -59,10 +59,11 @@
   text-align: center; }
 
 .popUpModal {
-  position: fixed;
   z-index: 1;
-  left: 30rem;
-  bottom: 15rem; }
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem; }
 
 .noBorder {
   border-bottom: none; }
@@ -90,14 +91,11 @@
   margin-bottom: 4rem;
   background-color: #b0c9cbad; }
 
-.popUpModal {
-  position: fixed;
-  z-index: 1;
-  left: 30rem;
-  bottom: 15rem; }
-
 .popUpModalHidden {
   visibility: hidden; }
+
+.buttonInline {
+  display: flex; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
@@ -7083,10 +7081,11 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center; }
 
 .popUpModal {
-  position: fixed;
   z-index: 1;
-  left: 30rem;
-  bottom: 15rem; }
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
