@@ -34,37 +34,43 @@ export default class Shoedidas extends Component {
               of the project is for our recreate the Adidas' product page from
               scratch as of December 2018.
             </p>
-            <p>See GitHub for more details.</p>
+            <p>For more details, please refer below:</p>
 
             <div className={styles.buttonInline}>
               <a
                 href="https://github.com/ttran835/Tim---Module"
                 target="_blank"
-                className="btn btn-primary"
+                className={`btn btn-primary ${styles.buttonSpace}`}
               >
-                View GitHub
+                View code on GitHub
               </a>
-              <Button color="primary" onClick={this.toggle}>
-                View Details
+              <Button
+                color="primary"
+                className={styles.buttonSpace}
+                onClick={this.toggle}
+              >
+                View more details about Shoedidas
               </Button>
             </div>
           </div>
         </div>
 
         <Modal
+          size="lg"
           isOpen={this.state.modal}
           toggle={this.toggle}
           className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Shoedidas</ModalHeader>
           <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            This is my individual project that was created as a demonstration
+            for a real estate website for realtor that operates in Orange
+            County. Front-end of the codebase uses Javscript, ReactJS, CSS, Zurb
+            Foundation. The back-end of the project consisted of Express,
+            NodeJS, and PostgreSQL. Scaling has not been tested at this time for
+            the website since it is in it's demo stage. Site works with multiple
+            viewports at this time, however, primary image needs to change once
+            mobile viewport comes into play.
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={this.toggle}>
