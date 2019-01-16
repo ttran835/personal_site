@@ -1,14 +1,31 @@
-.imgBg {
-  background-color: #000;
-}
-
 .cardMargin {
   margin-bottom: 4rem;
   background-color: #b0c9cbad;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.imgBg {
+  background-color: #000;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.12), 1px 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .popUpModalHidden {
   visibility: hidden;
+}
+
+.materialBtn {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-position: center;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+  }
+  &:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
 }
 
 .buttonInline {
@@ -17,4 +34,12 @@
 
 .buttonSpace {
   margin-right: 1rem;
+  margin-bottom: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.techStackImg {
+  width: 3.5rem;
 }

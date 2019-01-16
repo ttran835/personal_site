@@ -36,21 +36,26 @@ export default class Shoedidas extends Component {
             </p>
             <p>For more details, please refer below:</p>
 
-            <div className={styles.buttonInline}>
-              <a
-                href="https://github.com/ttran835/Tim---Module"
-                target="_blank"
-                className={`btn btn-primary ${styles.buttonSpace}`}
-              >
-                View code on GitHub
-              </a>
-              <Button
-                color="primary"
-                className={styles.buttonSpace}
-                onClick={this.toggle}
-              >
-                View more details about Shoedidas
-              </Button>
+            <div className={`container-fluid 0-px`}>
+              <div className="row">
+                <a
+                  href="https://github.com/ttran835/Tim---Module"
+                  target="_blank"
+                  className={`btn btn-primary ${styles.buttonSpace} ${
+                    styles.materialBtn
+                  }`}
+                >
+                  View code on GitHub
+                </a>
+
+                <Button
+                  color="primary"
+                  className={`${styles.buttonSpace} ${styles.materialBtn}`}
+                  onClick={this.toggle}
+                >
+                  View more details about Shoedidas
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -63,14 +68,10 @@ export default class Shoedidas extends Component {
         >
           <ModalHeader toggle={this.toggle}>Shoedidas</ModalHeader>
           <ModalBody>
-            This is my individual project that was created as a demonstration
-            for a real estate website for realtor that operates in Orange
-            County. Front-end of the codebase uses Javscript, ReactJS, CSS, Zurb
-            Foundation. The back-end of the project consisted of Express,
-            NodeJS, and PostgreSQL. Scaling has not been tested at this time for
-            the website since it is in it's demo stage. Site works with multiple
-            viewports at this time, however, primary image needs to change once
-            mobile viewport comes into play.
+            <h6>Project Overview</h6>
+            <p>
+              This project is blah blah blah, and blah blah blah and what not
+            </p>
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={this.toggle}>

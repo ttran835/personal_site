@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import styles from '../../../../../../css/components/HrProjects.css';
+import ReactDOM from 'react-dom';
+// import ReactMarkdown from 'react-markdown';
+
+//ReactJS | PostgreSQL | Nodejs | Foundation6 | CSS | Docker | AWS | HTML5
 
 export default class FrontierRealty extends Component {
   constructor(props) {
@@ -36,21 +40,25 @@ export default class FrontierRealty extends Component {
               Westminster, Huntington Beach, and Fountain Valley area.
             </p>
             <p>See GitHub for more details.</p>
-            <div className={styles.buttonInline}>
-              <a
-                href="https://github.com/ttran835/sample_jack"
-                target="_blank"
-                className={`btn btn-primary ${styles.buttonSpace}`}
-              >
-                View code on GitHub
-              </a>
-              <Button
-                color="primary"
-                className={styles.buttonSpace}
-                onClick={this.toggle}
-              >
-                View more details about Shoedidas
-              </Button>
+            <div className={`container-fluid`}>
+              <div className="row">
+                <a
+                  href="https://github.com/ttran835/sample_jack"
+                  target="_blank"
+                  className={`btn btn-primary ${styles.buttonSpace}  ${
+                    styles.materialBtn
+                  }`}
+                >
+                  View code on GitHub
+                </a>
+                <Button
+                  color="primary"
+                  className={`${styles.buttonSpace} ${styles.materialBtn}`}
+                  onClick={this.toggle}
+                >
+                  View more details about Shoedidas
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -62,14 +70,78 @@ export default class FrontierRealty extends Component {
           >
             <ModalHeader toggle={this.toggle}>Frontier Realty</ModalHeader>
             <ModalBody>
-              This is my individual project that was created as a demonstration
-              for a real estate website for realtor that operates in Orange
-              County. Front-end of the codebase uses Javscript, ReactJS, CSS,
-              Zurb Foundation. The back-end of the project consisted of Express,
-              NodeJS, and PostgreSQL. Scaling has not been tested at this time
-              for the website since it is in it's demo stage. Site works with
-              multiple viewports at this time, however, primary image needs to
-              change once mobile viewport comes into play.
+              <h6>Project Overview</h6>
+              <p>
+                This is my individual project that was created as a
+                demonstration for a real estate website for realtor that
+                operates in Orange County. Front-end of the codebase uses
+                Javscript, ReactJS, CSS, Zurb Foundation. The back-end of the
+                project consisted of Express, NodeJS, and PostgreSQL. Scaling
+                has not been tested at this time for the website since it is in
+                it's demo stage. Site works with multiple viewports at this
+                time, however, primary image needs to change once mobile
+                viewport comes into play.
+              </p>
+              <div className={`container`}>
+                <div className="row">
+                  <div className="col">
+                    <p>ReactJS</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="https://s3.amazonaws.com/personal-site-tim/react_svg.svg"
+                      alt="react"
+                    />
+                  </div>
+                  <div className="col">
+                    <p>Zurb Foundation</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="https://s3.amazonaws.com/personal-site-tim/fi-foundation.svg"
+                      alt="zurb"
+                    />
+                  </div>
+                  <div className="col">
+                    <p>HTML5</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="https://s3.amazonaws.com/personal-site-tim/html5_svg.svg"
+                      alt="html"
+                    />
+                  </div>
+                  <div className="col">
+                    <p>CSS3</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="https://s3.amazonaws.com/personal-site-tim/css_svg.svg"
+                      alt="css"
+                    />
+                  </div>
+                  <div className="col">
+                    <p>NodeJS</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="https://s3.amazonaws.com/personal-site-tim/nodejs_svg.svg"
+                      alt="nodejs"
+                    />
+                  </div>
+                  <div className="col">
+                    <p>PostgreSQL</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="https://s3.amazonaws.com/personal-site-tim/postgresql_svg.svg"
+                      alt="postgres"
+                    />
+                  </div>
+                  <div className="col">
+                    <p>Amazon-AWS</p>
+                    <img
+                      className={`${styles.techStackImg}`}
+                      src="	https://s3.amazonaws.com/personal-site-tim/aws_svg.svg"
+                      alt="aws"
+                    />
+                  </div>
+                </div>
+              </div>
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.toggle}>
