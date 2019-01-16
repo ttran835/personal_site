@@ -4,7 +4,7 @@ import styles from '../../../../css/components/AboutMe.css';
 
 export default function About(props) {
   const cardBgStyle = {
-    backgroundColor: '#e3e2e0',
+    backgroundColor: '#faf9f5',
   };
 
   return (

@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 //modules
 import NavBar from './Navigation/NavBar';
+import Header from './Header/Header';
 import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
-import Articles from '../components/About/Articles';
+import Articles from './About/Articles/Articles';
 
 //projects
 import HrProjects from '../components/Projects/HR/HrProjects';
@@ -29,7 +30,7 @@ export default class App extends Component {
 
   render() {
     const cardBgStyle = {
-      backgroundColor: '#e3e2e0',
+      backgroundColor: '#faf9f5',
     };
 
     //to Render Projects
@@ -38,24 +39,10 @@ export default class App extends Component {
       <div className="main container-fluid px-0">
         {/* <NavBar /> */}
         <div className={`${styles.title} `}>
-          <div
-            className={`container-fluid px-0 ${styles.section} ${
-              styles.paralax
-            } ${styles.background1}`}
-          >
-            <img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
-            <Headline />
-          </div>
-          <figcaption class="figure-caption">
-            Photo By{' '}
-            <a href="https://www.pexels.com/@cookiecutter?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">
-              veeterzy
-            </a>{' '}
-            from Pexels
-          </figcaption>
+          <Header />
 
           <div className={`${styles.aboutMeContainer}`}>
-            <div className={`${styles.aboutMe} container-fluid px-0`}>
+            <div className={`container-fluid px-0`}>
               <AboutMe />
             </div>
             {/* <div className="articles">

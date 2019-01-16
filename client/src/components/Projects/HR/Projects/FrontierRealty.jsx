@@ -75,13 +75,8 @@ export default class FrontierRealty extends Component {
                 <p className="card-body">
                   This is my individual project that was created as a
                   demonstration for a real estate website for realtor that
-                  operates in Orange County. Front-end of the codebase uses
-                  Javscript, ReactJS, CSS, Zurb Foundation. The back-end of the
-                  project consisted of Express, NodeJS, and PostgreSQL. Scaling
-                  has not been tested at this time for the website since it is
-                  in it's demo stage. Site works with multiple viewports at this
-                  time, however, primary image needs to change once mobile
-                  viewport comes into play.
+                  operates in Orange County. Scaling has not been tested at this
+                  time for the website since it is in it's demo stage.
                 </p>
               </div>
               <div className="container card-body">

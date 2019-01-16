@@ -1,15 +1,9 @@
 $body-color: #000;
-$body-bg-color: #fff;
+// $body-bg-color: #fff;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 
 $black: #000;
-
-.headings2 {
-  margin-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
 
 .title {
   z-index: -10;
@@ -22,26 +16,13 @@ $black: #000;
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 1px;
+  perspective: 5px;
 }
 
-.paralax {
-  /* Display and position the pseudo-element */
-  content: ' ';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Move the pseudo-element back away from the camera,
-     * then scale it back up to fill the viewport.
-     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(2);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .background1 {
@@ -54,23 +35,11 @@ $black: #000;
 }
 //paralax
 
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-
-  /* For text formatting. */
-  display: flex;
-  justify-content: center;
-  text-shadow: 0 0 5px #000;
-}
-
 .aboutMeContainer {
   width: 100%;
 }
 .aboutMe {
-  background-color: $body-bg-color;
+  // background-color: $body-bg-color;
 }
 
 .projects {
