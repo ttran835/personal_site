@@ -85,7 +85,6 @@ export default class FrontierRealty extends Component {
               <div className={`container`}>
                 <div className="row">
                   <div className="col">
-                    <p>ReactJS</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="https://s3.amazonaws.com/personal-site-tim/react_svg.svg"
@@ -93,7 +92,6 @@ export default class FrontierRealty extends Component {
                     />
                   </div>
                   <div className="col">
-                    <p>Zurb Foundation</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="https://s3.amazonaws.com/personal-site-tim/fi-foundation.svg"
@@ -101,7 +99,6 @@ export default class FrontierRealty extends Component {
                     />
                   </div>
                   <div className="col">
-                    <p>HTML5</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="https://s3.amazonaws.com/personal-site-tim/html5_svg.svg"
@@ -109,7 +106,6 @@ export default class FrontierRealty extends Component {
                     />
                   </div>
                   <div className="col">
-                    <p>CSS3</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="https://s3.amazonaws.com/personal-site-tim/css_svg.svg"
@@ -117,7 +113,6 @@ export default class FrontierRealty extends Component {
                     />
                   </div>
                   <div className="col">
-                    <p>NodeJS</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="https://s3.amazonaws.com/personal-site-tim/nodejs_svg.svg"
@@ -125,7 +120,6 @@ export default class FrontierRealty extends Component {
                     />
                   </div>
                   <div className="col">
-                    <p>PostgreSQL</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="https://s3.amazonaws.com/personal-site-tim/postgresql_svg.svg"
@@ -133,7 +127,6 @@ export default class FrontierRealty extends Component {
                     />
                   </div>
                   <div className="col">
-                    <p>Amazon-AWS</p>
                     <img
                       className={`${styles.techStackImg}`}
                       src="	https://s3.amazonaws.com/personal-site-tim/aws_svg.svg"

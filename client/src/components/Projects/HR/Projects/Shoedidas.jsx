@@ -72,6 +72,52 @@ export default class Shoedidas extends Component {
             <p>
               This project is blah blah blah, and blah blah blah and what not
             </p>
+            <div className={`container`}>
+              <div className="row">
+                <div className="col">
+                  <img
+                    className={`${styles.techStackImg}`}
+                    src="https://s3.amazonaws.com/personal-site-tim/react_svg.svg"
+                    alt="react"
+                  />
+                </div>
+                <div className="col">
+                  <img
+                    className={`${styles.techStackImg}`}
+                    src="https://s3.amazonaws.com/personal-site-tim/html5_svg.svg"
+                    alt="html"
+                  />
+                </div>
+                <div className="col">
+                  <img
+                    className={`${styles.techStackImg}`}
+                    src="https://s3.amazonaws.com/personal-site-tim/css_svg.svg"
+                    alt="css"
+                  />
+                </div>
+                <div className="col">
+                  <img
+                    className={`${styles.techStackImg}`}
+                    src="https://s3.amazonaws.com/personal-site-tim/nodejs_svg.svg"
+                    alt="nodejs"
+                  />
+                </div>
+                <div className="col">
+                  <img
+                    className={`${styles.techStackImg}`}
+                    src="https://s3.amazonaws.com/personal-site-tim/mysql.png"
+                    alt="mysql"
+                  />
+                </div>
+                <div className="col">
+                  <img
+                    className={`${styles.techStackImg}`}
+                    src="	https://s3.amazonaws.com/personal-site-tim/aws_svg.svg"
+                    alt="aws"
+                  />
+                </div>
+              </div>
+            </div>
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={this.toggle}>
