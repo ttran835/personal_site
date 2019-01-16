@@ -5,6 +5,8 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 
 $black: #000;
 
+$tim-default-bg: #faf9f5;
+
 .title {
   z-index: -10;
 
@@ -35,11 +37,12 @@ $black: #000;
 }
 //paralax
 
-.aboutMeContainer {
+.primaryBodyContainer {
   width: 100%;
 }
 .aboutMe {
-  // background-color: $body-bg-color;
+  position: relative;
+  bottom: 20rem;
 }
 
 .projects {
@@ -57,4 +60,9 @@ $black: #000;
 footer {
   margin-bottom: 5rem;
   margin-top: 2rem;
+}
+
+.parallaxHider {
+  background-color: $tim-default-bg;
+  color: $tim-default-bg;
 }

@@ -1,3 +1,52 @@
+.title {
+  z-index: -10;
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 4.5px; }
+
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+.background1 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat; }
+
+.background2 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.primaryBodyContainer {
+  width: 100%; }
+
+.aboutMe {
+  position: relative;
+  bottom: 20rem; }
+
+.projects {
+  text-align: center; }
+
+.popUpModal {
+  z-index: 1;
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem; }
+
+footer {
+  margin-bottom: 5rem;
+  margin-top: 2rem; }
+
+.parallaxHider {
+  background-color: #faf9f5;
+  color: #faf9f5; }
+
 .paralax {
   /* Display and position the pseudo-element */
   content: ' ';
@@ -68,3 +117,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   /* Black background with opacity */
   z-index: 1; }
+
+.parallaxHider {
+  background-color: #faf9f5;
+  color: #faf9f5; }

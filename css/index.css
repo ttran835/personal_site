@@ -22,8 +22,12 @@
 .background2 {
   background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
 
-.aboutMeContainer {
+.primaryBodyContainer {
   width: 100%; }
+
+.aboutMe {
+  position: relative;
+  bottom: 20rem; }
 
 .projects {
   text-align: center; }
@@ -39,13 +43,23 @@ footer {
   margin-bottom: 5rem;
   margin-top: 2rem; }
 
+.parallaxHider {
+  background-color: #faf9f5;
+  color: #faf9f5; }
+
 .noBorder {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: transparent; }
 
 .paragraphWidth {
   margin-bottom: 6rem;
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
   text-align: justify; }
+
+.aboutMeBg {
+  background-color: '#faf9f5';
+  max-width: 70%;
+  margin: auto; }
 
 .bg {
   background-color: #b0c9cbad;
@@ -53,12 +67,18 @@ footer {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 .noBorder {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: transparent; }
 
 .paragraphWidth {
   margin-bottom: 6rem;
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
   text-align: justify; }
+
+.aboutMeBg {
+  background-color: '#faf9f5';
+  max-width: 70%;
+  margin: auto; }
 
 .cardMargin {
   margin-bottom: 4rem;

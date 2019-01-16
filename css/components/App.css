@@ -22,8 +22,12 @@
 .background2 {
   background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
 
-.aboutMeContainer {
+.primaryBodyContainer {
   width: 100%; }
+
+.aboutMe {
+  position: relative;
+  bottom: 20rem; }
 
 .projects {
   text-align: center; }
@@ -38,3 +42,7 @@
 footer {
   margin-bottom: 5rem;
   margin-top: 2rem; }
+
+.parallaxHider {
+  background-color: #faf9f5;
+  color: #faf9f5; }

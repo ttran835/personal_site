@@ -1,3 +1,5 @@
+@import './App.scss';
+
 @mixin blur-header-img {
   filter: blur(1px);
 }
@@ -86,4 +88,9 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
   z-index: 1;
+}
+
+.parallaxHider {
+  background-color: $tim-default-bg;
+  color: $tim-default-bg;
 }

@@ -5,6 +5,7 @@ import NavBar from './Navigation/NavBar';
 import Header from './Header/Header';
 import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
+import Technical from './About/Technical';
 import Articles from './About/Articles/Articles';
 
 //projects
@@ -38,28 +39,30 @@ export default class App extends Component {
     return (
       <div className="main container-fluid px-0">
         {/* <NavBar /> */}
-        <div className={`${styles.title} `}>
+        <div className={`${styles.title} `} style={cardBgStyle}>
           <Header />
-
-          <div className={`${styles.aboutMeContainer}`}>
-            <div className={`container-fluid px-0`}>
-              <AboutMe />
-            </div>
+          <div className={`${styles.primaryBodyContainer}`}>
             {/* <div className="articles">
               <h2 className={styles.headings2}> ARTICLES </h2>
               <Articles />
             </div> */}
-          </div>
-          <div className={`container-fluid `} style={cardBgStyle}>
-            <h3 className={styles.projects}>MY PROJECTS</h3>
-            <HrProjects toHelpRender={this.toHelpRender} />
-          </div>
-          <footer>
-            <div className="contaier-fluid text-center">
-              <h3>Let's Connect</h3>
-              <Footer />
+            <div className={`container-fluid ${styles.parallaxHider}`}>
+              <div className={`container-fluid px-0 ${styles.aboutMe}`}>
+                <AboutMe />
+              </div>
+              <Technical />
             </div>
-          </footer>
+            <div className={`container-fluid `}>
+              <h3 className={styles.projects}>MY PROJECTS</h3>
+              <HrProjects toHelpRender={this.toHelpRender} />
+            </div>
+            <footer>
+              <div className="contaier-fluid text-center">
+                <h3>Let's Connect</h3>
+                <Footer />
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
     );

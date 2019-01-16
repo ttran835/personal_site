@@ -1,7 +1,13 @@
 .noBorder {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: transparent; }
 
 .paragraphWidth {
   margin-bottom: 6rem;
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
   text-align: justify; }
+
+.aboutMeBg {
+  background-color: '#faf9f5';
+  max-width: 70%;
+  margin: auto; }
