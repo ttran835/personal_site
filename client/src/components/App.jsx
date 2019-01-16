@@ -55,8 +55,10 @@ export default class App extends Component {
             <HrProjects toHelpRender={this.toHelpRender} />
           </div>
           <footer>
-            <div>All Footer information</div>
-            <Footer />
+            <div className="contaier-fluid text-center">
+              <h3>Let's Connect</h3>
+              <Footer />
+            </div>
           </footer>
         </div>
       </div>

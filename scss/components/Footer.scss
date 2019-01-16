@@ -1,0 +1,21 @@
+.iconBg {
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  border-radius: 2px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.footerImg {
+  width: 1.5rem;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+  }
+}

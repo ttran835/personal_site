@@ -35,6 +35,10 @@
   position: absolute;
   left: 28rem; }
 
+footer {
+  margin-bottom: 5rem;
+  margin-top: 2rem; }
+
 .noBorder {
   border-bottom: none; }
 

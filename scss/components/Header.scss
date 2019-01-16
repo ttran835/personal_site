@@ -1,3 +1,7 @@
+@mixin blur-header-img {
+  filter: blur(1px);
+}
+
 .paralax {
   /* Display and position the pseudo-element */
   content: ' ';
@@ -46,23 +50,40 @@
 .analysisImg {
   width: 18rem;
   height: 9rem;
+  @include blur-header-img;
 }
 
 .statisticImg {
   width: 18rem;
   height: 14rem;
+  @include blur-header-img;
 }
 
 .programmerImg {
   width: 27rem;
+  @include blur-header-img;
 }
 
 .businessImg {
   width: 20rem;
   height: 18rem;
+  @include blur-header-img;
 }
 
 .leftSideHeaderImg {
   width: 15rem;
   height: 9rem;
+  @include blur-header-img;
+}
+
+//overlay
+
+.overlay {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 1;
 }

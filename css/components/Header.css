@@ -37,19 +37,34 @@
 
 .analysisImg {
   width: 18rem;
-  height: 9rem; }
+  height: 9rem;
+  filter: blur(1px); }
 
 .statisticImg {
   width: 18rem;
-  height: 14rem; }
+  height: 14rem;
+  filter: blur(1px); }
 
 .programmerImg {
-  width: 27rem; }
+  width: 27rem;
+  filter: blur(1px); }
 
 .businessImg {
   width: 20rem;
-  height: 18rem; }
+  height: 18rem;
+  filter: blur(1px); }
 
 .leftSideHeaderImg {
   width: 15rem;
-  height: 9rem; }
+  height: 9rem;
+  filter: blur(1px); }
+
+.overlay {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 1; }
