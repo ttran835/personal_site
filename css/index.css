@@ -120,7 +120,13 @@
     cursor: pointer; }
 
 .techStackImg {
-  width: 3.5rem; }
+  width: 2.5rem; }
+
+.modalCardTechStack {
+  border: 1px solid #dee2e6;
+  background-color: #b0c9cbad;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
@@ -7045,73 +7051,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.headings2 {
-  margin-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 1.5rem; }
-
-.title {
-  z-index: -10;
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 1px; }
-
-.paralax {
-  /* Display and position the pseudo-element */
-  content: ' ';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /* Move the pseudo-element back away from the camera,
-     * then scale it back up to fill the viewport.
-     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(2);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1; }
-
-.background1 {
-  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-repeat: no-repeat; }
-
-.background2 {
-  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
-
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-  /* For text formatting. */
-  display: flex;
-  justify-content: center;
-  text-shadow: 0 0 5px #000; }
-
-.aboutMeContainer {
-  width: 100%; }
-
-.aboutMe {
-  background-color: #fff; }
-
-.projects {
-  text-align: center; }
-
-.popUpModal {
-  z-index: 1;
-  bottom: 14rem;
-  overflow: hidden;
-  position: absolute;
-  left: 28rem; }
-
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7170,7 +7109,7 @@ body {
   line-height: 1.5;
   color: #000;
   text-align: left;
-  background-color: #fff; }
+  background-color: #e3e2e0; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8151,7 +8090,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #dee2e6; }
   .table .table {
-    background-color: #fff; }
+    background-color: #e3e2e0; }
 
 .table-sm th,
 .table-sm td {
@@ -11079,7 +11018,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #e3e2e0;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;

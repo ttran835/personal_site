@@ -32,4 +32,10 @@
     cursor: pointer; }
 
 .techStackImg {
-  width: 3.5rem; }
+  width: 2.5rem; }
+
+.modalCardTechStack {
+  border: 1px solid #dee2e6;
+  background-color: #b0c9cbad;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
