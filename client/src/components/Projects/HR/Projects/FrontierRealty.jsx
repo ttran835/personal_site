@@ -84,57 +84,71 @@ export default class FrontierRealty extends Component {
                   viewport comes into play.
                 </p>
               </div>
-
+              <div className="container card-body">
+                <h6 className="card-title">Demo Site</h6>
+                <p className="card-body">
+                  This project is still in progress. The demo site currently
+                  shows a static front-end. API has been removed for development
+                  purposes.
+                </p>
+                <p className="card-body">
+                  Please refer to this{' '}
+                  <a href="http://34.217.149.124/" target="_blank">
+                    link
+                  </a>{' '}
+                  for a full look.
+                </p>
+              </div>
               <div
                 className={` card-body container ${styles.modalCardTechStack}`}
               >
-                <h6 className="card-title">Tech Stack</h6>
+                <h6 className="card-title">Developed using:</h6>
                 <div className="row">
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="https://s3.amazonaws.com/personal-site-tim/react_svg.svg"
                       alt="react"
                     />
                   </div>
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="https://s3.amazonaws.com/personal-site-tim/fi-foundation.svg"
                       alt="zurb"
                     />
                   </div>
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="https://s3.amazonaws.com/personal-site-tim/html5_svg.svg"
                       alt="html"
                     />
                   </div>
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="https://s3.amazonaws.com/personal-site-tim/css_svg.svg"
                       alt="css"
                     />
                   </div>
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="https://s3.amazonaws.com/personal-site-tim/nodejs_svg.svg"
                       alt="nodejs"
                     />
                   </div>
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="https://s3.amazonaws.com/personal-site-tim/postgresql_svg.svg"
                       alt="postgres"
                     />
                   </div>
                   <div className="col">
                     <img
-                      className={`${styles.techStackImg}`}
+                      className={`${styles.techStackIcons}`}
                       src="	https://s3.amazonaws.com/personal-site-tim/aws_svg.svg"
                       alt="aws"
                     />
