@@ -1,7 +1,3 @@
-.headerImg {
-  width: 10rem;
-}
-
 .paralax {
   /* Display and position the pseudo-element */
   content: ' ';
@@ -14,7 +10,7 @@
   /* Move the pseudo-element back away from the camera,
      * then scale it back up to fill the viewport.
      * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
+  transform: translateZ(-1px) scale(1.6);
   /* Force the background image to fill the whole element. */
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */
@@ -25,10 +21,48 @@
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 40vh;
+  height: 43vh;
 
   /* For text formatting. */
-  // display: flex;
+  display: flex;
   justify-content: center;
   text-shadow: 0 0 5px #000;
+}
+
+.adjustRowWidth {
+  width: 77%;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.lastPictureContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+//images
+.analysisImg {
+  width: 18rem;
+  height: 9rem;
+}
+
+.statisticImg {
+  width: 18rem;
+  height: 14rem;
+}
+
+.programmerImg {
+  width: 27rem;
+}
+
+.businessImg {
+  width: 20rem;
+  height: 18rem;
+}
+
+.leftSideHeaderImg {
+  width: 15rem;
+  height: 9rem;
 }

@@ -120,7 +120,7 @@ export default class Shoedidas extends Component {
                 will lead to the components that we're developed by me.
               </p>
               <img
-                className={styles.modalImg}
+                className={`img-fluid ${styles.modalImg}`}
                 src="https://media.giphy.com/media/jkZgVAHXtGHfRFuC65/giphy.gif"
               />
             </div>
