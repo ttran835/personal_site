@@ -1,11 +1,46 @@
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf');
+}
+
+//@font-face {
+//   font-family: 'AdihausDIN-bold';
+//   src: url('https://s3-us-west-1.amazonaws.com/fec-matthew/AdihausDIN-Bold.woff2')
+//     format('woff2');
+// }
+
 $body-color: #000;
+
 // $body-bg-color: #fff;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  'Liberation Mono', 'Courier New', monospace !default;
+@mixin Ed-Bold {
+  font-family: Edmonsans-Bold;
+}
+
+@mixin Ed-Med {
+  font-family: Edmonsans-Medium;
+}
+
+@mixin Ed-Reg {
+  font-family: Edmonsans-Reg;
+}
 
 $black: #000;
 
 $tim-default-bg: #faf9f5;
+
+body {
+  @include Ed-Reg;
+}
 
 .title {
   z-index: -10;
@@ -48,6 +83,7 @@ $tim-default-bg: #faf9f5;
 .aboutMe {
   position: relative;
   bottom: 12rem;
+  z-index: 10;
 }
 
 .projects {

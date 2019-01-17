@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
+
+body {
+  font-family: Edmonsans-Reg; }
+
 .title {
   z-index: -10;
   /* The height needs to be set to a fixed value for the effect to work.
@@ -30,7 +45,8 @@
 
 .aboutMe {
   position: relative;
-  bottom: 12rem; }
+  bottom: 12rem;
+  z-index: 10; }
 
 .projects {
   text-align: center; }

@@ -1,16 +1,18 @@
 //react module scss import
+$body-bg: #faf9f5;
+$jumbotron-bg: #faf9f5 !important;
+$modal-content-bg: #e3e2e0;
 
 @import '../scss/components/App.scss';
+
 @import './components/NavBar.scss';
 @import './components/AboutMe.scss';
 @import './components/Articles.scss';
+
 @import './components/Technical.scss';
 @import './components/AboutMe.scss';
 @import './components//HrProjects.scss';
-
 //import for b4
 // $white: #e3e2e0;
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-$body-bg: #faf9f5;
-$modal-content-bg: #e3e2e0;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

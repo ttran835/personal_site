@@ -1,50 +1,17 @@
-.title {
-  z-index: -10;
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 4.5px; }
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
 
-.parallaxHider {
-  background-color: #faf9f5; }
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
 
-.headings2 {
-  margin-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 1.5rem; }
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
 
-.background1 {
-  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-repeat: no-repeat; }
-
-.background2 {
-  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
-
-.primaryBodyContainer {
-  width: 100%; }
-
-.aboutMe {
-  position: relative;
-  bottom: 12rem; }
-
-.projects {
-  text-align: center; }
-
-.popUpModal {
-  z-index: 1;
-  bottom: 14rem;
-  overflow: hidden;
-  position: absolute;
-  left: 28rem; }
-
-footer {
-  margin-bottom: 5rem;
-  margin-top: 3rem; }
+body {
+  font-family: Edmonsans-Reg; }
 
 .title {
   z-index: -10;
@@ -78,7 +45,8 @@ footer {
 
 .aboutMe {
   position: relative;
-  bottom: 12rem; }
+  bottom: 12rem;
+  z-index: 10; }
 
 .projects {
   text-align: center; }
@@ -93,6 +61,82 @@ footer {
 footer {
   margin-bottom: 5rem;
   margin-top: 3rem; }
+
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
+
+body {
+  font-family: Edmonsans-Reg; }
+
+.title {
+  z-index: -10;
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 4.5px; }
+
+.parallaxHider {
+  background-color: #faf9f5; }
+
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+.background1 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat; }
+
+.background2 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.primaryBodyContainer {
+  width: 100%; }
+
+.aboutMe {
+  position: relative;
+  bottom: 12rem;
+  z-index: 10; }
+
+.projects {
+  text-align: center; }
+
+.popUpModal {
+  z-index: 1;
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem; }
+
+footer {
+  margin-bottom: 5rem;
+  margin-top: 3rem; }
+
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
 
 .noBorder {
   border-bottom: none;
@@ -108,7 +152,8 @@ footer {
   background-color: #faf9f5;
   max-width: 65rem;
   margin: auto;
-  padding: 0; }
+  padding: 0;
+  font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
   background-color: #b0c9cbad;
@@ -119,12 +164,34 @@ footer {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .shadow:hover {
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
+
+.aboutMeImg {
+  width: 19rem;
+  margin: 3rem; }
+
+.jumboTronBg {
+  background-color: #faf9f5; }
 
 .bg {
   background-color: #b0c9cbad;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
+
+body {
+  font-family: Edmonsans-Reg; }
+
 .title {
   z-index: -10;
   /* The height needs to be set to a fixed value for the effect to work.
@@ -157,7 +224,8 @@ footer {
 
 .aboutMe {
   position: relative;
-  bottom: 12rem; }
+  bottom: 12rem;
+  z-index: 10; }
 
 .projects {
   text-align: center; }
@@ -173,6 +241,18 @@ footer {
   margin-bottom: 5rem;
   margin-top: 3rem; }
 
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
+
 .noBorder {
   border-bottom: none;
   background-color: transparent;
@@ -187,7 +267,8 @@ footer {
   background-color: #faf9f5;
   max-width: 65rem;
   margin: auto;
-  padding: 0; }
+  padding: 0;
+  font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
   background-color: #b0c9cbad;
@@ -198,6 +279,13 @@ footer {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .shadow:hover {
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
+
+.aboutMeImg {
+  width: 19rem;
+  margin: 3rem; }
+
+.jumboTronBg {
+  background-color: #faf9f5; }
 
 .cardMargin {
   margin-bottom: 4rem;
@@ -307,7 +395,7 @@ body {
   line-height: 1.5;
   color: #000;
   text-align: left;
-  background-color: #fff; }
+  background-color: #faf9f5; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -638,7 +726,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #faf9f5;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1288,7 +1376,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #dee2e6; }
   .table .table {
-    background-color: #fff; }
+    background-color: #faf9f5; }
 
 .table-sm th,
 .table-sm td {
@@ -3020,11 +3108,11 @@ input[type="button"].btn-block {
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #faf9f5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #faf9f5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #faf9f5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .custom-range::-moz-focus-outer {
     border: 0; }
   .custom-range::-webkit-slider-thumb {
@@ -3156,8 +3244,8 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff; }
+    background-color: #faf9f5;
+    border-color: #dee2e6 #dee2e6 #faf9f5; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3819,7 +3907,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #faf9f5;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
@@ -4216,7 +4304,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #e3e2e0;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -7561,7 +7649,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #faf9f5;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -9943,11 +10031,11 @@ input[type="button"].btn-block {
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #faf9f5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #faf9f5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #faf9f5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .custom-range::-moz-focus-outer {
     border: 0; }
   .custom-range::-webkit-slider-thumb {
@@ -10079,8 +10167,8 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff; }
+    background-color: #faf9f5;
+    border-color: #dee2e6 #dee2e6 #faf9f5; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -10742,7 +10830,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #faf9f5;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
