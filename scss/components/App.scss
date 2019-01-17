@@ -21,6 +21,10 @@ $tim-default-bg: #faf9f5;
   perspective: 4.5px;
 }
 
+.parallaxHider {
+  background-color: $tim-default-bg;
+}
+
 .headings2 {
   margin-top: 1.5rem;
   text-align: center;
@@ -40,9 +44,10 @@ $tim-default-bg: #faf9f5;
 .primaryBodyContainer {
   width: 100%;
 }
+
 .aboutMe {
   position: relative;
-  bottom: 20rem;
+  bottom: 12rem;
 }
 
 .projects {
@@ -59,10 +64,5 @@ $tim-default-bg: #faf9f5;
 
 footer {
   margin-bottom: 5rem;
-  margin-top: 2rem;
-}
-
-.parallaxHider {
-  background-color: $tim-default-bg;
-  color: $tim-default-bg;
+  margin-top: 3rem;
 }

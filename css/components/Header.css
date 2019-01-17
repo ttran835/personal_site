@@ -10,6 +10,9 @@
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 4.5px; }
 
+.parallaxHider {
+  background-color: #faf9f5; }
+
 .headings2 {
   margin-top: 1.5rem;
   text-align: center;
@@ -27,7 +30,7 @@
 
 .aboutMe {
   position: relative;
-  bottom: 20rem; }
+  bottom: 12rem; }
 
 .projects {
   text-align: center; }
@@ -41,11 +44,7 @@
 
 footer {
   margin-bottom: 5rem;
-  margin-top: 2rem; }
-
-.parallaxHider {
-  background-color: #faf9f5;
-  color: #faf9f5; }
+  margin-top: 3rem; }
 
 .paralax {
   /* Display and position the pseudo-element */
@@ -114,10 +113,6 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   /* Black background with opacity */
   z-index: 1; }
-
-.parallaxHider {
-  background-color: #faf9f5;
-  color: #faf9f5; }

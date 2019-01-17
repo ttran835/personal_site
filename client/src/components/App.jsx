@@ -58,7 +58,6 @@ export default class App extends Component {
             </div>
             <footer>
               <div className="contaier-fluid text-center">
-                <h3>Let's Connect</h3>
                 <Footer />
               </div>
             </footer>

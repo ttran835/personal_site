@@ -1,6 +1,9 @@
+@import './App.scss';
+
 .noBorder {
   border-bottom: none;
   background-color: transparent;
+  border: none;
 }
 
 .paragraphWidth {
@@ -10,7 +13,21 @@
 }
 
 .aboutMeBg {
-  background-color: '#faf9f5';
-  max-width: 70%;
+  background-color: $tim-default-bg;
+  max-width: 65rem;
   margin: auto;
+  padding: 0;
+}
+
+.aboutMeFooter {
+  background-color: #b0c9cbad;
+  margin: none;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+  }
 }
