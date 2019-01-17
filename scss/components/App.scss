@@ -42,6 +42,10 @@ body {
   @include Ed-Reg;
 }
 
+.containerMargin {
+  margin: 2rem 0 2rem 0;
+}
+
 .title {
   z-index: -10;
 
@@ -86,6 +90,11 @@ body {
   z-index: 10;
 }
 
+.details {
+  position: relative;
+  bottom: 9rem;
+}
+
 .projects {
   text-align: center;
 }
@@ -99,7 +108,6 @@ body {
 }
 
 .mainWrapper {
-  width: 65rem;
   margin: auto;
 }
 

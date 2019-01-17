@@ -13,6 +13,9 @@
 body {
   font-family: Edmonsans-Reg; }
 
+.containerMargin {
+  margin: 2rem 0 2rem 0; }
+
 .title {
   z-index: -10;
   /* The height needs to be set to a fixed value for the effect to work.
@@ -48,6 +51,10 @@ body {
   bottom: 12rem;
   z-index: 10; }
 
+.details {
+  position: relative;
+  bottom: 9rem; }
+
 .projects {
   text-align: center; }
 
@@ -59,7 +66,6 @@ body {
   left: 28rem; }
 
 .mainWrapper {
-  width: 65rem;
   margin: auto; }
 
 footer {

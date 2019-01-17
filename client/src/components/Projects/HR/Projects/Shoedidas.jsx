@@ -37,25 +37,23 @@ export default class Shoedidas extends Component {
             <p>For more details, please refer below:</p>
 
             <div className={`container-fluid 0-px`}>
-              <div className="row">
-                <a
-                  href="https://github.com/ttran835/Tim---Module"
-                  target="_blank"
-                  className={`btn btn-primary ${styles.buttonSpace} ${
-                    styles.materialBtn
-                  }`}
-                >
-                  View code on GitHub
-                </a>
+              <a
+                href="https://github.com/ttran835/Tim---Module"
+                target="_blank"
+                className={`btn btn-primary ${styles.buttonSpace} ${
+                  styles.materialBtn
+                }`}
+              >
+                View code on GitHub
+              </a>
 
-                <Button
-                  color="primary"
-                  className={`${styles.buttonSpace} ${styles.materialBtn}`}
-                  onClick={this.toggle}
-                >
-                  View more details about Shoedidas
-                </Button>
-              </div>
+              <Button
+                color="primary"
+                className={`${styles.buttonSpace} ${styles.materialBtn}`}
+                onClick={this.toggle}
+              >
+                View more details about Shoedidas
+              </Button>
             </div>
           </div>
         </div>

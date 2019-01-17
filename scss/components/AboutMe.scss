@@ -31,7 +31,6 @@ $jumbotron-bg: $tim-default-bg;
 
 .aboutMeBg {
   background-color: $tim-default-bg;
-  max-width: 61rem;
   margin: auto;
   padding: 0;
   font-family: Edmonsans-Reg;
@@ -53,11 +52,9 @@ $jumbotron-bg: $tim-default-bg;
 
 .aboutMeImg {
   width: 19rem;
-  margin: 2rem;
 }
 
 .jumboTronBg {
   background-color: $tim-default-bg;
-  padding: 1.1rem 4rem;
   margin-bottom: 0;
 }

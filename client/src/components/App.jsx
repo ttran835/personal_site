@@ -48,17 +48,25 @@ export default class App extends Component {
               <Articles />
             </div> */}
             <div className={`container-fluid ${styles.parallaxHider}`}>
-              <div className={styles.mainWrapper}>
+              <div
+                className={`col col-lg-8 align-self-center ${
+                  styles.mainWrapper
+                }`}
+              >
                 <div className={`container-fluid px-0 ${styles.aboutMe}`}>
                   <AboutMe />
                 </div>
-                <div className="contaier-fluid">
+                <div
+                  className={`container-fluid ${styles.containerMargin} ${
+                    styles.details
+                  }`}
+                >
                   <Details />
                 </div>
-                <div className="container-fluid">
+                <div className={`container-fluid ${styles.containerMargin}`}>
                   <Technical />
                 </div>
-                <div className={`container-fluid `}>
+                <div className={`container-fluid ${styles.containerMargin}`}>
                   <h3 className={styles.projects}>MY PROJECTS</h3>
                   <HrProjects toHelpRender={this.toHelpRender} />
                 </div>
