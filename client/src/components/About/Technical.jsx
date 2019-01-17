@@ -25,16 +25,6 @@ export default function Technical(props) {
           <p className="card-text">
             Docker | AWS | EC2 | New Relics | LoaderIO | GitHub
           </p>
-
-          <a
-            href=""
-            type="pdf"
-            rel="resume"
-            target="_blank"
-            className="card-link"
-          >
-            Resume
-          </a>
         </div>
       </div>
     </div>

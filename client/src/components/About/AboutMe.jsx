@@ -20,7 +20,7 @@ export default function About(props) {
             </div>
             <div className="col col-lg-8 align-self-center">
               <div className={`jumbotron ${styles.jumboTronBg}`}>
-                <h3>Hello!</h3>
+                <h1>Hello!</h1>
                 <h4>
                   I'm <strong>Tim Tran</strong>
                 </h4>

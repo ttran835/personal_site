@@ -9,3 +9,9 @@
   width: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem; }
+
+.shadow {
+  display: flex;
+  justify-content: center;
+  background-color: #42649f;
+  background-size: 0rem 0rem; }
