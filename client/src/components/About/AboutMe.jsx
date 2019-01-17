@@ -24,7 +24,8 @@ export default function About(props) {
               <p className="lead">
                 Software Engineer and advocate for financial literacy.
               </p>
-              <table className="table">
+              <hr class="my-4" />
+              <table className="table table-striped">
                 <tbody>
                   <tr>
                     <th scope="row">Email</th>

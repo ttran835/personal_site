@@ -86,7 +86,7 @@ footer {
 
 .aboutMeBg {
   background-color: #faf9f5;
-  max-width: 65rem;
+  max-width: 61rem;
   margin: auto;
   padding: 0;
   font-family: Edmonsans-Reg; }
@@ -103,7 +103,9 @@ footer {
 
 .aboutMeImg {
   width: 19rem;
-  margin: 3rem; }
+  margin: 2rem; }
 
 .jumboTronBg {
-  background-color: #faf9f5; }
+  background-color: #faf9f5;
+  padding: 1.1rem 4rem;
+  margin-bottom: 0; }
