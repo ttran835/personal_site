@@ -24,7 +24,7 @@ export default class FrontierRealty extends Component {
 
   render() {
     return (
-      <div class="col-md-6 offset-md-3">
+      <div className="container-fluid">
         <div className={`card ${styles.cardMargin}`}>
           <img
             className={`card-img-top img-fluid ${styles.imgBg}`}

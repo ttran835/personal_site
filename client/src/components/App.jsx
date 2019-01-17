@@ -5,6 +5,7 @@ import NavBar from './Navigation/NavBar';
 import Header from './Header/Header';
 import Headline from './Navigation/Headline';
 import AboutMe from '../components/About/AboutMe';
+import Details from '../components/About/Details';
 import Technical from './About/Technical';
 import Articles from './About/Articles/Articles';
 
@@ -47,20 +48,27 @@ export default class App extends Component {
               <Articles />
             </div> */}
             <div className={`container-fluid ${styles.parallaxHider}`}>
-              <div className={`container-fluid px-0 ${styles.aboutMe}`}>
-                <AboutMe />
+              <div className={styles.mainWrapper}>
+                <div className={`container-fluid px-0 ${styles.aboutMe}`}>
+                  <AboutMe />
+                </div>
+                <div className="contaier-fluid">
+                  <Details />
+                </div>
+                <div className="container-fluid">
+                  <Technical />
+                </div>
+                <div className={`container-fluid `}>
+                  <h3 className={styles.projects}>MY PROJECTS</h3>
+                  <HrProjects toHelpRender={this.toHelpRender} />
+                </div>
               </div>
-              <Technical />
+              <footer>
+                <div className="contaier-fluid text-center">
+                  <Footer />
+                </div>
+              </footer>
             </div>
-            <div className={`container-fluid `}>
-              <h3 className={styles.projects}>MY PROJECTS</h3>
-              <HrProjects toHelpRender={this.toHelpRender} />
-            </div>
-            <footer>
-              <div className="contaier-fluid text-center">
-                <Footer />
-              </div>
-            </footer>
           </div>
         </div>
       </div>

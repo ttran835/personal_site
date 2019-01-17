@@ -13,7 +13,7 @@ export default class HrProjects extends Component {
 
   render() {
     return (
-      <div class="row container-fluid ">
+      <div className="container-fluid px-0">
         <Shoedidas />
         {/* <Sdc /> */}
         <FrontierRealty />
