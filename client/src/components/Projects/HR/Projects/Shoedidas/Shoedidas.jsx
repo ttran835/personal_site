@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import styles from '../../../../../../css/components/HrProjects.css';
+import styles from '../../../../../../../css/components/HrProjects.css';
+import ShoedidasDescription from './ShoedidasDescription';
 
 export default class Shoedidas extends Component {
   constructor(props) {
@@ -12,6 +13,11 @@ export default class Shoedidas extends Component {
     this.toggle = this.toggle.bind(this);
   }
 
+  toggleDescription() {
+    this.setState({
+      description: !this.state.description,
+    });
+  }
   toggle() {
     this.setState({
       modal: !this.state.modal,
@@ -36,7 +42,7 @@ export default class Shoedidas extends Component {
             </p>
             <p>For more details, please refer below:</p>
 
-            <div className={`container-fluid 0-px`}>
+            <div className={`container-fluid px-0`}>
               <a
                 href="https://github.com/ttran835/Tim---Module"
                 target="_blank"

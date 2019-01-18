@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import styles from '../../../../../../css/components/HrProjects.css';
+import styles from '../../../../../../../css/components/HrProjects.css';
+import FrontierDescription from './FrontierDescription';
 import ReactDOM from 'react-dom';
 // import ReactMarkdown from 'react-markdown';
 

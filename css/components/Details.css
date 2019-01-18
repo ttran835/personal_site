@@ -10,9 +10,6 @@
   font-family: 'Edmonsans-Reg';
   src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
 
-body {
-  font-family: Edmonsans-Reg; }
-
 .containerMargin {
   margin: 2rem 0 2rem 0; }
 
@@ -55,7 +52,8 @@ body {
   margin-top: -10rem; }
 
 .projects {
-  text-align: center; }
+  text-align: center;
+  margin: 2rem 0 2rem 0; }
 
 .popUpModal {
   z-index: 1;

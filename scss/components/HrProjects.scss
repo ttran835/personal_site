@@ -10,8 +10,10 @@ $gray-300: #dee2e6;
 }
 
 .imgBg {
-  background-color: #000;
+  background: url('https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg');
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.12), 1px 1px 4px rgba(0, 0, 0, 0.24);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .popUpModalHidden {

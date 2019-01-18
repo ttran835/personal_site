@@ -39,10 +39,6 @@ $black: #000;
 $tim-default-bg: #faf9f5;
 $tim-default-2: #b0c9cbad;
 
-body {
-  @include Ed-Reg;
-}
-
 .containerMargin {
   margin: 2rem 0 2rem 0;
 }
@@ -97,6 +93,7 @@ body {
 
 .projects {
   text-align: center;
+  margin: 2rem 0 2rem 0;
 }
 
 .popUpModal {

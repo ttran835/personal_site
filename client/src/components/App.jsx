@@ -12,8 +12,6 @@ import Articles from './About/Articles/Articles';
 
 //projects
 import HrProjects from '../components/Projects/HR/HrProjects';
-import Shoedidas from './Projects/HR/Projects/Shoedidas';
-import FrontierRealty from './Projects/HR/Projects/FrontierRealty';
 
 import Footer from '../components/Footer/Footer';
 
@@ -68,13 +66,13 @@ export default class App extends Component {
                 <div className="container-fluid">
                   <Resume />
                 </div>
-
+                {/* 
                 <div className={`container-fluid ${styles.containerMargin}`}>
                   <Technical />
-                </div>
+                </div> */}
 
                 <div className={`container-fluid ${styles.containerMargin}`}>
-                  <h3 className={styles.projects}>MY PROJECTS</h3>
+                  <h2 className={styles.projects}>PROJECTS</h2>
                   <HrProjects toHelpRender={this.toHelpRender} />
                 </div>
               </div>
