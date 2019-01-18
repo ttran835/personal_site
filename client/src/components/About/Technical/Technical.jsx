@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../css/components/Technical.css';
+import styles from '../../../../../css/components/Technical.css';
 // import Resume from '../../Resume.pdf';
 
 export default function Technical(props) {

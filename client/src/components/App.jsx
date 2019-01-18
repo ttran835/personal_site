@@ -4,9 +4,10 @@ import Axios from 'axios';
 import NavBar from './Navigation/NavBar';
 import Header from './Header/Header';
 import Headline from './Navigation/Headline';
-import AboutMe from '../components/About/AboutMe';
-import Details from '../components/About/Details';
-import Technical from './About/Technical';
+import AboutMe from './About/AboutMe';
+import Details from './About/Details';
+import Resume from './About/Technical/Resume';
+import Technical from './About/Technical/Technical';
 import Articles from './About/Articles/Articles';
 
 //projects
@@ -63,14 +64,21 @@ export default class App extends Component {
                 >
                   <Details />
                 </div>
+
+                <div className="container-fluid">
+                  <Resume />
+                </div>
+
                 <div className={`container-fluid ${styles.containerMargin}`}>
                   <Technical />
                 </div>
+
                 <div className={`container-fluid ${styles.containerMargin}`}>
                   <h3 className={styles.projects}>MY PROJECTS</h3>
                   <HrProjects toHelpRender={this.toHelpRender} />
                 </div>
               </div>
+
               <footer>
                 <div className="contaier-fluid text-center">
                   <Footer />
