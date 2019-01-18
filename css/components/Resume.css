@@ -85,14 +85,16 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  cursor: pointer; }
   .btnStyle:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22);
-    border: 1px solid #b0c9cbad;
-    background-color: #b0c9cbad;
-    cursor: pointer; }
+    border: 1px solid #b0c9cbad; }
   .btnStyle:active {
     border: 1px solid #b0c9cbad; }
   .btnStyle:after {
+    border: 1px solid #b0c9cbad; }
+  .btnStyle:focus {
     border: 1px solid #b0c9cbad;
-    background-color: #b0c9cbad; }
+    outline: 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22); }
