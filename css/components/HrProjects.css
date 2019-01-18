@@ -1,37 +1,32 @@
-.cardMargin {
-  margin-bottom: 4rem;
-  background-color: #b0c9cbad;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.cardMarginAndBg {
+  background-color: transparent; }
 
 .imgBg {
+  margin: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg");
-  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.12), 1px 1px 4px rgba(0, 0, 0, 0.24);
-  background-size: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
+  background-size: cover;
   background-repeat: no-repeat; }
 
 .popUpModalHidden {
   visibility: hidden; }
 
 .materialBtn {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background-position: center;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: transparent;
   transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .materialBtn:hover {
-    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
+    background: linear-gradient(to bottom, transparent 0%, rgba(240, 239, 239, 0.363) 100%); }
   .materialBtn:active {
-    background-color: #6eb9f7;
+    background-color: rgba(240, 239, 239, 0.253) 100%;
     background-size: 100%;
-    transition: background 0s; }
-
-.buttonInline {
-  display: flex; }
-
-.buttonSpace {
-  margin-right: 1rem;
-  margin-bottom: 1rem; }
-  .buttonSpace:hover {
-    cursor: pointer; }
+    transition: background 0s;
+    border: 1px solid #000; }
+  .materialBtn:focus {
+    border: 1px solid #000;
+    outline: none; }
 
 .techStackIcons {
   width: 2.5rem;
@@ -49,3 +44,21 @@
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.showIcons {
+  color: transparent;
+  padding-left: 2rem;
+  opacity: 1;
+  box-sizing: border-box;
+  transition: height 200ms 0ms, opacity 200ms 200ms; }
+
+.hideIcons {
+  color: transparent;
+  padding-left: 2rem;
+  transition: height 200ms 200ms, opacity 200ms 0ms, visibility 200ms 0ms;
+  opacity: 0;
+  visibility: hidden; }
+
+.githubBg {
+  background: url("https://s3.amazonaws.com/personal-site-tim/github_svg.svg");
+  background-size: cover; }
