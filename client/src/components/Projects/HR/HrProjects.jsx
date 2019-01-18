@@ -13,16 +13,18 @@ export default class HrProjects extends Component {
 
   render() {
     return (
-      <div className={`container-fluid px-0 ${styles.projectFont}`}>
-        <div className="row">
+      <div className="container-fluid">
+        <div className={`row ${styles.projectFont}`}>
           <div className="col">
             <Shoedidas />
           </div>
+
           <div className="col">
             <FrontierRealty />
           </div>
-          {/* <Sdc /> */}
         </div>
+
+        {/* <Sdc /> */}
       </div>
     );
   }

@@ -10,6 +10,6 @@ COPY . .
 
 EXPOSE 1128
 
-RUN npm run webpack
+#RUN npm run webpack
 
 CMD ["npm", "start"]

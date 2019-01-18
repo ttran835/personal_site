@@ -7,16 +7,26 @@ $gray-300: #dee2e6;
 .projectFont {
   @include Ed-Med;
   color: $gray-300;
+  margin: 0;
 }
 
 .cardMarginAndBg {
   background-color: transparent;
 }
 
-.imgBg {
+.shoedidasImgBg {
   margin: 2rem 0 2rem 0;
   padding: 1rem 0 1rem 0;
   background: url('https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg');
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.frontierImgBg {
+  margin: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
+  background: url('https://s3.amazonaws.com/personal-site-tim/projects/frontier_bg.jpg');
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,4 +110,12 @@ $gray-300: #dee2e6;
   height: 33px;
   border: 1px solid #000;
   opacity: 0.5;
+}
+
+.descriptionCardPosition {
+  position: relative;
+}
+
+.shoedidasImg {
+  width: 14rem;
 }

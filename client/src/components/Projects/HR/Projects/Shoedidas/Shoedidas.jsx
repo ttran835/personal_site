@@ -16,13 +16,12 @@ export default class Shoedidas extends Component {
   }
 
   toggleIcons(e) {
-    console.log('hello hehe');
-    console.log('state', this.state.icon);
     let id = e.target.id;
     this.setState({
       icon: !this.state.icon,
     });
   }
+
   toggle() {
     this.setState({
       modal: !this.state.modal,
@@ -32,20 +31,18 @@ export default class Shoedidas extends Component {
   render() {
     return (
       <div
-        className={`container-fluid ${styles.imgBg}`}
+        className={`container-fluid ${styles.shoedidasImgBg}`}
         onMouseEnter={this.toggleIcons}
         onMouseLeave={this.toggleIcons}
       >
         <div className="row">
           <div className="col col-lg-8">
-            <figure className="figure">
-              <img
-                src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
-                className={`figure-img img-fluid rounded`}
-                id="Shoedidas"
-                alt="shoedidas project"
-              />
-            </figure>
+            <img
+              src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
+              className={`img-fluid ${styles.shoedidasImg}`}
+              id="Shoedidas"
+              alt="shoedidas project"
+            />
           </div>
           <div className="col col-md-4 ">
             <div
@@ -75,9 +72,9 @@ export default class Shoedidas extends Component {
         </div>
         <div className={`card ${styles.cardMarginAndBg}`}>
           <div className="card-block px-1">
-            <h4 class="card-title">Shoedidas</h4>
-            <p class="card-text">
-              A collaborative Project to mock Adidas' product page at Hack
+            <h4 className="card-title">Shoedidas</h4>
+            <p className="card-text">
+              A collaborative project to mock Adidas' product page at Hack
               Reactor.
             </p>
           </div>
