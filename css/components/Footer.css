@@ -5,13 +5,25 @@
   .iconBg:hover {
     cursor: pointer; }
 
+.test .aboutMeFooter {
+  background-color: #b0c9cbad;
+  margin: none;
+  height: 5rem; }
+
 .footerImg {
   width: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+.iconAdjustments {
+  padding: 0.6rem; }
+
 .shadow {
+  border-radius: 60px;
   display: flex;
   justify-content: center;
-  background-color: #42649f;
-  background-size: 0rem 0rem; }
+  transition: all 0.3s;
+  width: 4rem; }
+  .shadow:hover {
+    background-color: #42649f;
+    opacity: 0.8; }
