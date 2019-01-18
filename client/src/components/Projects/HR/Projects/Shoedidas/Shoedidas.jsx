@@ -56,23 +56,19 @@ export default class Shoedidas extends Component {
               }
             >
               <div className="col col-md-4">
-                <Button
+                <a
                   href="https://github.com/ttran835/Tim---Module"
                   target="_blank"
-                  className={`btn btn-primary ${styles.materialBtn} ${
-                    styles.githubBg
-                  }`}
-                >
-                  .
-                </Button>
+                  className={`btn btn-secondary ${styles.githubBg}`}
+                  role="button"
+                />
               </div>
               <div className="col col-md-4">
-                <Button
-                  className={` ${styles.materialBtn}`}
+                <a
+                  className={`btn btn-secondary ${styles.viewMore}`}
                   onClick={this.toggle}
-                >
-                  .
-                </Button>
+                  role="button"
+                />
               </div>
             </div>
           </div>

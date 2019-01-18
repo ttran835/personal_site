@@ -1,6 +1,13 @@
+@import './App.scss';
+
 $modal-bg: #e3e2e0;
 
 $gray-300: #dee2e6;
+
+.projectFont {
+  @include Ed-Med;
+  color: $gray-300;
+}
 
 .cardMarginAndBg {
   background-color: transparent;
@@ -82,4 +89,15 @@ $gray-300: #dee2e6;
 .githubBg {
   background: url('https://s3.amazonaws.com/personal-site-tim/github_svg.svg');
   background-size: cover;
+  height: 33px;
+  border: 1px solid #000;
+  opacity: 0.5;
+}
+
+.viewMore {
+  background: url('https://s3.amazonaws.com/personal-site-tim/eye-regular.svg');
+  background-size: auto;
+  height: 33px;
+  border: 1px solid #000;
+  opacity: 0.5;
 }

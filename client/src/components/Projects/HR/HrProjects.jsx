@@ -13,7 +13,7 @@ export default class HrProjects extends Component {
 
   render() {
     return (
-      <div className="container-fluid px-0">
+      <div className={`container-fluid px-0 ${styles.projectFont}`}>
         <div className="row">
           <div className="col">
             <Shoedidas />
