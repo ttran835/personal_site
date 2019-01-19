@@ -4,6 +4,8 @@ $modal-bg: #e3e2e0;
 
 $gray-300: #dee2e6;
 
+$transition-bg: #b0c9cb;
+
 .projectFont {
   @include Ed-Med;
   color: $gray-300;
@@ -12,10 +14,10 @@ $gray-300: #dee2e6;
 
 .cardMarginAndBg {
   background-color: transparent;
-  margin-top: 12rem;
 }
 
 .shoedidasImgBg {
+  height: 22rem;
   margin: 2rem 0 2rem 0;
   background: url('https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg');
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
@@ -29,6 +31,7 @@ $gray-300: #dee2e6;
 }
 
 .frontierImgBg {
+  height: 22rem;
   margin: 2rem 0 2rem 0;
   background: url('https://s3.amazonaws.com/personal-site-tim/projects/pexels-photo-1439710.jpeg');
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
@@ -90,15 +93,22 @@ $gray-300: #dee2e6;
 }
 
 .showDetails {
+  top: 5rem;
+  border: 0;
+  font-size: 24px;
   opacity: 1;
   box-sizing: border-box;
   transition: height 200ms 0ms, opacity 200ms 200ms;
+  text-align: initial;
 }
 
 .hideDetails {
+  top: 5rem;
+  border: 0;
+  font-size: 24px;
   transition: height 200ms 200ms, opacity 200ms 0ms, visibility 200ms 0ms;
-  opacity: 0;
   visibility: hidden;
+  text-align: initial;
 }
 
 .githubBg {
@@ -126,6 +136,31 @@ $gray-300: #dee2e6;
 }
 
 .headingBg {
-  background-color: $tim-default-2;
+  color: #fff;
+  transition: all 0.5s;
+  .isActive & {
+    background-color: $tim-default-2;
+    opacity: 0.5;
+    :hover > & {
+      opacity: 1;
+      background-color: #b0c9cb;
+      -webkit-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear;
+    }
+  }
+}
+
+.projectOverlayBg {
   opacity: 1;
+  transition: all 0.5s;
+  height: 100%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    z-index: 1;
+    height: 100%;
+  }
 }

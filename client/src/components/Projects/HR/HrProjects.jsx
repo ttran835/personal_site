@@ -15,11 +15,11 @@ export default class HrProjects extends Component {
     return (
       <div className={`container-fluid ${styles.projectFont}`}>
         <div className={`row justify-content-around`}>
-          <div className={`col col-lg-5 ${styles.shoedidasImgBg}`}>
+          <div className={`col col-lg-5`}>
             <Shoedidas />
           </div>
 
-          <div className={`col col-lg-5 ${styles.frontierImgBg}`}>
+          <div className={`col col-lg-5`}>
             <FrontierRealty />
           </div>
         </div>

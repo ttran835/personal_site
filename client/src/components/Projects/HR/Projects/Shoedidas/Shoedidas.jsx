@@ -31,13 +31,15 @@ export default class Shoedidas extends Component {
   render() {
     return (
       <div
-        className={`container-fluid px-0`}
+        className={`container-fluid px-0  ${styles.shoedidasImgBg} ${
+          styles.isActive
+        }`}
         onMouseEnter={this.toggleDetails}
         onMouseLeave={this.toggleDetails}
         onClick={this.toggle}
       >
-        <div className="container-fluid">
-          <div className="row">
+        <div className={`container-fluid px-0 ${styles.projectOverlayBg}`}>
+          <div className={`row`}>
             <div className="col col-lg-8">
               <img
                 src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
@@ -47,22 +49,22 @@ export default class Shoedidas extends Component {
               />
             </div>
           </div>
-        </div>
-        <div className="container-fluid px-0 text-center">
-          <h1 className={styles.headingBg}>Shoedidas</h1>
-        </div>
-        <div
-          className={
-            this.state.details === true
-              ? `card ${styles.cardMarginAndBg} ${styles.showDetails}`
-              : `card ${styles.cardMarginAndBg} ${styles.hideDetails}`
-          }
-        >
-          <div className="card-block px-1">
-            <p className="card-text">
-              A collaborative project to mock Adidas' product page at Hack
-              Reactor.
-            </p>
+          <div className={`container-fluid px-0 text-center `}>
+            <h1 className={styles.headingBg}>Shoedidas</h1>
+            <div
+              className={
+                this.state.details === true
+                  ? `card ${styles.cardMarginAndBg} ${styles.showDetails}`
+                  : `card ${styles.cardMarginAndBg} ${styles.hideDetails}`
+              }
+            >
+              <div className="container-fluid">
+                <p className={`card-text`}>
+                  A collaborative project to mock Adidas' product page at Hack
+                  Reactor.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

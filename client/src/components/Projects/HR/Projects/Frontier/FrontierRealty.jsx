@@ -12,16 +12,17 @@ export default class FrontierRealty extends Component {
     super(props);
     this.state = {
       modal: false,
+      details: false,
     };
 
-    this.toggleIcons = this.toggleIcons.bind(this);
+    this.toggleDetails = this.toggleDetails.bind(this);
     this.toggle = this.toggle.bind(this);
   }
 
-  toggleIcons(e) {
+  toggleDetails(e) {
     let id = e.target.id;
     this.setState({
-      icon: !this.state.icon,
+      details: !this.state.details,
     });
   }
 
@@ -34,34 +35,42 @@ export default class FrontierRealty extends Component {
   render() {
     return (
       <div
-        className={` container-fluid px-0`}
-        onMouseEnter={this.toggleIcons}
-        onMouseLeave={this.toggleIcons}
+        className={` container-fluid px-0 ${styles.frontierImgBg} ${
+          styles.isActive
+        }`}
+        onMouseEnter={this.toggleDetails}
+        onMouseLeave={this.toggleDetails}
         onClick={this.toggle}
       >
-        <div className="container-fluid">
+        <div className={`container-fluid px-0 ${styles.projectOverlayBg} `}>
           <div className="row">
             <div className="col col-lg-8">
               <img
-                src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
+                src="https://s3.amazonaws.com/personal-site-tim/projects/frontier.png"
                 className={`img-fluid ${styles.shoedidasImg}`}
                 id="Shoedidas"
                 alt="shoedidas project"
               />
             </div>
           </div>
-        </div>
 
-        <div className="container-fluid px-0 text-center">
-          <h1 className={styles.headingBg}>Frontier Realty</h1>
-        </div>
+          <div className="container-fluid px-0 text-center">
+            <h1 className={styles.headingBg}>Frontier Realty</h1>
 
-        <div className={`card ${styles.cardMarginAndBg}`}>
-          <div className="card-block px-1">
-            <p className="card-text">
-              A collaborative project to mock Adidas' product page at Hack
-              Reactor.
-            </p>
+            <div
+              className={
+                this.state.details === true
+                  ? `card ${styles.cardMarginAndBg} ${styles.showDetails}`
+                  : `card ${styles.cardMarginAndBg} ${styles.hideDetails}`
+              }
+            >
+              <div className="container-fluid">
+                <p className={`card-text`}>
+                  This is a personal project used to mock up a realestate
+                  website for Frontier Realty.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
