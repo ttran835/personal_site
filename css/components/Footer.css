@@ -16,7 +16,9 @@
   margin-bottom: 1rem; }
 
 .iconAdjustments {
-  padding: 0.6rem; }
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center; }
 
 .shadow {
   border-radius: 60px;

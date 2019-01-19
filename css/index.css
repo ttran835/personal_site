@@ -387,23 +387,30 @@ footer {
   margin: 0; }
 
 .cardMarginAndBg {
-  background-color: transparent; }
+  background-color: transparent;
+  margin-top: 12rem; }
 
 .shoedidasImgBg {
   margin: 2rem 0 2rem 0;
-  padding: 1rem 0 1rem 0;
   background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer; }
+  .shoedidasImgBg:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
 
 .frontierImgBg {
   margin: 2rem 0 2rem 0;
-  padding: 1rem 0 1rem 0;
-  background: url("https://s3.amazonaws.com/personal-site-tim/projects/frontier_bg.jpg");
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/pexels-photo-1439710.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer; }
+  .frontierImgBg:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
 
 .popUpModalHidden {
   visibility: hidden; }
@@ -441,16 +448,12 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
-.showIcons {
-  color: transparent;
-  padding-left: 2rem;
+.showDetails {
   opacity: 1;
   box-sizing: border-box;
   transition: height 200ms 0ms, opacity 200ms 200ms; }
 
-.hideIcons {
-  color: transparent;
-  padding-left: 2rem;
+.hideDetails {
   transition: height 200ms 200ms, opacity 200ms 0ms, visibility 200ms 0ms;
   opacity: 0;
   visibility: hidden; }
@@ -473,7 +476,11 @@ footer {
   position: relative; }
 
 .shoedidasImg {
-  width: 14rem; }
+  width: 4rem; }
+
+.headingBg {
+  background-color: #b0c9cbad;
+  opacity: 1; }
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)

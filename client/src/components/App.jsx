@@ -66,12 +66,14 @@ export default class App extends Component {
                 <div className="container-fluid">
                   <Resume />
                 </div>
-                {/* 
-                <div className={`container-fluid ${styles.containerMargin}`}>
-                  <Technical />
-                </div> */}
 
                 <div className={`container-fluid ${styles.containerMargin}`}>
+                  <Technical />
+                </div>
+
+                <div
+                  className={`container-fluid px-0 ${styles.containerMargin}`}
+                >
                   <h2 className={styles.projects}>PROJECTS</h2>
                   <HrProjects toHelpRender={this.toHelpRender} />
                 </div>

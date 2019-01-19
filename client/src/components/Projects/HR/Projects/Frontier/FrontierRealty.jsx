@@ -34,54 +34,37 @@ export default class FrontierRealty extends Component {
   render() {
     return (
       <div
-        className={` container-fluid ${styles.frontierImgBg}`}
+        className={` container-fluid px-0`}
         onMouseEnter={this.toggleIcons}
         onMouseLeave={this.toggleIcons}
+        onClick={this.toggle}
       >
-        <div className="row">
-          <div className="col col-lg-8">
-            <img
-              src="https://s3.amazonaws.com/personal-site-tim/projects/frontier.png"
-              className={`img-fluid`}
-              id="Shoedidas"
-              alt="shoedidas project"
-            />
-          </div>
-          <div className="col col-md-4 ">
-            <div
-              className={
-                this.state.icon === true
-                  ? `row ${styles.showIcons}`
-                  : `row ${styles.hideIcons}`
-              }
-            >
-              <div className="col col-md-4">
-                <a
-                  href="https://github.com/ttran835/sample_jack"
-                  target="_blank"
-                  className={`btn btn-secondary ${styles.githubBg}`}
-                  role="button"
-                />
-              </div>
-              <div className="col col-md-4">
-                <a
-                  className={`btn btn-secondary ${styles.viewMore}`}
-                  onClick={this.toggle}
-                  role="button"
-                />
-              </div>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col col-lg-8">
+              <img
+                src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
+                className={`img-fluid ${styles.shoedidasImg}`}
+                id="Shoedidas"
+                alt="shoedidas project"
+              />
             </div>
           </div>
         </div>
+
+        <div className="container-fluid px-0 text-center">
+          <h1 className={styles.headingBg}>Frontier Realty</h1>
+        </div>
+
         <div className={`card ${styles.cardMarginAndBg}`}>
           <div className="card-block px-1">
-            <h4 className="card-title">Shoedidas</h4>
             <p className="card-text">
               A collaborative project to mock Adidas' product page at Hack
               Reactor.
             </p>
           </div>
         </div>
+
         <Modal
           size="lg"
           isOpen={this.state.modal}

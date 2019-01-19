@@ -8,17 +8,17 @@ export default class Shoedidas extends Component {
     super(props);
     this.state = {
       modal: false,
-      icon: false,
+      details: false,
     };
 
     this.toggle = this.toggle.bind(this);
-    this.toggleIcons = this.toggleIcons.bind(this);
+    this.toggleDetails = this.toggleDetails.bind(this);
   }
 
-  toggleIcons(e) {
+  toggleDetails(e) {
     let id = e.target.id;
     this.setState({
-      icon: !this.state.icon,
+      details: !this.state.details,
     });
   }
 
@@ -31,48 +31,34 @@ export default class Shoedidas extends Component {
   render() {
     return (
       <div
-        className={`container-fluid ${styles.shoedidasImgBg}`}
-        onMouseEnter={this.toggleIcons}
-        onMouseLeave={this.toggleIcons}
+        className={`container-fluid px-0`}
+        onMouseEnter={this.toggleDetails}
+        onMouseLeave={this.toggleDetails}
+        onClick={this.toggle}
       >
-        <div className="row">
-          <div className="col col-lg-8">
-            <img
-              src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
-              className={`img-fluid ${styles.shoedidasImg}`}
-              id="Shoedidas"
-              alt="shoedidas project"
-            />
-          </div>
-          <div className="col col-md-4 ">
-            <div
-              className={
-                this.state.icon === true
-                  ? `row ${styles.showIcons}`
-                  : `row ${styles.hideIcons}`
-              }
-            >
-              <div className="col col-md-4">
-                <a
-                  href="https://github.com/ttran835/Tim---Module"
-                  target="_blank"
-                  className={`btn btn-secondary ${styles.githubBg}`}
-                  role="button"
-                />
-              </div>
-              <div className="col col-md-4">
-                <a
-                  className={`btn btn-secondary ${styles.viewMore}`}
-                  onClick={this.toggle}
-                  role="button"
-                />
-              </div>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col col-lg-8">
+              <img
+                src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
+                className={`img-fluid ${styles.shoedidasImg}`}
+                id="Shoedidas"
+                alt="shoedidas project"
+              />
             </div>
           </div>
         </div>
-        <div className={`card ${styles.cardMarginAndBg}`}>
+        <div className="container-fluid px-0 text-center">
+          <h1 className={styles.headingBg}>Shoedidas</h1>
+        </div>
+        <div
+          className={
+            this.state.details === true
+              ? `card ${styles.cardMarginAndBg} ${styles.showDetails}`
+              : `card ${styles.cardMarginAndBg} ${styles.hideDetails}`
+          }
+        >
           <div className="card-block px-1">
-            <h4 className="card-title">Shoedidas</h4>
             <p className="card-text">
               A collaborative project to mock Adidas' product page at Hack
               Reactor.
