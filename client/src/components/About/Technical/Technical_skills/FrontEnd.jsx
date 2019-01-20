@@ -5,11 +5,12 @@ import styles from '../../../../../../css/components/Technical.css';
 export default function FrontEnd(props) {
   return (
     <div className={`container-fluid`}>
-      <div className={`row`}>
-        <div className="col">
-          <h1>Hello, please click on me.</h1>
-        </div>
-      </div>
+      <p>
+        {' '}
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut
+      </p>
 
       <Modal isOpen={props.modal} toggle={props.toggle} className={'hello'}>
         <ModalHeader toggle={props.toggle}>Modal title</ModalHeader>

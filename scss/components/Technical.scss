@@ -16,15 +16,43 @@
 //   }
 // }
 
+@mixin smallerBg($bg) {
+  background: url($bg);
+  background-size: cover;
+}
+
 .bg {
   background-color: $tim-default-bg;
+  margin: 0 0 1rem 0;
+
   // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   // transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.margin {
+  margin: 0.5rem 0 0.5rem 0;
+  background-color: $tim-default-bg;
+}
+
+.fake {
+  color: $tim-default-bg;
 }
 
 .frontEndBg {
   background: urL('https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg');
   background-size: cover;
+}
+
+.backEndBg {
+  @include smallerBg(
+    'https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg'
+  );
+}
+
+.othersBg {
+  @include smallerBg(
+    'https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg'
+  );
 }
 
 .skillsOverlay {

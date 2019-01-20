@@ -70,10 +70,26 @@ footer {
   margin-top: 3rem; }
 
 .bg {
+  background-color: #faf9f5;
+  margin: 0 0 1rem 0; }
+
+.margin {
+  margin: 0.5rem 0 0.5rem 0;
   background-color: #faf9f5; }
+
+.fake {
+  color: #faf9f5; }
 
 .frontEndBg {
   background: urL("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
+  background-size: cover; }
+
+.backEndBg {
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
+  background-size: cover; }
+
+.othersBg {
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
   background-size: cover; }
 
 .skillsOverlay {

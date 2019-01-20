@@ -16,7 +16,7 @@ export default class Technical extends Component {
     };
 
     this.toggleFrontEnd = this.toggleFrontEnd.bind(this);
-    this.toggleBacktEnd = this.toggleBacktEnd.bind(this);
+    this.toggleBackEnd = this.toggleBackEnd.bind(this);
     this.toggleOthers = this.toggleOthers.bind(this);
   }
 
@@ -26,7 +26,7 @@ export default class Technical extends Component {
     });
   }
 
-  toggleBacktEnd() {
+  toggleBackEnd() {
     this.setState({
       backEnd: !this.state.backEnd,
     });
@@ -40,25 +40,33 @@ export default class Technical extends Component {
 
   render() {
     return (
-      <div className={`row  ${styles.bg}`}>
-        <div className={`col col-lg-6 ${styles.frontEndBg} `}>
-          <div className={styles.skillsOverlay} onClick={this.toggleFrontEnd}>
-            <FrontEnd
-              toggle={this.toggleFrontEnd}
-              modal={this.state.frontEnd}
-            />
-          </div>
-        </div>
-
-        <div className={`col col-md-4`}>
-          <div className="row">
-            <div className={`col`}>
-              <div className={`back-end`}>
-                <BackEnd />
+      <div className="container-fluid">
+        <div className={`row justify-content-center ${styles.bg}`}>
+          <div className={`col col-sm-4 ${styles.margin}`}>
+            <div className={styles.frontEndBg} onClick={this.toggleFrontEnd}>
+              <div className={styles.skillsOverlay}>
+                <FrontEnd
+                  toggle={this.toggleFrontEnd}
+                  modal={this.state.frontEnd}
+                />
               </div>
-
-              <div className={`other`}>
-                <Others />
+            </div>
+          </div>
+          <div className={`col col-sm-4 ${styles.margin}`}>
+            <div className={`${styles.backEndBg}`} onClick={this.toggleBackEnd}>
+              <div className={styles.skillsOverlay}>
+                <BackEnd
+                  toggle={this.toggleBackEnd}
+                  modal={this.state.backEnd}
+                />
+              </div>
+            </div>
+            {/* <div className={styles.fake}>1</div> */}
+          </div>
+          <div className="col col-lg-8">
+            <div className={`${styles.othersBg}`} onClick={this.toggleOthers}>
+              <div className={styles.skillsOverlay}>
+                <Others toggle={this.toggleOthers} modal={this.state.others} />
               </div>
             </div>
           </div>
