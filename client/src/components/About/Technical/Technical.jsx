@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../../../../../css/components/Technical.css';
+import Slider from 'react-slick';
 
 //technical Skills
 import FrontEnd from './Technical_skills/FrontEnd';
@@ -21,60 +22,84 @@ export default class Technical extends Component {
   }
 
   toggleFrontEnd() {
+    console.log('hello frontend');
     this.setState({
       frontEnd: !this.state.frontEnd,
     });
   }
 
   toggleBackEnd() {
+    console.log('hello backend');
     this.setState({
       backEnd: !this.state.backEnd,
     });
   }
 
   toggleOthers() {
+    console.log('hello others');
     this.setState({
       others: !this.state.others,
     });
   }
 
   render() {
+    const settings = {
+      dots: true,
+      speed: 500,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      pauseOnHover: true,
+      arrows: true,
+    };
+
     return (
-      <div className="container-fluid">
-        <div className={`row justify-content-center ${styles.bg}`}>
-          <div className={`col col-sm-4 ${styles.margin}`}>
-            <div className={styles.frontEndBg} onClick={this.toggleFrontEnd}>
-              <div className={styles.skillsOverlay}>
-                <FrontEnd
-                  toggle={this.toggleFrontEnd}
-                  modal={this.state.frontEnd}
-                />
+      <div className={`row justify-content-center `}>
+        <div className={`col col-lg-10 `}>
+          <Slider className={styles.skillsOverlay} {...settings}>
+            <div>
+              <img
+                className="img-fluid"
+                src="https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg"
+                onClick={this.toggleFrontEnd}
+              />
+              <div className={styles.text}>
+                <h5>Front-End Skills</h5>
               </div>
+
+              <FrontEnd
+                toggle={this.toggleFrontEnd}
+                modal={this.state.frontEnd}
+              />
             </div>
-          </div>
-          <div className={`col col-sm-4 ${styles.margin}`}>
-            <div className={`${styles.backEndBg}`} onClick={this.toggleBackEnd}>
-              <div className={styles.skillsOverlay}>
-                <BackEnd
-                  toggle={this.toggleBackEnd}
-                  modal={this.state.backEnd}
-                />
-              </div>
+            <div>
+              <img
+                className="img-fluid"
+                src="https://s3.amazonaws.com/personal-site-tim/background.jpg"
+                onClick={this.toggleBackEnd}
+              />
+
+              <BackEnd toggle={this.toggleBackEnd} modal={this.state.backEnd} />
             </div>
-            {/* <div className={styles.fake}>1</div> */}
-          </div>
-          <div className="col col-lg-8">
-            <div className={`${styles.othersBg}`} onClick={this.toggleOthers}>
-              <div className={styles.skillsOverlay}>
-                <Others toggle={this.toggleOthers} modal={this.state.others} />
-              </div>
+
+            <div>
+              <img
+                className="img-fluid"
+                src="https://s3.amazonaws.com/personal-site-tim/forest-haze-hd-wallpaper-39811.jpg"
+                onClick={this.toggleOthers}
+              />
+
+              <Others toggle={this.toggleOthers} modal={this.state.others} />
             </div>
-          </div>
+          </Slider>
         </div>
       </div>
     );
   }
 }
+
 /*
 
   <div className=" col-md-6 offset-md-3 card-block">
@@ -95,4 +120,36 @@ export default class Technical extends Component {
       Docker | AWS | EC2 | New Relics | LoaderIO | GitHub
     </p>
   </div>
+
+
+  <div className={`row justify-content-center ${styles.bg}`}>
+          <div className={`col col-lg-10 ${styles.margin}`}>
+            <div className={styles.frontEndBg} onClick={this.toggleFrontEnd}>
+              <div className={styles.skillsOverlay}>
+                <FrontEnd
+                  toggle={this.toggleFrontEnd}
+                  modal={this.state.frontEnd}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={`col col-sm-5 ${styles.margin}`}>
+            <div className={`${styles.backEndBg}`} onClick={this.toggleBackEnd}>
+              <div className={styles.skillsOverlay}>
+                <BackEnd
+                  toggle={this.toggleBackEnd}
+                  modal={this.state.backEnd}
+                />
+              </div>
+            </div>
+    
+            </div>
+            <div className="col col-sm-5">
+              <div className={`${styles.othersBg}`} onClick={this.toggleOthers}>
+                <div className={styles.skillsOverlay}>
+                  <Others toggle={this.toggleOthers} modal={this.state.others} />
+                </div>
+              </div>
+            </div>
+          </div>
 */

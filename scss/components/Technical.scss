@@ -21,6 +21,14 @@
   background-size: cover;
 }
 
+.text {
+  background-color: $gray-300;
+  position: absolute;
+  top: 5rem;
+  text-align: center;
+  width: 14.3%;
+}
+
 .bg {
   background-color: $tim-default-bg;
   margin: 0 0 1rem 0;
@@ -30,7 +38,7 @@
 }
 
 .margin {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
   background-color: $tim-default-bg;
 }
 
@@ -39,32 +47,30 @@
 }
 
 .frontEndBg {
-  background: urL('https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg');
+  background-color: transparent;
   background-size: cover;
 }
 
 .backEndBg {
-  @include smallerBg(
-    'https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg'
-  );
+  background-color: transparent;
 }
 
 .othersBg {
-  @include smallerBg(
-    'https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg'
-  );
+  background-color: transparent;
+}
+
+.testBg {
 }
 
 .skillsOverlay {
   transition: all 0.5s;
-  height: 100%;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   &:hover {
-    background-color: rgba(0, 0, 0, 0.6);
     -webkit-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
     z-index: 1;
-    height: 100%;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
   }
 }
