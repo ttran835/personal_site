@@ -160,7 +160,7 @@ $transition-bg: #b0c9cb;
     opacity: 0.5;
     :hover > & {
       opacity: 1;
-      background-color: #b0c9cb;
+      background-color: $tim-default-bg;
       -webkit-transition: background-color 300ms linear;
       -ms-transition: background-color 300ms linear;
       transition: background-color 300ms linear;
