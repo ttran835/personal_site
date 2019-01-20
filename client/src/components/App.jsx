@@ -40,7 +40,7 @@ export default class App extends Component {
       <div className="main container-fluid px-0">
         {/* <NavBar /> */}
         <div className={`${styles.title} `} style={cardBgStyle}>
-          <Header />
+          {/* <Header /> */}
           <div className={`${styles.primaryBodyContainer}`}>
             {/* <div className="articles">
               <h2 className={styles.headings2}> ARTICLES </h2>
@@ -53,7 +53,7 @@ export default class App extends Component {
                 }`}
               >
                 <div className={`container-fluid px-0 ${styles.aboutMe}`}>
-                  <AboutMe />
+                  {/* <AboutMe /> */}
                 </div>
                 <div
                   className={`container-fluid ${styles.containerMargin} ${
@@ -63,9 +63,7 @@ export default class App extends Component {
                   <Details />
                 </div>
 
-                <div className="container-fluid">
-                  <Resume />
-                </div>
+                <div className="container-fluid">{/* <Resume /> */}</div>
 
                 <div className={`container-fluid ${styles.containerMargin}`}>
                   <Technical />
@@ -75,7 +73,7 @@ export default class App extends Component {
                   className={`container-fluid px-0 ${styles.containerMargin}`}
                 >
                   <h2 className={styles.projects}>PROJECTS</h2>
-                  <HrProjects toHelpRender={this.toHelpRender} />
+                  {/* <HrProjects toHelpRender={this.toHelpRender} /> */}
                 </div>
               </div>
 

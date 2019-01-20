@@ -19,7 +19,7 @@ $transition-bg: #b0c9cb;
 .shoedidasImgBg {
   height: 22rem;
   margin: 2rem 0 2rem 0;
-  background: url('https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg');
+  background: url('https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg');
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ $transition-bg: #b0c9cb;
 
 .modalCardTechStack {
   border: 1px solid $gray-300;
-  background-color: #b0c9cbad;
+  background-color: $tim-default-2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -156,11 +156,11 @@ $transition-bg: #b0c9cb;
   color: #fff;
   transition: all 0.5s;
   .isActive & {
-    background-color: $tim-default-2;
+    background-color: $gray-300;
     opacity: 0.5;
     :hover > & {
       opacity: 1;
-      background-color: $tim-default-bg;
+      background-color: $gray-300;
       -webkit-transition: background-color 300ms linear;
       -ms-transition: background-color 300ms linear;
       transition: background-color 300ms linear;

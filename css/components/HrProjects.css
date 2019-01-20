@@ -80,7 +80,7 @@ footer {
 .shoedidasImgBg {
   height: 22rem;
   margin: 2rem 0 2rem 0;
-  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_ball_field.jpg");
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,11 +185,11 @@ footer {
   color: #fff;
   transition: all 0.5s; }
   .isActive .headingBg {
-    background-color: #b0c9cbad;
+    background-color: #dee2e6;
     opacity: 0.5; }
     :hover > .isActive .headingBg {
       opacity: 1;
-      background-color: #b0c9cb;
+      background-color: #dee2e6;
       -webkit-transition: background-color 300ms linear;
       -ms-transition: background-color 300ms linear;
       transition: background-color 300ms linear; }
