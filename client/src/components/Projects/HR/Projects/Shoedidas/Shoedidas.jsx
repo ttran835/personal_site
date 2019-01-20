@@ -52,11 +52,7 @@ export default class Shoedidas extends Component {
           <div className={`container-fluid px-0 text-center `}>
             <h1 className={styles.headingBg}>Shoedidas</h1>
             <div
-              className={
-                this.state.details === true
-                  ? `card ${styles.cardMarginAndBg} ${styles.showDetails}`
-                  : `card ${styles.cardMarginAndBg} ${styles.hideDetails}`
-              }
+              className={`card ${styles.cardMarginAndBg} ${styles.showDetails}`}
             >
               <div className="container-fluid">
                 <p className={`card-text`}>
@@ -143,42 +139,42 @@ export default class Shoedidas extends Component {
                 <div className="col">
                   <img
                     className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/react_svg.svg"
+                    src="https://s3.amazonaws.com/personal-site-tim/skills/react_svg.svg"
                     alt="react"
                   />
                 </div>
                 <div className="col">
                   <img
                     className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/html5_svg.svg"
+                    src="https://s3.amazonaws.com/personal-site-tim/skills/html5_svg.svg"
                     alt="html"
                   />
                 </div>
                 <div className="col">
                   <img
                     className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/css_svg.svg"
+                    src="https://s3.amazonaws.com/personal-site-tim/skills/css_svg.svg"
                     alt="css"
                   />
                 </div>
                 <div className="col">
                   <img
                     className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/nodejs_svg.svg"
+                    src="https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg"
                     alt="nodejs"
                   />
                 </div>
                 <div className="col">
                   <img
                     className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/mysql.png"
+                    src="https://s3.amazonaws.com/personal-site-tim/skills/mysql.png"
                     alt="mysql"
                   />
                 </div>
                 <div className="col">
                   <img
                     className={`${styles.techStackIcons}`}
-                    src="	https://s3.amazonaws.com/personal-site-tim/aws_svg.svg"
+                    src="	https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg"
                     alt="aws"
                   />
                 </div>

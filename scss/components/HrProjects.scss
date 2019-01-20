@@ -95,21 +95,38 @@ $transition-bg: #b0c9cb;
 .showDetails {
   top: 5rem;
   border: 0;
-  font-size: 24px;
-  opacity: 1;
+  opacity: 0;
   box-sizing: border-box;
-  transition: height 200ms 0ms, opacity 200ms 200ms;
+  transition: all 200ms;
   text-align: initial;
+  transition: all 0.5s;
+  .isActive & {
+    top: 5rem;
+    border: 0;
+    font-size: 24px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 200ms;
+    text-align: initial;
+    transition: all 0.5s;
+    :hover > & {
+      top: 5rem;
+      border: 0;
+      font-size: 24px;
+      text-align: initial;
+      opacity: 1;
+    }
+  }
 }
 
-.hideDetails {
-  top: 5rem;
-  border: 0;
-  font-size: 24px;
-  transition: height 200ms 200ms, opacity 200ms 0ms, visibility 200ms 0ms;
-  visibility: hidden;
-  text-align: initial;
-}
+// .hideDetails {
+//   top: 5rem;
+//   border: 0;
+//   font-size: 24px;
+//   transition: height 200ms 200ms, opacity 200ms 0ms, visibility 200ms 0ms;
+//   visibility: hidden;
+//   text-align: initial;
+// }
 
 .githubBg {
   background: url('https://s3.amazonaws.com/personal-site-tim/github_svg.svg');
