@@ -5,7 +5,7 @@ export default function Footer(props) {
   return (
     <div className={styles.test}>
       <div className="row align-items-center justify-content-sm-center">
-        <div className={`col col-sm-1 ${styles.iconAdjustments}`}>
+        <div className={`col col-sm-2 ${styles.iconAdjustments}`}>
           <div className={`${styles.shadow}`}>
             <a
               href="https://www.linkedin.com/in/timtran835/"
@@ -19,7 +19,7 @@ export default function Footer(props) {
             </a>
           </div>
         </div>
-        <div className={`col col-sm-1 ${styles.iconAdjustments} `}>
+        <div className={`col col-sm-2 ${styles.iconAdjustments} `}>
           <div className={`${styles.shadow}`}>
             <a
               href="https://github.com/ttran835"
@@ -34,7 +34,7 @@ export default function Footer(props) {
           </div>
         </div>
 
-        <div className={`col col-sm-1 ${styles.iconAdjustments} `}>
+        <div className={`col col-sm-2 ${styles.iconAdjustments} `}>
           <div className={`${styles.shadow}`}>
             <a
               href="https://angel.co/tim-tran-6"

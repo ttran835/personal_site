@@ -62,7 +62,7 @@ export default class Technical extends Component {
             <div>
               <img
                 className="img-fluid"
-                src="https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg"
+                src="https://s3.amazonaws.com/personal-site-tim/projects/front_end_dev.jpeg"
                 onClick={this.toggleFrontEnd}
               />
               <div className={styles.text}>
@@ -77,9 +77,12 @@ export default class Technical extends Component {
             <div>
               <img
                 className="img-fluid"
-                src="https://s3.amazonaws.com/personal-site-tim/background.jpg"
+                src="https://s3.amazonaws.com/personal-site-tim/projects/back_end_photo.jpeg"
                 onClick={this.toggleBackEnd}
               />
+              <div className={styles.text}>
+                <h5>Back-End Skills</h5>
+              </div>
 
               <BackEnd toggle={this.toggleBackEnd} modal={this.state.backEnd} />
             </div>
@@ -87,9 +90,12 @@ export default class Technical extends Component {
             <div>
               <img
                 className="img-fluid"
-                src="https://s3.amazonaws.com/personal-site-tim/forest-haze-hd-wallpaper-39811.jpg"
+                src="https://s3.amazonaws.com/personal-site-tim/projects/deployment.jpeg"
                 onClick={this.toggleOthers}
               />
+              <div className={styles.text}>
+                <h5>Deloyment/Others</h5>
+              </div>
 
               <Others toggle={this.toggleOthers} modal={this.state.others} />
             </div>

@@ -259,12 +259,223 @@ footer {
   margin-bottom: 5rem;
   margin-top: 3rem; }
 
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
+
+.containerMargin {
+  margin: 2rem 0 2rem 0; }
+
+.title {
+  z-index: -10;
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 4.5px; }
+
+.parallaxHider {
+  background-color: #faf9f5; }
+
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+.background1 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat; }
+
+.background2 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.primaryBodyContainer {
+  width: 100%; }
+
+.aboutMe {
+  position: relative;
+  z-index: 10;
+  bottom: 13rem; }
+
+.details {
+  margin-top: -10rem; }
+
+.projects {
+  text-align: center;
+  margin: 2rem 0 2rem 0; }
+
+.popUpModal {
+  z-index: 1;
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem; }
+
+.mainWrapper {
+  margin: auto; }
+
+footer {
+  margin-bottom: 5rem;
+  margin-top: 3rem; }
+
+.projectFont {
+  font-family: Edmonsans-Medium;
+  color: #dee2e6;
+  margin: 0; }
+
+.cardMarginAndBg {
+  background-color: transparent; }
+
+.shoedidasImgBg {
+  height: 22rem;
+  margin: 2rem 0 2rem 0;
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer; }
+  .shoedidasImgBg:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
+
+.frontierImgBg {
+  height: 22rem;
+  margin: 2rem 0 2rem 0;
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/pexels-photo-1439710.jpeg");
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer; }
+  .frontierImgBg:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
+
+.popUpModalHidden {
+  visibility: hidden; }
+
+.materialBtn {
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .materialBtn:hover {
+    background: linear-gradient(to bottom, transparent 0%, rgba(240, 239, 239, 0.363) 100%); }
+  .materialBtn:active {
+    background-color: rgba(240, 239, 239, 0.253) 100%;
+    background-size: 100%;
+    transition: background 0s;
+    border: 1px solid #000; }
+  .materialBtn:focus {
+    border: 1px solid #000;
+    outline: none; }
+
+.techStackIcons {
+  width: 2.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 0px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 3px; }
+
+.modalCardTechStack {
+  border: 1px solid #dee2e6;
+  background-color: #b0c9cbad;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.modalImg {
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.showDetails {
+  top: 5rem;
+  border: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: all 200ms;
+  text-align: initial;
+  transition: all 0.5s; }
+  .isActive .showDetails {
+    top: 5rem;
+    border: 0;
+    font-size: 24px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 200ms;
+    text-align: initial;
+    transition: all 0.5s; }
+    :hover > .isActive .showDetails {
+      top: 5rem;
+      border: 0;
+      font-size: 24px;
+      text-align: initial;
+      opacity: 1; }
+
+.githubBg {
+  background: url("https://s3.amazonaws.com/personal-site-tim/github_svg.svg");
+  background-size: cover;
+  height: 33px;
+  border: 1px solid #000;
+  opacity: 0.5; }
+
+.viewMore {
+  background: url("https://s3.amazonaws.com/personal-site-tim/eye-regular.svg");
+  background-size: auto;
+  height: 33px;
+  border: 1px solid #000;
+  opacity: 0.5; }
+
+.descriptionCardPosition {
+  position: relative; }
+
+.shoedidasImg {
+  width: 4rem; }
+
+.headingBg {
+  color: #fff;
+  transition: all 0.5s; }
+  .isActive .headingBg {
+    background-color: #dee2e6;
+    opacity: 0.5; }
+    :hover > .isActive .headingBg {
+      opacity: 1;
+      background-color: #dee2e6;
+      -webkit-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear; }
+
+.projectOverlayBg {
+  opacity: 1;
+  transition: all 0.5s;
+  height: 100%; }
+  .projectOverlayBg:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    z-index: 1;
+    height: 100%; }
+
 .text {
   background-color: #dee2e6;
   position: absolute;
   top: 5rem;
   text-align: center;
   width: 14.3%; }
+
+table {
+  text-align: center; }
 
 .bg {
   background-color: #faf9f5;
@@ -288,7 +499,9 @@ footer {
   background-color: transparent; }
 
 .skillsOverlay {
+  color: #000;
   transition: all 0.5s;
+  height: 97.83%;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24); }
   .skillsOverlay:hover {
@@ -297,6 +510,129 @@ footer {
     transition: background-color 300ms linear;
     z-index: 1;
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
+
+.newRelics {
+  background: url("https://api.iconify.design/logos-new-relic.svg") no-repeat center center/contain; }
+
+.react {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/react_svg.svg") no-repeat center center/contain; }
+  .react p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.html5 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/html5_svg.svg") no-repeat center center/contain; }
+  .html5 p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.css {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/css_svg.svg") no-repeat center center/contain; }
+  .css p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.foundation {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/fi-foundation.svg") no-repeat center center/contain; }
+  .foundation p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.jquery {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/jQuery.svg") no-repeat center center/contain; }
+  .jquery p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.sass {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/sass_icon.svg") no-repeat center center/contain; }
+  .sass p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.angular {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/angularJS.svg") no-repeat center center/contain; }
+  .angular p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.bootstrap {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/bootstrap.svg") no-repeat center center/contain; }
+  .bootstrap p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
