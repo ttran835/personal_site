@@ -56,50 +56,55 @@ export default class Technical extends Component {
     };
 
     return (
-      <div className={`row justify-content-center `}>
-        <div className={`col col-lg-10 `}>
-          <Slider className={styles.skillsOverlay} {...settings}>
-            <div>
-              <img
-                className="img-fluid"
-                src="https://s3.amazonaws.com/personal-site-tim/projects/front_end_dev.jpeg"
-                onClick={this.toggleFrontEnd}
-              />
-              <div className={styles.text}>
-                <h5>Front-End Skills</h5>
+      <div className="container-fluid">
+        <div className={`row justify-content-center `}>
+          <div className={`col col-lg-10 `}>
+            <Slider className={styles.skillsOverlay} {...settings}>
+              <div>
+                <img
+                  className="img-fluid"
+                  src="https://s3.amazonaws.com/personal-site-tim/projects/front_end_dev.jpeg"
+                  onClick={this.toggleFrontEnd}
+                />
+                <div className={styles.text}>
+                  <h5>Front-End Skills</h5>
+                </div>
+
+                <FrontEnd
+                  toggle={this.toggleFrontEnd}
+                  modal={this.state.frontEnd}
+                />
+              </div>
+              <div>
+                <img
+                  className="img-fluid"
+                  src="https://s3.amazonaws.com/personal-site-tim/projects/back_end_photo.jpeg"
+                  onClick={this.toggleBackEnd}
+                />
+                <div className={styles.text}>
+                  <h5>Back-End Skills</h5>
+                </div>
+
+                <BackEnd
+                  toggle={this.toggleBackEnd}
+                  modal={this.state.backEnd}
+                />
               </div>
 
-              <FrontEnd
-                toggle={this.toggleFrontEnd}
-                modal={this.state.frontEnd}
-              />
-            </div>
-            <div>
-              <img
-                className="img-fluid"
-                src="https://s3.amazonaws.com/personal-site-tim/projects/back_end_photo.jpeg"
-                onClick={this.toggleBackEnd}
-              />
-              <div className={styles.text}>
-                <h5>Back-End Skills</h5>
+              <div>
+                <img
+                  className="img-fluid"
+                  src="https://s3.amazonaws.com/personal-site-tim/projects/deployment.jpeg"
+                  onClick={this.toggleOthers}
+                />
+                <div className={styles.text}>
+                  <h5>Deloyment/Others</h5>
+                </div>
+
+                <Others toggle={this.toggleOthers} modal={this.state.others} />
               </div>
-
-              <BackEnd toggle={this.toggleBackEnd} modal={this.state.backEnd} />
-            </div>
-
-            <div>
-              <img
-                className="img-fluid"
-                src="https://s3.amazonaws.com/personal-site-tim/projects/deployment.jpeg"
-                onClick={this.toggleOthers}
-              />
-              <div className={styles.text}>
-                <h5>Deloyment/Others</h5>
-              </div>
-
-              <Others toggle={this.toggleOthers} modal={this.state.others} />
-            </div>
-          </Slider>
+            </Slider>
+          </div>
         </div>
       </div>
     );

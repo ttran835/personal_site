@@ -46,7 +46,7 @@ export default class App extends Component {
               <h2 className={styles.headings2}> ARTICLES </h2>
               <Articles />
             </div> */}
-            <div className={`container-fluid ${styles.parallaxHider}`}>
+            <div className={`container-fluid px-0 ${styles.parallaxHider}`}>
               <div
                 className={`col col-lg-6 align-self-center ${
                   styles.mainWrapper
@@ -83,11 +83,8 @@ export default class App extends Component {
                   <HrProjects />
                 </div>
               </div>
-
               <footer>
-                <div className="contaier-fluid text-center">
-                  <Footer />
-                </div>
+                <Footer />
               </footer>
             </div>
           </div>

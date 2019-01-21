@@ -13,6 +13,10 @@
 .containerMargin {
   margin: 2rem 0 2rem 0; }
 
+table .table-striped > tbody > tr:nth-child(odd) > td,
+table .table-sstriped > tbody > tr:nth-child(odd) > th {
+  background-color: red; }
+
 .title {
   z-index: -10;
   /* The height needs to be set to a fixed value for the effect to work.
@@ -26,7 +30,7 @@
   perspective: 4.5px; }
 
 .parallaxHider {
-  background-color: #faf9f5; }
+  background-color: #e0e3da; }
 
 .headings2 {
   margin-top: 1.5rem;
@@ -66,11 +70,11 @@
   margin: auto; }
 
 footer {
-  margin-bottom: 5rem;
-  margin-top: 3rem; }
+  margin: 0;
+  background-color: #f50f26; }
 
 body {
-  background: #faf9f5; }
+  background: #e0e3da; }
 
 .btnStyle {
   background-color: transparent;
@@ -78,7 +82,7 @@ body {
   height: 3rem;
   box-shadow: none;
   background: none;
-  border: 1px solid #b0c9cbad;
+  border: 1px solid #f50f26;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 600;
@@ -87,12 +91,12 @@ body {
   cursor: pointer; }
   .btnStyle:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22);
-    border: 1px solid #b0c9cbad; }
+    border: 1px solid #f50f26; }
   .btnStyle:active {
-    border: 1px solid #b0c9cbad; }
+    border: 1px solid #f50f26; }
   .btnStyle:after {
-    border: 1px solid #b0c9cbad; }
+    border: 1px solid #f50f26; }
   .btnStyle:focus {
-    border: 1px solid #b0c9cbad;
+    border: 1px solid #f50f26;
     outline: 0;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22); }

@@ -36,16 +36,23 @@ $body-color: #000;
 
 $black: #000;
 
-$tim-default-bg: #faf9f5;
-$tim-default-2: #b0c9cbad;
-$tim-highlight: #42649f;
-$card-bg-color: #b0c9cbad;
+$tim-default-bg: #e0e3da;
+$tim-default-2: #f50f26;
+$tim-highlight: #c8db9e;
+$card-bg-color: #e0e3da;
 $modal-bg: #e3e2e0;
 $gray-300: #dee2e6;
 $transition-bg: #b0c9cb;
 
 .containerMargin {
   margin: 2rem 0 2rem 0;
+}
+
+table {
+  .table-striped > tbody > tr:nth-child(odd) > td,
+  .table-sstriped > tbody > tr:nth-child(odd) > th {
+    background-color: red; // Choose your own color here
+  }
 }
 
 .title {
@@ -114,6 +121,6 @@ $transition-bg: #b0c9cb;
 }
 
 footer {
-  margin-bottom: 5rem;
-  margin-top: 3rem;
+  margin: 0;
+  background-color: $tim-default-2;
 }

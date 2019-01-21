@@ -9,14 +9,6 @@
   }
 }
 
-.test {
-  .aboutMeFooter {
-    background-color: $tim-default-2;
-    margin: none;
-    height: 5rem;
-  }
-}
-
 .footerImg {
   width: 1.5rem;
   margin-top: 1rem;
@@ -37,6 +29,6 @@
   width: 60px;
   &:hover {
     background-color: $tim-highlight;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
