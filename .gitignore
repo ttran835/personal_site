@@ -6,7 +6,7 @@
 ## Ignore config & Env files 
 .config 
 .env
-.bundle.js
+client/dist/bundle.js
 
 ## Ignore node_modules 
 .node_modules

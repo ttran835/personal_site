@@ -8,10 +8,14 @@ export default function FrontEnd(props) {
       <Modal isOpen={props.modal} toggle={props.toggle} className={'hello'}>
         <ModalHeader toggle={props.toggle}>Front-End</ModalHeader>
         <ModalBody>
-          {' '}
-          <table class="table table-striped">
+          <table className="table table-striped">
             <tbody>
               <tr>
+                <td>
+                  <div className={styles.js}>
+                    <p>JavaScript</p>
+                  </div>
+                </td>
                 <td>
                   <div className={styles.react}>
                     <p>ReactJS</p>
@@ -32,7 +36,7 @@ export default function FrontEnd(props) {
                 <td>
                   <div className={styles.foundation}>
                     <p>Foundation6</p>
-                  </div>{' '}
+                  </div>
                 </td>
                 <td>
                   <div className={styles.jquery}>
@@ -44,18 +48,20 @@ export default function FrontEnd(props) {
                     <p>Sass/SCSS</p>
                   </div>
                 </td>
-              </tr>
-              <tr>
                 <td>
                   <div className={styles.angular}>
                     <p>AngularJS</p>
                   </div>
                 </td>
+              </tr>
+              <tr>
                 <td>
                   <div className={styles.bootstrap}>
                     <p>Bootstrap</p>
                   </div>
                 </td>
+                <td />
+                <td />
                 <td />
               </tr>
             </tbody>

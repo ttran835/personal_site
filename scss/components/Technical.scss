@@ -103,12 +103,13 @@ table {
   }
 }
 
-.newRelics {
-  background: url('https://api.iconify.design/logos-new-relic.svg') no-repeat
-    center center / contain;
-}
-
 //frontEnd Icons
+
+.js {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/js_svg.svg'
+  );
+}
 
 .react {
   @include techStack(
@@ -159,3 +160,68 @@ table {
 }
 
 //backEnd Icons
+.node {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg'
+  );
+}
+
+.postgres {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/postgresql_svg.svg'
+  );
+}
+
+.mysql {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/mysql_icon.svg'
+  );
+}
+
+.sql {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/sql_icon.png'
+  );
+}
+
+.mongo {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/mongodb_icon.svg'
+  );
+}
+
+//others
+
+.newRelics {
+  @include techStack('https://api.iconify.design/logos-new-relic.svg');
+}
+
+.agile {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/agile.svg'
+  );
+}
+
+.aws {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg'
+  );
+}
+
+.docker {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/docker_svg.svg'
+  );
+}
+
+.nginx {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/nginx_icon.svg'
+  );
+}
+
+.git {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/github_svg.svg'
+  );
+}

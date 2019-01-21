@@ -321,8 +321,20 @@ table {
     z-index: 1;
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
 
-.newRelics {
-  background: url("https://api.iconify.design/logos-new-relic.svg") no-repeat center center/contain; }
+.js {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/js_svg.svg") no-repeat center center/contain; }
+  .js p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
 
 .react {
   width: 2.5rem;
@@ -438,6 +450,171 @@ table {
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/bootstrap.svg") no-repeat center center/contain; }
   .bootstrap p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.node {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg") no-repeat center center/contain; }
+  .node p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.postgres {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/postgresql_svg.svg") no-repeat center center/contain; }
+  .postgres p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.mysql {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/mysql_icon.svg") no-repeat center center/contain; }
+  .mysql p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.sql {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/sql_icon.png") no-repeat center center/contain; }
+  .sql p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.mongo {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/mongodb_icon.svg") no-repeat center center/contain; }
+  .mongo p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.newRelics {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://api.iconify.design/logos-new-relic.svg") no-repeat center center/contain; }
+  .newRelics p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.agile {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/agile.svg") no-repeat center center/contain; }
+  .agile p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.aws {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg") no-repeat center center/contain; }
+  .aws p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.docker {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/docker_svg.svg") no-repeat center center/contain; }
+  .docker p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.nginx {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/nginx_icon.svg") no-repeat center center/contain; }
+  .nginx p {
+    position: relative;
+    top: 2.3rem;
+    display: block;
+    font-size: 80%;
+    color: #636c72; }
+
+.git {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url("https://s3.amazonaws.com/personal-site-tim/github_svg.svg") no-repeat center center/contain; }
+  .git p {
     position: relative;
     top: 2.3rem;
     display: block;
