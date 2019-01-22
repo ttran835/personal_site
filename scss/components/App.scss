@@ -13,6 +13,11 @@
   src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf');
 }
 
+@font-face {
+  font-family: 'Simplifica';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/SIMPLIFICA_Typeface.ttf');
+}
+
 //@font-face {
 //   font-family: 'AdihausDIN-bold';
 //   src: url('https://s3-us-west-1.amazonaws.com/fec-matthew/AdihausDIN-Bold.woff2')
@@ -43,6 +48,10 @@ $card-bg-color: #e0e3da;
 $modal-bg: #e3e2e0;
 $gray-300: #dee2e6;
 $transition-bg: #b0c9cb;
+
+p {
+  font-family: Simplifica;
+}
 
 .containerMargin {
   margin: 2rem 0 2rem 0;
