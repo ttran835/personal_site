@@ -71,7 +71,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 body {
   background: #e0e3da; }
@@ -82,7 +82,7 @@ body {
   height: 3rem;
   box-shadow: none;
   background: none;
-  border: 1px solid #f50f26;
+  border: 1px solid #bb0606e3;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 600;
@@ -91,12 +91,12 @@ body {
   cursor: pointer; }
   .btnStyle:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22);
-    border: 1px solid #f50f26; }
+    border: 1px solid #bb0606e3; }
   .btnStyle:active {
-    border: 1px solid #f50f26; }
+    border: 1px solid #bb0606e3; }
   .btnStyle:after {
-    border: 1px solid #f50f26; }
+    border: 1px solid #bb0606e3; }
   .btnStyle:focus {
-    border: 1px solid #f50f26;
+    border: 1px solid #bb0606e3;
     outline: 0;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22); }

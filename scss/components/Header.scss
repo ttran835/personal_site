@@ -1,7 +1,7 @@
 @import './App.scss';
 
 @mixin blur-header-img {
-  filter: blur(1px);
+  filter: blur(0px);
 }
 
 .paralax {
@@ -27,7 +27,7 @@
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 45vh;
+  height: 50vh;
 
   /* For text formatting. */
   display: flex;
@@ -73,8 +73,6 @@
 }
 
 .leftSideHeaderImg {
-  width: 15rem;
-  height: 9rem;
   @include blur-header-img;
 }
 

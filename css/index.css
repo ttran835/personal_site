@@ -71,7 +71,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -146,7 +146,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -177,7 +177,7 @@ footer {
   font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
-  background-color: #f50f26;
+  background-color: #bb0606e3;
   margin: none;
   height: 5rem; }
 
@@ -190,7 +190,8 @@ footer {
 
 .aboutMeImg {
   width: 19rem;
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  max-width: -webkit-fill-available; }
 
 .jumboTronBg {
   background-color: #fff;
@@ -269,7 +270,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -344,7 +345,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 .projectFont {
   font-family: Edmonsans-Medium;
@@ -357,7 +358,7 @@ footer {
 .shoedidasImgBg {
   height: 22rem;
   margin: 2rem 0 2rem 0;
-  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -369,7 +370,7 @@ footer {
 .frontierImgBg {
   height: 22rem;
   margin: 2rem 0 2rem 0;
-  background: url("https://s3.amazonaws.com/personal-site-tim/projects/pexels-photo-1439710.jpeg");
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/home_new.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -456,7 +457,7 @@ footer {
   position: relative; }
 
 .shoedidasImg {
-  width: 4rem; }
+  width: 0; }
 
 .headingBg {
   color: #fff;
@@ -483,6 +484,11 @@ footer {
     z-index: 1;
     height: 100%; }
 
+.p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #636c72; }
+
 .text {
   background-color: #dee2e6;
   position: absolute;
@@ -491,33 +497,40 @@ footer {
   width: 14.3%; }
 
 table {
-  text-align: center; }
+  text-align: center;
+  border-color: #bb0606e3; }
+  table th {
+    border-color: #bb0606e3; }
+  table td {
+    border-color: #bb0606e3; }
 
 .bg {
   background-color: #e0e3da;
   margin: 0 0 1rem 0; }
 
 .margin {
-  margin: 0 0 0.5rem 0;
   background-color: #e0e3da; }
 
 .fake {
   color: #e0e3da; }
 
 .frontEndBg {
-  background-color: transparent;
-  background-size: cover; }
+  height: 94%; }
 
 .backEndBg {
-  background-color: transparent; }
+  height: 94%; }
 
 .othersBg {
-  background-color: transparent; }
+  height: 94%; }
+
+h5 {
+  width: 100%; }
 
 .skillsOverlay {
+  background-color: #fff;
+  margin-bottom: 0.5rem;
   color: #000;
   transition: all 0.5s;
-  height: 97.83%;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24); }
   .skillsOverlay:hover {
@@ -532,300 +545,160 @@ table {
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/js_svg.svg") no-repeat center center/contain; }
-  .js p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .react {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/react_svg.svg") no-repeat center center/contain; }
-  .react p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .html5 {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/html5_svg.svg") no-repeat center center/contain; }
-  .html5 p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .css {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/css_svg.svg") no-repeat center center/contain; }
-  .css p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .foundation {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/fi-foundation.svg") no-repeat center center/contain; }
-  .foundation p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .jquery {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/jQuery.svg") no-repeat center center/contain; }
-  .jquery p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .sass {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/sass_icon.svg") no-repeat center center/contain; }
-  .sass p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .angular {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/angularJS.svg") no-repeat center center/contain; }
-  .angular p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .bootstrap {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/bootstrap.svg") no-repeat center center/contain; }
-  .bootstrap p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .node {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg") no-repeat center center/contain; }
-  .node p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .postgres {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/postgresql_svg.svg") no-repeat center center/contain; }
-  .postgres p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .mysql {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/mysql_icon.svg") no-repeat center center/contain; }
-  .mysql p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .sql {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/sql_icon.png") no-repeat center center/contain; }
-  .sql p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .mongo {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/mongodb_icon.svg") no-repeat center center/contain; }
-  .mongo p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .newRelics {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://api.iconify.design/logos-new-relic.svg") no-repeat center center/contain; }
-  .newRelics p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .agile {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/agile.svg") no-repeat center center/contain; }
-  .agile p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .aws {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg") no-repeat center center/contain; }
-  .aws p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .docker {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/docker_svg.svg") no-repeat center center/contain; }
-  .docker p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .nginx {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/skills/nginx_icon.svg") no-repeat center center/contain; }
-  .nginx p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 .git {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
   background: url("https://s3.amazonaws.com/personal-site-tim/github_svg.svg") no-repeat center center/contain; }
-  .git p {
-    position: relative;
-    top: 2.3rem;
-    display: block;
-    font-size: 80%;
-    color: #636c72; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -900,7 +773,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -931,7 +804,7 @@ footer {
   font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
-  background-color: #f50f26;
+  background-color: #bb0606e3;
   margin: none;
   height: 5rem; }
 
@@ -944,7 +817,8 @@ footer {
 
 .aboutMeImg {
   width: 19rem;
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  max-width: -webkit-fill-available; }
 
 .jumboTronBg {
   background-color: #fff;
@@ -1023,7 +897,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 .projectFont {
   font-family: Edmonsans-Medium;
@@ -1036,7 +910,7 @@ footer {
 .shoedidasImgBg {
   height: 22rem;
   margin: 2rem 0 2rem 0;
-  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas_shoes.jpg");
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1048,7 +922,7 @@ footer {
 .frontierImgBg {
   height: 22rem;
   margin: 2rem 0 2rem 0;
-  background: url("https://s3.amazonaws.com/personal-site-tim/projects/pexels-photo-1439710.jpeg");
+  background: url("https://s3.amazonaws.com/personal-site-tim/projects/home_new.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1135,7 +1009,7 @@ footer {
   position: relative; }
 
 .shoedidasImg {
-  width: 4rem; }
+  width: 0; }
 
 .headingBg {
   color: #fff;

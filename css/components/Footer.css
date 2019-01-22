@@ -71,7 +71,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 .iconBg {
   margin-left: 0.2rem;
@@ -97,5 +97,5 @@ footer {
   transition: all 0.3s;
   width: 60px; }
   .shadow:hover {
-    background-color: #c8db9e;
+    background-color: #cfd3d4;
     opacity: 0.6; }

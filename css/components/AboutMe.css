@@ -71,7 +71,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -102,7 +102,7 @@ footer {
   font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
-  background-color: #f50f26;
+  background-color: #bb0606e3;
   margin: none;
   height: 5rem; }
 
@@ -115,7 +115,8 @@ footer {
 
 .aboutMeImg {
   width: 19rem;
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  max-width: -webkit-fill-available; }
 
 .jumboTronBg {
   background-color: #fff;

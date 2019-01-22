@@ -7,10 +7,10 @@ export default function Details(props) {
       <div className={`card ${styles.detailsBg}`}>
         <div class="card-block">
           <p class="card-text">
-            Hello! Thank you for visiting my site. My name is Tim and I'm a
-            software engineer operating in Orange County and Greater Los Angeles
-            with a diverse set of skills and a knack for creating clean and
-            simple front-ends.
+            Thank you for visiting my site. My name is Tim and I'm a software
+            engineer operating in Orange County and Greater Los Angeles with a
+            diverse set of skills and a knack for creating clean and simple
+            front-ends.
           </p>
           <p class="card-text">
             With a background in insurance and financial planning, my passion

@@ -72,7 +72,7 @@ export default class App extends Component {
                     styles.containerMargin
                   }`}
                 >
-                  <h2>My Skills</h2>
+                  <h2>Technical Skills</h2>
                   <Technical />
                 </div>
 

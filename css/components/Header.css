@@ -71,7 +71,7 @@ table .table-sstriped > tbody > tr:nth-child(odd) > th {
 
 footer {
   margin: 0;
-  background-color: #f50f26; }
+  background-color: #bb0606e3; }
 
 .paralax {
   /* Display and position the pseudo-element */
@@ -94,7 +94,7 @@ footer {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 45vh;
+  height: 50vh;
   /* For text formatting. */
   display: flex;
   justify-content: center;
@@ -113,26 +113,24 @@ footer {
 .analysisImg {
   width: 18rem;
   height: 9rem;
-  filter: blur(1px); }
+  filter: blur(0px); }
 
 .statisticImg {
   width: 18rem;
   height: 14rem;
-  filter: blur(1px); }
+  filter: blur(0px); }
 
 .programmerImg {
   width: 27rem;
-  filter: blur(1px); }
+  filter: blur(0px); }
 
 .businessImg {
   width: 20rem;
   height: 18rem;
-  filter: blur(1px); }
+  filter: blur(0px); }
 
 .leftSideHeaderImg {
-  width: 15rem;
-  height: 9rem;
-  filter: blur(1px); }
+  filter: blur(0px); }
 
 .overlay {
   width: 100%;

@@ -7,6 +7,11 @@ import FrontEnd from './Technical_skills/FrontEnd';
 import BackEnd from './Technical_skills/BackEnd';
 import Others from './Technical_skills/Others';
 
+//table
+import FrontEndTable from './Technical_skills/Tables/FrontEndTable';
+import BackEndTable from './Technical_skills/Tables/BackEndTable';
+import OthersTable from './Technical_skills/Tables/OthersTable';
+
 export default class Technical extends Component {
   constructor(props) {
     super(props);
@@ -58,8 +63,53 @@ export default class Technical extends Component {
     return (
       <div className="container-fluid">
         <div className={`row justify-content-center `}>
-          <div className={`col col-lg-10 `}>
-            <Slider className={styles.skillsOverlay} {...settings}>
+          <div className={`row justify-content-center ${styles.bg}`}>
+            <div className={`col col-lg-10 ${styles.margin}`}>
+              <div className={styles.frontEndBg} onClick={this.toggleFrontEnd}>
+                <div className={styles.skillsOverlay}>
+                  <FrontEndTable />
+                  <FrontEnd
+                    toggle={this.toggleFrontEnd}
+                    modal={this.state.frontEnd}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={`col col-sm-5 ${styles.margin}`}>
+              <div
+                className={`${styles.backEndBg}`}
+                onClick={this.toggleBackEnd}
+              >
+                <div className={styles.skillsOverlay}>
+                  <BackEndTable />
+                  <BackEnd
+                    toggle={this.toggleBackEnd}
+                    modal={this.state.backEnd}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col col-sm-5">
+              <div className={`${styles.othersBg}`} onClick={this.toggleOthers}>
+                <div className={styles.skillsOverlay}>
+                  <OthersTable />
+                  <Others
+                    toggle={this.toggleOthers}
+                    modal={this.state.others}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+/*
+
+  <Slider className={styles.skillsOverlay} {...settings}>
               <div>
                 <img
                   className="img-fluid"
@@ -104,15 +154,6 @@ export default class Technical extends Component {
                 <Others toggle={this.toggleOthers} modal={this.state.others} />
               </div>
             </Slider>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
-
-/*
-
   <div className=" col-md-6 offset-md-3 card-block">
     <h3 className="card-title">My Skills</h3>
     <h4 className="card-subtitle mb-2 text-muted">Front End</h4>
@@ -133,34 +174,5 @@ export default class Technical extends Component {
   </div>
 
 
-  <div className={`row justify-content-center ${styles.bg}`}>
-          <div className={`col col-lg-10 ${styles.margin}`}>
-            <div className={styles.frontEndBg} onClick={this.toggleFrontEnd}>
-              <div className={styles.skillsOverlay}>
-                <FrontEnd
-                  toggle={this.toggleFrontEnd}
-                  modal={this.state.frontEnd}
-                />
-              </div>
-            </div>
-          </div>
-          <div className={`col col-sm-5 ${styles.margin}`}>
-            <div className={`${styles.backEndBg}`} onClick={this.toggleBackEnd}>
-              <div className={styles.skillsOverlay}>
-                <BackEnd
-                  toggle={this.toggleBackEnd}
-                  modal={this.state.backEnd}
-                />
-              </div>
-            </div>
-    
-            </div>
-            <div className="col col-sm-5">
-              <div className={`${styles.othersBg}`} onClick={this.toggleOthers}>
-                <div className={styles.skillsOverlay}>
-                  <Others toggle={this.toggleOthers} modal={this.state.others} />
-                </div>
-              </div>
-            </div>
-          </div>
+  
 */
