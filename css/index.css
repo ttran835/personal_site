@@ -70,7 +70,7 @@
 
 footer {
   margin: 0;
-  background-color: #bb0606e3; }
+  background-color: rgba(187, 6, 6, 0.8); }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -144,7 +144,7 @@ footer {
 
 footer {
   margin: 0;
-  background-color: #bb0606e3; }
+  background-color: rgba(187, 6, 6, 0.8); }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -175,7 +175,7 @@ footer {
   font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
-  background-color: #bb0606e3;
+  background-color: rgba(187, 6, 6, 0.8);
   margin: none;
   height: 5rem; }
 
@@ -189,7 +189,7 @@ footer {
 .aboutMeImg {
   width: 19rem;
   margin-top: 0.5rem;
-  max-width: -webkit-fill-available; }
+  max-width: fit-content; }
 
 .jumboTronBg {
   background-color: #fff;
@@ -267,7 +267,7 @@ footer {
 
 footer {
   margin: 0;
-  background-color: #bb0606e3; }
+  background-color: rgba(187, 6, 6, 0.8); }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -341,7 +341,7 @@ footer {
 
 footer {
   margin: 0;
-  background-color: #bb0606e3; }
+  background-color: rgba(187, 6, 6, 0.8); }
 
 .projectFont {
   font-family: Edmonsans-Medium;
@@ -494,11 +494,11 @@ footer {
 
 table {
   text-align: center;
-  border-color: #bb0606e3; }
+  border-color: rgba(187, 6, 6, 0.8); }
   table th {
-    border-color: #bb0606e3; }
+    border-color: rgba(187, 6, 6, 0.8); }
   table td {
-    border-color: #bb0606e3; }
+    border-color: rgba(187, 6, 6, 0.8); }
 
 .bg {
   background-color: #e0e3da;
@@ -761,7 +761,7 @@ h5 {
 
 footer {
   margin: 0;
-  background-color: #bb0606e3; }
+  background-color: rgba(187, 6, 6, 0.8); }
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -792,7 +792,7 @@ footer {
   font-family: Edmonsans-Reg; }
 
 .aboutMeFooter {
-  background-color: #bb0606e3;
+  background-color: rgba(187, 6, 6, 0.8);
   margin: none;
   height: 5rem; }
 
@@ -806,7 +806,7 @@ footer {
 .aboutMeImg {
   width: 19rem;
   margin-top: 0.5rem;
-  max-width: -webkit-fill-available; }
+  max-width: fit-content; }
 
 .jumboTronBg {
   background-color: #fff;
@@ -884,7 +884,7 @@ footer {
 
 footer {
   margin: 0;
-  background-color: #bb0606e3; }
+  background-color: rgba(187, 6, 6, 0.8); }
 
 .projectFont {
   font-family: Edmonsans-Medium;

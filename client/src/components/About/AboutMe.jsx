@@ -10,7 +10,7 @@ export default function About(props) {
       <div
         className={`container-fluid px-0 ${styles.aboutMeBg} ${styles.shadow} `}
       >
-        <div className="container-fluid">
+        <div className="container-fluid justify-content-center">
           <div className="row ">
             <div className="col col-sm-4 align-self-center">
               <img

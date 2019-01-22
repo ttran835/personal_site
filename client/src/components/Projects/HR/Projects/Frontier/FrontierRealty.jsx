@@ -98,9 +98,7 @@ export default class FrontierRealty extends Component {
                 for a full look.
               </p>
             </div>
-            <div
-              className={` card-body container ${styles.modalCardTechStack}`}
-            >
+            <div className={`container-fluid ${styles.modalCardTechStack}`}>
               <h6 className="card-title">Developed using:</h6>
               <div className="row">
                 <table
@@ -124,12 +122,12 @@ export default class FrontierRealty extends Component {
                         <div className={icons.css} />
                         <p className={icons.p}>CSS</p>
                       </td>
+                    </tr>
+                    <tr>
                       <td>
                         <div className={icons.foundation} />
                         <p className={icons.p}>Foundation6</p>
                       </td>
-                    </tr>
-                    <tr>
                       <td>
                         <div className={icons.node} />
                         <p className={icons.p}>NodeJS</p>
@@ -142,10 +140,15 @@ export default class FrontierRealty extends Component {
                         <div className={icons.sql} />
                         <p className={icons.p}>SQL</p>
                       </td>
+                    </tr>
+                    <tr>
                       <td>
                         <div className={icons.docker} />
                         <p className={icons.p}>SQL</p>
                       </td>
+                      <td />
+                      <td />
+                      <td />
                     </tr>
                   </tbody>
                 </table>

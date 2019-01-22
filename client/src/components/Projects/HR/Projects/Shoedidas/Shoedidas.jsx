@@ -132,7 +132,7 @@ export default class Shoedidas extends Component {
               />
             </div>
 
-            <div className={`card-body container ${styles.modalCardTechStack}`}>
+            <div className={`container-fluid ${styles.modalCardTechStack}`}>
               <h6 className="card-title">Developed Using:</h6>
               <div className="row">
                 <table

@@ -1,4 +1,4 @@
-@import url('./App.scss');
+@import './App.scss';
 
 @font-face {
   font-family: 'Edmonsans-Bold';
@@ -54,7 +54,7 @@ $jumbotron-bg: $tim-default-bg;
 .aboutMeImg {
   width: 19rem;
   margin-top: 0.5rem;
-  max-width: -webkit-fill-available;
+  max-width: fit-content;
 }
 
 .jumboTronBg {

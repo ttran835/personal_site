@@ -3,16 +3,16 @@ $body-bg: #faf9f5;
 $jumbotron-bg: #faf9f5 !important;
 $modal-content-bg: #e3e2e0;
 
-@import url('../scss/components/App.scss');
+@import '../scss/components/App.scss';
 
-@import url('./components/NavBar.scss');
-@import url('./components/AboutMe.scss');
-@import url('./components/Articles.scss');
+@import './components/NavBar.scss';
+@import './components/AboutMe.scss';
+@import './components/Articles.scss';
 
-@import url('./components/Technical.scss');
-@import url('./components/AboutMe.scss');
-@import url('./components//HrProjects.scss');
+@import './components/Technical.scss';
+@import './components/AboutMe.scss';
+@import './components//HrProjects.scss';
 //import for b4
 // $white: #e3e2e0;
 
-@import url('../node_modules/bootstrap/scss/bootstrap.scss');
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
