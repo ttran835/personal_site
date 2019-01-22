@@ -65,38 +65,35 @@ export default class Technical extends Component {
         <div className={`row justify-content-center `}>
           <div className={`row justify-content-center ${styles.bg}`}>
             <div className={`col col-lg-10 ${styles.margin}`}>
-              <div className={styles.frontEndBg} onClick={this.toggleFrontEnd}>
+              <div className={styles.frontEndBg}>
                 <div className={styles.skillsOverlay}>
                   <FrontEndTable />
-                  <FrontEnd
+                  {/* <FrontEnd
                     toggle={this.toggleFrontEnd}
                     modal={this.state.frontEnd}
-                  />
+                  />*/}
                 </div>
               </div>
             </div>
             <div className={`col col-sm-5 ${styles.margin}`}>
-              <div
-                className={`${styles.backEndBg}`}
-                onClick={this.toggleBackEnd}
-              >
+              <div className={`${styles.backEndBg}`}>
                 <div className={styles.skillsOverlay}>
                   <BackEndTable />
-                  <BackEnd
+                  {/* <BackEnd
                     toggle={this.toggleBackEnd}
                     modal={this.state.backEnd}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
             <div className="col col-sm-5">
-              <div className={`${styles.othersBg}`} onClick={this.toggleOthers}>
+              <div className={`${styles.othersBg}`}>
                 <div className={styles.skillsOverlay}>
                   <OthersTable />
-                  <Others
+                  {/* <Others
                     toggle={this.toggleOthers}
                     modal={this.state.others}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
