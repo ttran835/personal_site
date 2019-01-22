@@ -38,7 +38,7 @@ $black: #000;
 
 $tim-default-bg: #e0e3da;
 $tim-default-2: #bb0606e3;
-$tim-highlight: #cfd3d4;
+$tim-highlight: #6eb1b6;
 $card-bg-color: #e0e3da;
 $modal-bg: #e3e2e0;
 $gray-300: #dee2e6;
@@ -48,11 +48,8 @@ $transition-bg: #b0c9cb;
   margin: 2rem 0 2rem 0;
 }
 
-table {
-  .table-striped > tbody > tr:nth-child(odd) > td,
-  .table-sstriped > tbody > tr:nth-child(odd) > th {
-    background-color: red; // Choose your own color here
-  }
+.tableNoMargin {
+  margin-bottom: 0;
 }
 
 .title {

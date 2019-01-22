@@ -13,9 +13,8 @@
 .containerMargin {
   margin: 2rem 0 2rem 0; }
 
-table .table-striped > tbody > tr:nth-child(odd) > td,
-table .table-sstriped > tbody > tr:nth-child(odd) > th {
-  background-color: red; }
+.tableNoMargin {
+  margin-bottom: 0; }
 
 .title {
   z-index: -10;

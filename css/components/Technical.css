@@ -13,9 +13,8 @@
 .containerMargin {
   margin: 2rem 0 2rem 0; }
 
-table .table-striped > tbody > tr:nth-child(odd) > td,
-table .table-sstriped > tbody > tr:nth-child(odd) > th {
-  background-color: red; }
+.tableNoMargin {
+  margin-bottom: 0; }
 
 .title {
   z-index: -10;
@@ -88,9 +87,8 @@ footer {
 .containerMargin {
   margin: 2rem 0 2rem 0; }
 
-table .table-striped > tbody > tr:nth-child(odd) > td,
-table .table-sstriped > tbody > tr:nth-child(odd) > th {
-  background-color: red; }
+.tableNoMargin {
+  margin-bottom: 0; }
 
 .title {
   z-index: -10;
@@ -157,7 +155,7 @@ footer {
   background-color: transparent; }
 
 .shoedidasImgBg {
-  height: 22rem;
+  height: 18rem;
   margin: 2rem 0 2rem 0;
   background: url("https://s3.amazonaws.com/personal-site-tim/projects/adidas.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
@@ -169,7 +167,7 @@ footer {
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); }
 
 .frontierImgBg {
-  height: 22rem;
+  height: 18rem;
   margin: 2rem 0 2rem 0;
   background: url("https://s3.amazonaws.com/personal-site-tim/projects/home_new.jpeg");
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
@@ -347,7 +345,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/js_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/js.svg") no-repeat center center/contain; }
 
 .react {
   width: 2.5rem;
@@ -355,7 +353,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/react_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/react.svg") no-repeat center center/contain; }
 
 .html5 {
   width: 2.5rem;
@@ -363,7 +361,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/html5_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/html5.svg") no-repeat center center/contain; }
 
 .css {
   width: 2.5rem;
@@ -371,7 +369,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/css_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/css.svg") no-repeat center center/contain; }
 
 .foundation {
   width: 2.5rem;
@@ -379,7 +377,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/fi-foundation.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/foundation.png") no-repeat center center/contain; }
 
 .jquery {
   width: 2.5rem;
@@ -387,7 +385,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/jQuery.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/jquery.svg") no-repeat center center/contain; }
 
 .sass {
   width: 2.5rem;
@@ -395,7 +393,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/sass_icon.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/sass.svg") no-repeat center center/contain; }
 
 .angular {
   width: 2.5rem;
@@ -403,7 +401,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/angularJS.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/angular.svg") no-repeat center center/contain; }
 
 .bootstrap {
   width: 2.5rem;
@@ -419,7 +417,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/nodejs.svg") no-repeat center center/contain; }
 
 .postgres {
   width: 2.5rem;
@@ -427,7 +425,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/postgresql_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/postgres.svg") no-repeat center center/contain; }
 
 .mysql {
   width: 2.5rem;
@@ -443,7 +441,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/sql_icon.png") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/sql.svg") no-repeat center center/contain; }
 
 .mongo {
   width: 2.5rem;
@@ -475,7 +473,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/aws.svg") no-repeat center center/contain; }
 
 .docker {
   width: 2.5rem;
@@ -483,7 +481,7 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/skills/docker_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/docker.svg") no-repeat center center/contain; }
 
 .nginx {
   width: 2.5rem;
@@ -499,4 +497,4 @@ h5 {
   margin: auto;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3px;
-  background: url("https://s3.amazonaws.com/personal-site-tim/github_svg.svg") no-repeat center center/contain; }
+  background: url("https://s3.amazonaws.com/personal-site-tim/skills/Color/github.svg") no-repeat center center/contain; }

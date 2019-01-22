@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import styles from '../../../../../../../css/components/HrProjects.css';
-import ReactDOM from 'react-dom';
-// import ReactMarkdown from 'react-markdown';
-
-//ReactJS | PostgreSQL | Nodejs | Foundation6 | CSS | Docker | AWS | HTML5
+import icons from '../../../../../../../css/components/Technical.css';
 
 export default class FrontierRealty extends Component {
   constructor(props) {
@@ -106,55 +103,52 @@ export default class FrontierRealty extends Component {
             >
               <h6 className="card-title">Developed using:</h6>
               <div className="row">
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/skills/react_svg.svg"
-                    alt="react"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/skills/fi-foundation.svg"
-                    alt="zurb"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/skills/html5_svg.svg"
-                    alt="html"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/skills/css_svg.svg"
-                    alt="css"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg"
-                    alt="nodejs"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="https://s3.amazonaws.com/personal-site-tim/skills/postgresql_svg.svg"
-                    alt="postgres"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className={`${styles.techStackIcons}`}
-                    src="	https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg"
-                    alt="aws"
-                  />
-                </div>
+                <table
+                  className={`table table-bordered ${styles.tableNoMargin}`}
+                >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className={icons.js} />
+                        <p className={icons.p}>JavaScript</p>
+                      </td>
+                      <td>
+                        <div className={icons.react} />
+                        <p className={icons.p}>ReactJS</p>
+                      </td>
+                      <td>
+                        <div className={icons.html5} />
+                        <p className={icons.p}>HTML5</p>
+                      </td>
+                      <td>
+                        <div className={icons.css} />
+                        <p className={icons.p}>CSS</p>
+                      </td>
+                      <td>
+                        <div className={icons.foundation} />
+                        <p className={icons.p}>Foundation6</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className={icons.node} />
+                        <p className={icons.p}>NodeJS</p>
+                      </td>
+                      <td>
+                        <div className={icons.postgres} />
+                        <p className={icons.p}>MySQL</p>
+                      </td>
+                      <td>
+                        <div className={icons.sql} />
+                        <p className={icons.p}>SQL</p>
+                      </td>
+                      <td>
+                        <div className={icons.docker} />
+                        <p className={icons.p}>SQL</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </ModalBody>

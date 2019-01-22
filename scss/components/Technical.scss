@@ -113,49 +113,49 @@ h5 {
 
 .js {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/js_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/js.svg'
   );
 }
 
 .react {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/react_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/react.svg'
   );
 }
 
 .html5 {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/html5_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/html5.svg'
   );
 }
 
 .css {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/css_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/css.svg'
   );
 }
 
 .foundation {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/fi-foundation.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/foundation.png'
   );
 }
 
 .jquery {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/jQuery.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/jquery.svg'
   );
 }
 
 .sass {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/sass_icon.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/sass.svg'
   );
 }
 
 .angular {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/angularJS.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/angular.svg'
   );
 }
 
@@ -168,13 +168,13 @@ h5 {
 //backEnd Icons
 .node {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/nodejs_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/nodejs.svg'
   );
 }
 
 .postgres {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/postgresql_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/postgres.svg'
   );
 }
 
@@ -186,7 +186,7 @@ h5 {
 
 .sql {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/sql_icon.png'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/sql.svg'
   );
 }
 
@@ -210,13 +210,13 @@ h5 {
 
 .aws {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/aws_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/aws.svg'
   );
 }
 
 .docker {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/skills/docker_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/docker.svg'
   );
 }
 
@@ -228,6 +228,6 @@ h5 {
 
 .git {
   @include techStack(
-    'https://s3.amazonaws.com/personal-site-tim/github_svg.svg'
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/github.svg'
   );
 }

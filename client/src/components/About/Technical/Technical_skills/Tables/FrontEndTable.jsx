@@ -50,9 +50,14 @@ export default function FrontEndTable(props) {
               <div className={styles.bootstrap} />
               <p className={styles.p}>Bootstrap</p>
             </td>
-            <td />
-            <td />
-            <td />
+            <td>
+              <div className={styles.aws} />
+              <p className={styles.p}>AWS</p>
+            </td>
+            <td>
+              <div className={styles.docker} />
+              <p className={styles.p}>Docker</p>
+            </td>
           </tr>
         </tbody>
       </table>

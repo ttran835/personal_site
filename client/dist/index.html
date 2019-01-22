@@ -42,7 +42,15 @@
   </head>
   <body>
     <div id="app"></div>
-
     <script src="bundle.js"></script>
+    <script>
+      $(document).ready(function() {
+        let deviceAgent = navigator.userAgent.toLowerCase();
+        let agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
+        if (agentID) {
+          $('body').css('-webkit-overflow-scrolling', 'touch');
+        }
+      });
+    </script>
   </body>
 </html>

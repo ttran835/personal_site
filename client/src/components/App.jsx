@@ -48,7 +48,7 @@ export default class App extends Component {
             </div> */}
             <div className={`container-fluid px-0 ${styles.parallaxHider}`}>
               <div
-                className={`col col-lg-6 align-self-center ${
+                className={`col col-lg-7 align-self-center ${
                   styles.mainWrapper
                 }`}
               >
