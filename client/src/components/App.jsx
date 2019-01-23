@@ -61,25 +61,42 @@ export default class App extends Component {
                   }`}
                 >
                   <Details />
-                </div>
-
+                </div>{' '}
                 <div className="container-fluid">
                   <Resume />
                 </div>
-
                 <div
                   className={`container-fluid text-center ${
                     styles.containerMargin
                   }`}
                 >
-                  <h2>Technical Skills</h2>
+                  <div className="contaier-fluid justify-content-center">
+                    <h2>
+                      Technical Skills
+                      <div
+                        className={`progress-bar ${styles.barStyle}`}
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      />
+                    </h2>
+                  </div>
                   <Technical />
                 </div>
-
                 <div
                   className={`container-fluid px-0 ${styles.containerMargin}`}
                 >
-                  <h2 className={styles.projects}>PROJECTS</h2>
+                  <h2 className={`${styles.projects}`}>
+                    Projects
+                    <div
+                      className={`progress-bar ${styles.barStyle}`}
+                      role="progressbar"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    />
+                  </h2>
                   <HrProjects />
                 </div>
               </div>

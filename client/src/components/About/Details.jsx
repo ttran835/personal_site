@@ -5,18 +5,19 @@ export default function Details(props) {
   return (
     <div className={`container-fluid`}>
       <div className={`card ${styles.detailsBg}`}>
-        <div class="card-block">
-          <p class="card-text">
-            Thank you for visiting my site. My name is Tim and I'm a software
-            engineer operating in Orange County and Greater Los Angeles with a
-            diverse set of skills and a knack for creating clean and simple
-            front-ends.
+        <div className="card-block">
+          <p className="card-text">
+            My name is Tim and I'm a software engineer currently located in
+            Orange County and Greater Los Angeles. I specialized in TDD, OOP,
+            front-end frameworks, data-structures, and a primary focus in
+            creating clean and simple front-ends.
           </p>
-          <p class="card-text">
-            With a background in insurance and financial planning, my passion
-            for providing simple solutions to complex problems grew greater when
-            I found out programming would able to provide me with an easier way
-            to reach the most amount of people.
+          <p className="card-text">
+            With a background in insurance and finance, I am able to anaylze
+            complex problems and identify the best solution, for my customers.
+            This translate well to programming and web development because it
+            provided me with a skillset on how to best approach a problem:
+            <strong>asking the right questions.</strong>
           </p>
         </div>
       </div>
