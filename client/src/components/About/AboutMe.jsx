@@ -25,7 +25,7 @@ export default function About(props) {
                   I'm <strong>Tim Tran</strong>
                 </h4>
                 <p className="lead">Software Engineer.</p>
-                <hr class="my-4" />
+                <hr className="my-4" />
                 <table className="container-fluid table table-striped">
                   <tbody>
                     <tr>

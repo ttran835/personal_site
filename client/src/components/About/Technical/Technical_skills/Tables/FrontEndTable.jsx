@@ -15,10 +15,6 @@ export default function FrontEndTable(props) {
               <p className={styles.p}>JavaScript</p>
             </td>
             <td>
-              <div className={styles.react} />
-              <p className={styles.p}>ReactJS</p>
-            </td>
-            <td>
               <div className={styles.html5} />
               <p className={styles.p}>HTML5</p>
             </td>
@@ -26,23 +22,27 @@ export default function FrontEndTable(props) {
               <div className={styles.css} />
               <p className={styles.p}>CSS</p>
             </td>
+            <td>
+              <div className={styles.sass} />
+              <p className={styles.p}>Sass/SCSS</p>
+            </td>
           </tr>
           <tr>
             <td>
-              <div className={styles.foundation} />
-              <p className={styles.p}>Foundation6</p>
+              <div className={styles.react} />
+              <p className={styles.p}>ReactJS</p>
+            </td>
+            <td>
+              <div className={styles.angular} />
+              <p className={styles.p}>AngularJS</p>
             </td>
             <td>
               <div className={styles.jquery} />
               <p className={styles.p}>jQuery</p>
             </td>
             <td>
-              <div className={styles.sass} />
-              <p className={styles.p}>Sass/SCSS</p>
-            </td>
-            <td>
-              <div className={styles.angular} />
-              <p className={styles.p}>AngularJS</p>
+              <div className={styles.foundation} />
+              <p className={styles.p}>Foundation6</p>
             </td>
           </tr>
           <tr>
@@ -50,14 +50,9 @@ export default function FrontEndTable(props) {
               <div className={styles.bootstrap} />
               <p className={styles.p}>Bootstrap</p>
             </td>
-            <td>
-              <div className={styles.aws} />
-              <p className={styles.p}>AWS</p>
-            </td>
-            <td>
-              <div className={styles.docker} />
-              <p className={styles.p}>Docker</p>
-            </td>
+            <td />
+            <td />
+            <td />
           </tr>
         </tbody>
       </table>
