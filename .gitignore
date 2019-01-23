@@ -6,9 +6,12 @@
 ## Ignore config & Env files 
 .config 
 .env
+client/dist/bundle.js
 
 ## Ignore node_modules 
 .node_modules
+## Ignore css recompiling file for bootstrap
+.css
 
 # User-specific files
 *.suo

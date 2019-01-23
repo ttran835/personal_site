@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url('https://s3.amazonaws.com/personal-site-tim/fonts/SIMPLIFICA_Typeface.ttf');
+}
+
+@mixin Oswald {
+  font-family: 'Oswald', sans-serif;
+  // font-family: 'Open Sans Condensed', sans-serif;
+  // font-family: 'Bitter', serif;
+}
+
+@mixin DancingScript {
+  font-family: 'Dancing Script', cursive;
+}
+
+@mixin Allerta {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+@mixin Gothic {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+@mixin defaultHeader {
+  font-family: Arial, Helvetica, sans-serif;
+  @include Allerta;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+}
+
+$body-color: #000;
+
+// $body-bg-color: #fff;
+@mixin Ed-Bold {
+  font-family: Edmonsans-Bold;
+}
+
+@mixin Ed-Med {
+  font-family: Edmonsans-Medium;
+}
+
+@mixin Ed-Reg {
+  font-family: Edmonsans-Reg;
+}
+
+$black: #000;
+
+$tim-default-bg: #e0e3da;
+$tim-default-2: rgba(187, 6, 6, 0.8);
+$tim-highlight: #6eb1b6;
+$card-bg-color: #e0e3da;
+$font-color: rgb(35, 26, 77);
+$modal-bg: #e3e2e0;
+$gray-300: #dee2e6;
+$transition-bg: #b0c9cb;
+
+body {
+  h1 {
+    @include defaultHeader;
+    font-size: 1.3em;
+  }
+  h2 {
+    @include defaultHeader;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+  h5 {
+    @include defaultHeader;
+    font-size: 1.3em;
+  }
+  h6 {
+    @include defaultHeader;
+    font-size: 1.3em;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    @include Oswald;
+    line-height: 1.5em;
+    letter-spacing: 0.4px;
+    font-size: 1.4em;
+  }
+}
+
+.containerMargin {
+  margin: 2rem 0 2rem 0;
+}
+
+.tableNoMargin {
+  margin-bottom: 0;
+}
+
+.title {
+  z-index: -10;
+
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 4.5px;
+}
+
+.parallaxHider {
+  background-color: $tim-default-bg;
+}
+
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.background1 {
+  background-image: url('https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+}
+
+.background2 {
+  background-image: url('https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+//paralax
+
+.primaryBodyContainer {
+  width: 100%;
+}
+
+.aboutMe {
+  position: relative;
+  z-index: 10;
+  bottom: 13rem;
+}
+
+.details {
+  margin-top: -10rem;
+}
+
+.popUpModal {
+  z-index: 1;
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem;
+}
+
+.mainWrapper {
+  margin: auto;
+}
+
+footer {
+  margin: 0;
+  background-color: $tim-default-2;
+}

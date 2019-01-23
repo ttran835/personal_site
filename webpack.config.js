@@ -32,14 +32,39 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[name]__[local]--[hash:base64]',
+              localIdentName: '[path]__[name]__[local]--[hash:base64]',
             },
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'postcss-loader', // Run postcss actions
+            options: {
+              plugins: function() {
+                // postcss plugins, can be exported to postcss.config.js
+                return [require('autoprefixer')];
+              },
+            },
+          },
+          {
+            loader: 'sass-loader', // compiles Sass to CSS
           },
         ],
       },
       {
         test: /\.json$/,
         loader: 'json-loader',
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
     ],
   },
@@ -49,8 +74,8 @@ module.exports = {
   // this is used to proxy ports
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.HOSTNAME': JSON.stringify(process.env.USERNAME),
-      'process.env.PORT': JSON.stringify(process.env.PORT),
+      'process.env.HOSTNAME': JSON.stringify(process.env.USER),
+      'process.env.PORT': JSON.stringify(process.env.SERVER_PORT),
     }),
   ],
 };

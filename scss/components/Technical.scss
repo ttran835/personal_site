@@ -1,0 +1,232 @@
+@import './App.scss';
+@import './HrProjects.scss';
+// .headingBg {
+//   color: #fff;
+//   transition: all 0.5s;
+//   .isActive & {
+//     background-color: $gray-300;
+//     opacity: 0.5;
+//     :hover > & {
+//       opacity: 1;
+//       background-color: $gray-300;
+//       -webkit-transition: background-color 300ms linear;
+//       -ms-transition: background-color 300ms linear;
+//       transition: background-color 300ms linear;
+//     }
+//   }
+// }
+
+@mixin smallerBg($bg) {
+  background: url($bg);
+  background-size: cover;
+}
+
+@mixin techStack($bg) {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  // box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.12), 1px 1px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  background: url($bg) no-repeat center center / contain;
+}
+
+.p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #636c72;
+}
+
+.text {
+  background-color: $gray-300;
+  position: absolute;
+  top: 5rem;
+  text-align: center;
+  width: 14.3%;
+}
+
+table {
+  text-align: center;
+  border-color: $tim-default-2;
+  // background-color: pink;
+  th {
+    border-color: $tim-default-2;
+  }
+  td {
+    border-color: $tim-default-2;
+    // background-color: $tim-default-2;
+  }
+}
+.bg {
+  background-color: $tim-default-bg;
+  margin: 0 0 1rem 0;
+
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  // transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.margin {
+  // margin: 0 0 0.5rem 0;
+  background-color: $tim-default-bg;
+}
+
+.fake {
+  color: $tim-default-bg;
+}
+
+.frontEndBg {
+  height: 94%;
+}
+
+.backEndBg {
+  height: 94%;
+}
+
+.othersBg {
+  height: 94%;
+}
+
+.testBg {
+}
+
+h5 {
+  width: 100%;
+}
+
+.skillsOverlay {
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  color: #000;
+  transition: all 0.5s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.24);
+  &:hover {
+    // -webkit-transition: background-color 300ms linear;
+    // -ms-transition: background-color 300ms linear;
+    // transition: background-color 300ms linear;
+    // z-index: 1;
+    // box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+//frontEnd Icons
+
+.js {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/js.svg'
+  );
+}
+
+.react {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/react.svg'
+  );
+}
+
+.html5 {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/html5.svg'
+  );
+}
+
+.css {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/css.svg'
+  );
+}
+
+.foundation {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/foundation.png'
+  );
+}
+
+.jquery {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/jquery.svg'
+  );
+}
+
+.sass {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/sass.svg'
+  );
+}
+
+.angular {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/angular.svg'
+  );
+}
+
+.bootstrap {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/bootstrap.svg'
+  );
+}
+
+//backEnd Icons
+.node {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/nodejs.svg'
+  );
+}
+
+.postgres {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/postgres.svg'
+  );
+}
+
+.mysql {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/mysql_icon.svg'
+  );
+}
+
+.sql {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/sql.svg'
+  );
+}
+
+.mongo {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/mongodb_icon.svg'
+  );
+}
+
+//others
+
+.newRelics {
+  @include techStack('https://api.iconify.design/logos-new-relic.svg');
+}
+
+.agile {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/agile.svg'
+  );
+}
+
+.aws {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/aws.svg'
+  );
+}
+
+.docker {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/docker.svg'
+  );
+}
+
+.nginx {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/nginx_icon.svg'
+  );
+}
+
+.git {
+  @include techStack(
+    'https://s3.amazonaws.com/personal-site-tim/skills/Color/github.svg'
+  );
+}

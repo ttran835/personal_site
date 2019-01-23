@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Edmonsans-Bold';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Medium';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Medium.otf"); }
+
+@font-face {
+  font-family: 'Edmonsans-Reg';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/Edmondsans-Regular.otf"); }
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url("https://s3.amazonaws.com/personal-site-tim/fonts/SIMPLIFICA_Typeface.ttf"); }
+
+body h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  font-size: 1.3em; }
+
+body h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  margin: 2rem 0 2rem 0;
+  text-align: center; }
+
+body h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  font-size: 1.3em; }
+
+body h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  font-size: 1.3em; }
+
+body p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 1.4em; }
+
+.containerMargin {
+  margin: 2rem 0 2rem 0; }
+
+.tableNoMargin {
+  margin-bottom: 0; }
+
+.title {
+  z-index: -10;
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 4.5px; }
+
+.parallaxHider {
+  background-color: #e0e3da; }
+
+.headings2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+.background1 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat; }
+
+.background2 {
+  background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.primaryBodyContainer {
+  width: 100%; }
+
+.aboutMe {
+  position: relative;
+  z-index: 10;
+  bottom: 13rem; }
+
+.details {
+  margin-top: -10rem; }
+
+.popUpModal {
+  z-index: 1;
+  bottom: 14rem;
+  overflow: hidden;
+  position: absolute;
+  left: 28rem; }
+
+.mainWrapper {
+  margin: auto; }
+
+footer {
+  margin: 0;
+  background-color: rgba(187, 6, 6, 0.8); }
+
+.paralax {
+  /* Display and position the pseudo-element */
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.6);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1; }
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 50vh;
+  /* For text formatting. */
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 5px #000; }
+
+.adjustRowWidth {
+  width: 77%; }
+
+.noPadding {
+  padding: 0; }
+
+.lastPictureContainer {
+  display: flex;
+  flex-direction: column; }
+
+.analysisImg {
+  width: 18rem;
+  height: 9rem;
+  filter: blur(0px); }
+
+.statisticImg {
+  width: 18rem;
+  height: 14rem;
+  filter: blur(0px); }
+
+.programmerImg {
+  width: 27rem;
+  filter: blur(0px); }
+
+.businessImg {
+  width: 20rem;
+  height: 18rem;
+  filter: blur(0px); }
+
+.leftSideHeaderImg {
+  filter: blur(0px); }
+
+.overlay {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black background with opacity */
+  z-index: 1; }
