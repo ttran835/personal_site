@@ -44,6 +44,14 @@ $transition-bg: #b0c9cb;
   }
 }
 
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+  @include Oswald;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+}
+
 .popUpModalHidden {
   visibility: hidden;
 }

@@ -56,8 +56,7 @@ export default class Shoedidas extends Component {
             >
               <div className="container-fluid">
                 <p className={`card-text`}>
-                  A collaborative project to mock Adidas' product page at Hack
-                  Reactor.
+                  A collaborative project at Hack Reactor LA.
                 </p>
               </div>
             </div>
@@ -74,13 +73,13 @@ export default class Shoedidas extends Component {
             Shoedidas
           </ModalHeader>
           <ModalBody onMouseEnter={this.toggleIcons}>
-            <div className={`container card-body `}>
+            <div className={`container card-body" ${styles.p}`}>
               <h6 className="card-title">Project Overview</h6>
-              <p className="card-body">
+              <p className={`card-body" ${styles.p}`}>
                 This is a group project developed by aspiring software engineers
                 at Hack Reactor from November 2018 to December 2018. The goal of
-                the project is to closely mimic Adidas' product description as
-                they appear on December of 2018.
+                the project is to closely mimic Adidas' product description and
+                detail page.
                 <br />
                 All components shown in 10 seconds preview are fully modular
                 microservices. They can be integrated with one another
@@ -109,9 +108,9 @@ export default class Shoedidas extends Component {
               </p>
             </div> */}
 
-            <div className="container card-body">
+            <div className={`container card-body"`}>
               <h6 className="card-title">Demo Site</h6>
-              <p className="card-body">
+              <p className={`card-body ${styles.p}`}>
                 Please refer to this{' '}
                 <a href="http://54.146.229.91/" target="_blank">
                   link
@@ -119,7 +118,7 @@ export default class Shoedidas extends Component {
                 for a full look at all components proxied together.
               </p>
 
-              <p className="card-body">
+              <p className={`card-body ${styles.p}`}>
                 This{' '}
                 <a href="http://54.146.229.91:3002" target="_blank">
                   link

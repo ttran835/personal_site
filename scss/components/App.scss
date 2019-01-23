@@ -18,11 +18,31 @@
   src: url('https://s3.amazonaws.com/personal-site-tim/fonts/SIMPLIFICA_Typeface.ttf');
 }
 
-//@font-face {
-//   font-family: 'AdihausDIN-bold';
-//   src: url('https://s3-us-west-1.amazonaws.com/fec-matthew/AdihausDIN-Bold.woff2')
-//     format('woff2');
-// }
+@mixin Oswald {
+  font-family: 'Oswald', sans-serif;
+  // font-family: 'Open Sans Condensed', sans-serif;
+  // font-family: 'Bitter', serif;
+}
+
+@mixin DancingScript {
+  font-family: 'Dancing Script', cursive;
+}
+
+@mixin Allerta {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+@mixin Gothic {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+@mixin defaultHeader {
+  font-family: Arial, Helvetica, sans-serif;
+  @include Gothic;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+}
 
 $body-color: #000;
 
@@ -45,12 +65,36 @@ $tim-default-bg: #e0e3da;
 $tim-default-2: rgba(187, 6, 6, 0.8);
 $tim-highlight: #6eb1b6;
 $card-bg-color: #e0e3da;
+$font-color: rgb(35, 26, 77);
 $modal-bg: #e3e2e0;
 $gray-300: #dee2e6;
 $transition-bg: #b0c9cb;
 
-p {
-  font-family: Simplifica;
+body {
+  h1 {
+    @include defaultHeader;
+    font-size: 1.3em;
+  }
+  h2 {
+    @include defaultHeader;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+  h5 {
+    @include defaultHeader;
+    font-size: 1.3em;
+  }
+  h6 {
+    @include defaultHeader;
+    font-size: 1.3em;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    @include Oswald;
+    line-height: 1.5em;
+    letter-spacing: 0.4px;
+    font-size: 1.4em;
+  }
 }
 
 .containerMargin {
@@ -107,11 +151,6 @@ p {
 
 .details {
   margin-top: -10rem;
-}
-
-.projects {
-  text-align: center;
-  margin: 2rem 0 2rem 0;
 }
 
 .popUpModal {

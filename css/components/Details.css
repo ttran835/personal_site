@@ -14,8 +14,45 @@
   font-family: 'Simplifica';
   src: url("https://s3.amazonaws.com/personal-site-tim/fonts/SIMPLIFICA_Typeface.ttf"); }
 
-p {
-  font-family: Simplifica; }
+body h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  font-size: 1.3em; }
+
+body h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  margin: 2rem 0 2rem 0;
+  text-align: center; }
+
+body h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  font-size: 1.3em; }
+
+body h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 3em;
+  font-size: 1.3em; }
+
+body p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 1.4em; }
 
 .containerMargin {
   margin: 2rem 0 2rem 0; }
@@ -61,10 +98,6 @@ p {
 .details {
   margin-top: -10rem; }
 
-.projects {
-  text-align: center;
-  margin: 2rem 0 2rem 0; }
-
 .popUpModal {
   z-index: 1;
   bottom: 14rem;
@@ -80,6 +113,6 @@ footer {
   background-color: rgba(187, 6, 6, 0.8); }
 
 .detailsBg {
-  font-size: 21px;
   background-color: #e0e3da;
-  border: none; }
+  border: none;
+  text-align: center; }

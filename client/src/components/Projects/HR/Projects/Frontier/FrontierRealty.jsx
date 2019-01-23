@@ -58,8 +58,7 @@ export default class FrontierRealty extends Component {
             >
               <div className="container-fluid">
                 <p className={`card-text`}>
-                  This is a personal project used to mock up a realestate
-                  website for Frontier Realty.
+                  Personal Front-end project for Frontier Realty.
                 </p>
               </div>
             </div>
@@ -74,23 +73,23 @@ export default class FrontierRealty extends Component {
         >
           <ModalHeader toggle={this.toggle}>Frontier Realty</ModalHeader>
           <ModalBody>
-            <div className={`container card-body `}>
+            <div className={`container card-body"`}>
               <h6 className="card-title">Project Overview</h6>
-              <p className="card-body">
+              <p className={`card-body  ${styles.p}`}>
                 This is my individual project that was created as a
                 demonstration for a real estate website for realtor that
                 operates in Orange County. Scaling has not been tested at this
                 time for the website since it is in it's demo stage.
               </p>
             </div>
-            <div className="container card-body">
+            <div className={`container card-body" ${styles.p}`}>
               <h6 className="card-title">Demo Site</h6>
-              <p className="card-body">
+              <p className={`card-body  ${styles.p}`}>
                 This project is still in progress. The demo site currently shows
                 a static front-end. API has been removed for development
                 purposes.
               </p>
-              <p className="card-body">
+              <p className={`card-body  ${styles.p}`}>
                 Please refer to this{' '}
                 <a href="http://34.217.149.124/" target="_blank">
                   link
