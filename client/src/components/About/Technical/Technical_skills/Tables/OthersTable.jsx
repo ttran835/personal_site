@@ -5,7 +5,7 @@ export default function OthersTable(props) {
   return (
     <div className="container-fluid px-0">
       <img src="https://s3.amazonaws.com/personal-site-tim/skills/deploy.png" />
-      <h5>Deplyoment/Others</h5>
+      <h5>Deployment/Others</h5>
       <table className="table table-bordered">
         <tbody>
           <tr>

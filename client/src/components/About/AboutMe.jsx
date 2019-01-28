@@ -22,15 +22,15 @@ export default function About(props) {
               <div className={`jumbotron ${styles.jumboTronBg}`}>
                 <h1>Hello!</h1>
                 <h4>
-                  I'm <strong>Tim Tran</strong>
+                  I'm <strong>Tim Tran</strong>.
                 </h4>
-                <p className="lead">Software Engineer.</p>
+                <p className="lead">Software Engineer</p>
                 <hr className="my-4" />
                 <table className="container-fluid table table-striped">
                   <tbody>
                     <tr>
                       <th scope="row">Email</th>
-                      <td>timsters93@gmail.com</td>
+                      <td>timothy.tran835@gmail.com</td>
                     </tr>
                     <tr>
                       <th scope="row">Phone</th>

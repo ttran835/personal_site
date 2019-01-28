@@ -62,9 +62,9 @@ export default class App extends Component {
                 >
                   <Details />
                 </div>{' '}
-                <div className="container-fluid">
+                {/* <div className="container-fluid">
                   <Resume />
-                </div>
+                </div> */}
                 <div
                   className={`container-fluid text-center ${
                     styles.containerMargin

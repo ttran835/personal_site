@@ -7,16 +7,16 @@ export default function Details(props) {
       <div className={`card ${styles.detailsBg}`}>
         <div className="card-block">
           <p className="card-text">
-            My name is Tim and I'm a software engineer currently located in
-            Orange County and Greater Los Angeles. I specialized in TDD, OOP,
+            My name is Tim and I'm a Software Engineer currently located in
+            Orange County and Greater Los Angeles. I specialize in TDD, OOP,
             front-end frameworks, data-structures, and a primary focus in
             creating clean and simple front-ends.
           </p>
           <p className="card-text">
             With a background in insurance and finance, I am able to anaylze
             complex problems and identify the best solution, for my customers.
-            This translate well to programming and web development because it
-            provided me with a skillset on how to best approach a problem:
+            This translates well to programming and web development because it
+            provided me with a skillset on how to best approach a problem: <br />
             <strong>asking the right questions.</strong>
           </p>
         </div>
