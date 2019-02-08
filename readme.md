@@ -1,6 +1,6 @@
 # This Repo is My Personal Portfolio:
 
-To visit the site (timtran.info)\
+To click [here](https://timtran.info/) to visit my site.\
 This repository is the Codebase for Tim's personal website/portfolio.\
 Code base is currently being worked on at this time: Initialized date Jan 4th 2019.
 
