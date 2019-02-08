@@ -1,9 +1,9 @@
 # This Repo is My Personal Portfolio:
 
-To click [here](https://timtran.info/) to visit my site.\
-This repository is the Codebase for Tim's personal website/portfolio.\
-Code base is currently being worked on at this time: Initialized date Jan 4th 2019.
+To click [here](https://timtran.info/) to visit my site.
 
-## Tech Stack
+If you have any questions, please feel free to reach out to me.
 
-Javascript | ES6 | ReacJS | Bootstrap4 | Express | NodeJS | SCSS | CSS 
+## Built With
+
+Javascript | ES6 | ReacJS | Bootstrap4 | Express | NodeJS | Sass/SCSS | HTML5/CSS 
