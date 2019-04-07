@@ -3,8 +3,39 @@ const webpack = require('webpack');
 require('dotenv').config();
 const autoprefixer = require('autoprefixer');
 
+const CSSModuleLoader = {
+  loader: 'css-loader',
+  options: {
+    modules: true,
+    sourceMap: true,
+    localIdentName: '-[name]-[local]-[hash:base64]',
+    // minimize: true,
+  },
+};
+
+const CSSLoader = {
+  loader: 'css-loader',
+  options: {
+    modules: false,
+    sourceMap: true,
+    // minimize: true,
+  },
+};
+
+const postCSSLoader = {
+  loader: 'postcss-loader',
+  options: {
+    ident: 'postcssrc',
+    sourceMap: true,
+    plugins: () => [
+      autoprefixer({
+        browsers: ['>1%', 'last 4 versions', 'Firefox ESR', 'not ie < 9'],
+      }),
+    ],
+  },
+};
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: path.resolve(__dirname, './client/src/'),
   output: {
     path: path.resolve(__dirname, './client/dist'),
@@ -26,34 +57,13 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
-        use: [
-          { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              localIdentName: '[path]__[name]__[local]--[hash:base64]',
-            },
-          },
-        ],
+        test: /\.scss$/,
+        exclude: /\.module\.scss$/,
+        use: ['style-loader', CSSLoader, postCSSLoader, 'sass-loader'],
       },
       {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: 'postcss-loader', // Run postcss actions
-            options: {
-              plugins: function() {
-                // postcss plugins, can be exported to postcss.config.js
-                return [require('autoprefixer')];
-              },
-            },
-          },
-          {
-            loader: 'sass-loader', // compiles Sass to CSS
-          },
-        ],
+        test: /\.module\.scss$/,
+        use: ['style-loader', CSSModuleLoader, postCSSLoader, 'sass-loader'],
       },
       {
         test: /\.json$/,
@@ -72,11 +82,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+
   // this is used to proxy ports
   plugins: [
     new webpack.DefinePlugin({
       'process.env.HOSTNAME': JSON.stringify(process.env.USER),
-      'process.env.PORT': JSON.stringify(process.env.SERVER_PORT),
+      'process.env.SERVER_PORT': JSON.stringify(process.env.SERVER_PORT),
     }),
   ],
 };
