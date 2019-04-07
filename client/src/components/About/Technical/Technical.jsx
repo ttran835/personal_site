@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from '../../../../../css/components/Technical.css';
-import Slider from 'react-slick';
 
 //technical Skills
 import FrontEnd from './Technical_skills/FrontEnd';

@@ -17,7 +17,6 @@ import Footer from '../components/Footer/Footer';
 
 //styles
 import styles from '../../../css/components/App.css';
-import 'bootstrap';
 
 export default class App extends Component {
   constructor(props) {
