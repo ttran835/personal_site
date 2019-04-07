@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap';
 import 'reactstrap';
 
 export default function NavBar(props) {

@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 require('dotenv').config();
-const autoprefixer = require('autoprefixer')
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   mode: 'production',
@@ -17,10 +17,10 @@ module.exports = {
         test: /\.js[x]?/,
         exclude: /node_modules/,
         options: {
-          presets: [['env', { modules: false }], 'react'],
+          presets: [['@babel/preset-env', { modules: false }], '@babel/react'],
           env: {
             test: {
-              presets: [['env'], 'react'],
+              presets: [['@babel/preset-env'], '@babel/react'],
             },
           },
         },
