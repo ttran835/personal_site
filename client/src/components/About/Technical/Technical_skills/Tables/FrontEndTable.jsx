@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../../../../css/components/Technical.css';
+import styles from '../../styles/Technical.module.scss';
 
 export default function FrontEndTable(props) {
   return (

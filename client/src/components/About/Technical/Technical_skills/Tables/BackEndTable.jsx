@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/Technical.module.scss';
+import styles from '../../styles/Technical.module.scss';
 
 export default function BackEndTable(props) {
   return (

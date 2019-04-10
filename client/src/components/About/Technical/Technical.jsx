@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import styles from './styles/Technical.module.scss';
 
 // Technical Skills Table
-import FrontEndTable from './Technical_skills/Tables/components/FrontEndTable';
-import BackEndTable from './Technical_skills/Tables/components/BackEndTable';
-import OthersTable from './Technical_skills/Tables/components/OthersTable';
+import FrontEndTable from './Technical_skills/Tables/FrontEndTable';
+import BackEndTable from './Technical_skills/Tables/BackEndTable';
+import OthersTable from './Technical_skills/Tables/OthersTable';
 
 export default function Technical(props) {
   return (

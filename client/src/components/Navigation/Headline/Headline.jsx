@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../css/components/Headline.css';
+import styles from './Headline.module.scss';
 
 export default function Headline(props) {
   return (
