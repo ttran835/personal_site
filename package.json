@@ -10,7 +10,7 @@
     "start": "nodemon server/server.js",
     "seed": "nodemon database/seed/seed.js",
     "scss-dev": "node-sass --watch client/src/styles -o client/dist/styles",
-    "scss": "node-sass scss -o css"
+    "scss": "node-sass client/src/styles -o client/dist/styles"
   },
   "dependencies": {
     "axios": "^0.18.0",

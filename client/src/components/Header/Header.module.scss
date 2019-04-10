@@ -1,4 +1,4 @@
-@import './App.scss';
+@import '../App.module.scss';
 
 @mixin blur-header-img {
   filter: blur(0px);

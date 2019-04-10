@@ -1,6 +1,6 @@
 import React from 'react';
-import Technical from './Technical/Technical';
-import Footer from '../Footer/Footer';
+import Technical from '../Technical/Technical';
+import Footer from '../../Footer/Footer';
 
 import styles from '../../../../css/components/AboutMe.css';
 
