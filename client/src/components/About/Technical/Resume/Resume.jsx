@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../../css/components/Resume.css';
+import styles from './Resume.module.scss';
 
 export default function Resume(props) {
   return (
