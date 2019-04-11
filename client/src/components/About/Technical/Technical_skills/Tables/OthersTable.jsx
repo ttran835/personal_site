@@ -11,15 +11,18 @@ export default function OthersTable(props) {
           <tr>
             <td>
               <div className={styles.newRelics} />
-              <p className={styles.p}>NewRelics</p>
+              <p className={styles.p}>New Relic</p>
             </td>
             <td>
               <div className={styles.agile} />
               <p className={styles.p}>AGILE</p>
             </td>
             <td>
-              <div className={styles.aws} />
-              <p className={styles.p}>AWS</p>
+              <img
+                className="img-fluid"
+                src="https://s3.amazonaws.com/personal-site-tim/skills/jekyll.png"
+              />
+              <p className={styles.p}>Jekyll</p>
             </td>
           </tr>
           <tr>

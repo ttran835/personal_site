@@ -32,6 +32,10 @@ export default function BackEndTable(props) {
               <div className={styles.mongo} />
               <p className={styles.p}>MongoDB</p>
             </td>
+            <td>
+              <img src="https://img.icons8.com/ultraviolet/40/000000/php.png" />
+              <p className={styles.p}>PHP</p>
+            </td>
           </tr>
         </tbody>
       </table>

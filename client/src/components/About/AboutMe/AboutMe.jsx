@@ -30,7 +30,7 @@ export default function About(props) {
                   <tbody>
                     <tr>
                       <th scope="row">Email</th>
-                      <td>timothy.tran835@gmail.com</td>
+                      <td>tim.t.tran835@gmail.com</td>
                     </tr>
                     <tr>
                       <th scope="row">Phone</th>

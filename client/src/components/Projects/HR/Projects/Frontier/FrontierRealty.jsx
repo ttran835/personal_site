@@ -58,7 +58,7 @@ export default class FrontierRealty extends Component {
             >
               <div className="container-fluid">
                 <p className={`card-text`}>
-                  Personal Front-end project for Frontier Realty.
+                  Freelance Web Development contract for Frontier Realty
                 </p>
               </div>
             </div>
@@ -76,22 +76,20 @@ export default class FrontierRealty extends Component {
             <div className={`container card-body"`}>
               <h6 className="card-title">Project Overview</h6>
               <p className={`card-body  ${styles.p}`}>
-                This is my individual project that was created as a
-                demonstration for a real estate website for realtor that
-                operates in Orange County. Scaling has not been tested at this
-                time for the website since it is in it's demo stage.
+                An informative site designed and developed for Frontier Realty
+                to help with brand awareness and providing a way for clients to
+                learn more about the office.
               </p>
             </div>
             <div className={`container card-body" ${styles.p}`}>
               <h6 className="card-title">Demo Site</h6>
               <p className={`card-body  ${styles.p}`}>
                 This project is still in progress. The demo site currently shows
-                a static front-end. API has been removed for development
-                purposes.
+                a static front-end for testing purposes.
               </p>
               <p className={`card-body  ${styles.p}`}>
                 Please refer to this{' '}
-                <a href="http://34.217.149.124/" target="_blank">
+                <a href="https://datusername1.github.io/" target="_blank">
                   link
                 </a>{' '}
                 for a full look.
@@ -110,8 +108,11 @@ export default class FrontierRealty extends Component {
                         <p className={icons.p}>JavaScript</p>
                       </td>
                       <td>
-                        <div className={icons.react} />
-                        <p className={icons.p}>ReactJS</p>
+                        <img
+                          className="img-fluid"
+                          src="https://s3.amazonaws.com/personal-site-tim/skills/jekyll.png"
+                        />
+                        <p className={icons.p}>Jekyll</p>
                       </td>
                       <td>
                         <div className={icons.html5} />
@@ -121,33 +122,6 @@ export default class FrontierRealty extends Component {
                         <div className={icons.css} />
                         <p className={icons.p}>CSS</p>
                       </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className={icons.foundation} />
-                        <p className={icons.p}>Foundation6</p>
-                      </td>
-                      <td>
-                        <div className={icons.node} />
-                        <p className={icons.p}>NodeJS</p>
-                      </td>
-                      <td>
-                        <div className={icons.postgres} />
-                        <p className={icons.p}>MySQL</p>
-                      </td>
-                      <td>
-                        <div className={icons.sql} />
-                        <p className={icons.p}>SQL</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className={icons.docker} />
-                        <p className={icons.p}>SQL</p>
-                      </td>
-                      <td />
-                      <td />
-                      <td />
                     </tr>
                   </tbody>
                 </table>
