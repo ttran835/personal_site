@@ -31,14 +31,12 @@ export default class Shoedidas extends Component {
   render() {
     return (
       <div
-        className={`container-fluid px-0  ${styles.shoedidasImgBg} ${
-          styles.isActive
-        }`}
+        className={`container  ${styles.shoedidasImgBg} ${styles.isActive}`}
         onMouseEnter={this.toggleDetails}
         onMouseLeave={this.toggleDetails}
         onClick={this.toggle}
       >
-        <div className={`container-fluid px-0 ${styles.projectOverlayBg}`}>
+        <div className={`container ${styles.projectOverlayBg}`}>
           <div className={`row`}>
             <div className="col col-lg-8">
               <img
@@ -49,7 +47,7 @@ export default class Shoedidas extends Component {
               />
             </div>
           </div>
-          <div className={`container-fluid px-0 text-center `}>
+          <div className={`container text-center `}>
             <h1 className={styles.headingBg}>Shoedidas</h1>
             <div
               className={`card ${styles.cardMarginAndBg} ${styles.showDetails}`}

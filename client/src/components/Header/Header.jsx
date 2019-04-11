@@ -4,9 +4,7 @@ import styles from './Header.module.scss';
 export default function Header(props) {
   return (
     <div className={styles.overlay}>
-      <div
-        className={`container-fluid px-0 ${styles.section} ${styles.paralax} `}
-      >
+      <div className={`container ${styles.section} ${styles.paralax} `}>
         <div className={`row ${styles.adjustRowWidth}`}>
           <div className={`col col-lg-12 ${styles.noPadding}`}>
             {' '}

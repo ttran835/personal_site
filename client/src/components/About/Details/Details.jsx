@@ -3,7 +3,7 @@ import styles from './Details.module.scss';
 
 export default function Details(props) {
   return (
-    <div className={`container-fluid`}>
+    <div className={`container`}>
       <div className={`card ${styles.detailsBg}`}>
         <div className="card-block">
           <p className="card-text">

@@ -6,11 +6,11 @@ import styles from './AboutMe.module.scss';
 
 export default function About(props) {
   return (
-    <div className={`container-fluid px-0 ${styles.noBorder}`}>
+    <div className={`container ${styles.noBorder}`}>
       <div
-        className={`container-fluid px-0 ${styles.aboutMeBg} ${styles.shadow} `}
+        className={`container ${styles.aboutMeBg} ${styles.shadow} `}
       >
-        <div className="container-fluid">
+        <div className="container">
           <div className="row ">
             <div className="col col-sm-4 align-self-center">
               <img
@@ -26,7 +26,7 @@ export default function About(props) {
                 </h4>
                 <p className="lead">Software Engineer</p>
                 <hr className="my-4" />
-                <table className="container-fluid table table-striped">
+                <table className="container table table-striped">
                   <tbody>
                     <tr>
                       <th scope="row">Email</th>
@@ -42,7 +42,7 @@ export default function About(props) {
             </div>
           </div>
         </div>
-        <div className={`container-fluid ${styles.aboutMeFooter}`}>
+        <div className={`container ${styles.aboutMeFooter}`}>
           <Footer />
         </div>
       </div>

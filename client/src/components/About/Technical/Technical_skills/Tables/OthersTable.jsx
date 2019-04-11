@@ -3,7 +3,7 @@ import styles from '../../styles/Technical.module.scss';
 
 export default function OthersTable(props) {
   return (
-    <div className="container-fluid px-0">
+    <div className="container">
       <img src="https://s3.amazonaws.com/personal-site-tim/skills/deploy.png" />
       <h5>Deployment/Others</h5>
       <table className="table table-bordered">

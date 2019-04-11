@@ -3,7 +3,7 @@ import styles from '../../styles/Technical.module.scss';
 
 export default function FrontEndTable(props) {
   return (
-    <div className="container-fluid px-0">
+    <div className="container">
       <img src="https://s3.amazonaws.com/personal-site-tim/skills/macbook.png" />
       <h5>Front-End Web Development</h5>
 

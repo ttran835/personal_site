@@ -3,7 +3,7 @@ import styles from '../../styles/Technical.module.scss';
 
 export default function BackEndTable(props) {
   return (
-    <div className="container-fluid px-0">
+    <div className="container">
       <img src="https://s3.amazonaws.com/personal-site-tim/skills/backend_server.png" />
       <h5>Back-End Development</h5>
 

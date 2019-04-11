@@ -8,7 +8,7 @@ import OthersTable from './Technical_skills/Tables/OthersTable';
 
 export default function Technical(props) {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className={`row justify-content-center `}>
         <div className={`row justify-content-center ${styles.bg}`}>
           <div className={`col col-lg-10 ${styles.margin}`}>

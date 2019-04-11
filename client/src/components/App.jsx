@@ -36,7 +36,7 @@ export default class App extends Component {
     //to Render Projects
 
     return (
-      <div className="main container-fluid px-0">
+      <div className="container">
         {/* <NavBar /> */}
         <div className={`${styles.title} `} style={cardBgStyle}>
           <Header />
@@ -45,31 +45,29 @@ export default class App extends Component {
               <h2 className={styles.headings2}> ARTICLES </h2>
               <Articles />
             </div> */}
-            <div className={`container-fluid px-0 ${styles.parallaxHider}`}>
+            <div className={`container ${styles.parallaxHider}`}>
               <div
                 className={`col col-lg-7 align-self-center ${
                   styles.mainWrapper
                 }`}
               >
-                <div className={`container-fluid px-0 ${styles.aboutMe}`}>
+                <div className={`container ${styles.aboutMe}`}>
                   <AboutMe />
                 </div>
                 <div
-                  className={`container-fluid ${styles.containerMargin} ${
+                  className={`container ${styles.containerMargin} ${
                     styles.details
                   }`}
                 >
                   <Details />
                 </div>{' '}
-                {/* <div className="container-fluid">
+                {/* <div className="container">
                   <Resume />
                 </div> */}
                 <div
-                  className={`container-fluid text-center ${
-                    styles.containerMargin
-                  }`}
+                  className={`container text-center ${styles.containerMargin}`}
                 >
-                  <div className="contaier-fluid justify-content-center">
+                  <div className="contaier justify-content-center">
                     <h2>
                       Technical Skills
                       <div
@@ -83,9 +81,7 @@ export default class App extends Component {
                   </div>
                   <Technical />
                 </div>
-                <div
-                  className={`container-fluid px-0 ${styles.containerMargin}`}
-                >
+                <div className={`container ${styles.containerMargin}`}>
                   <h2 className={`${styles.projects}`}>
                     Projects
                     <div
