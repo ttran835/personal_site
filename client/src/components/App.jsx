@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 //modules
-import NavBar from './Navigation/NavBar';
+import NavBar from './Navigation/NavBar/NavBar';
 import Header from './Header/Header';
-import Headline from './Navigation/Headline';
-import AboutMe from './About/AboutMe';
-import Details from './About/Details';
-import Resume from './About/Technical/Resume';
+import Headline from './Navigation/Headline/Headline';
+import AboutMe from './About/AboutMe/AboutMe';
+import Details from './About/Details/Details';
+// import Resume from './About/Technical/Resume';
 import Technical from './About/Technical/Technical';
 import Articles from './About/Articles/Articles';
 
@@ -16,7 +16,7 @@ import HrProjects from '../components/Projects/HR/HrProjects';
 import Footer from '../components/Footer/Footer';
 
 //styles
-import styles from '../../../css/components/App.css';
+import styles from './App.module.scss';
 
 export default class App extends Component {
   constructor(props) {

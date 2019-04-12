@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../../../../../css/components/HrProjects.css';
+import styles from './HrProjects.module.scss';
 import Shoedidas from './Projects/Shoedidas/Shoedidas';
 import FrontierRealty from './Projects/Frontier/FrontierRealty';
 import Sdc from './Projects/SDC/Sdc';

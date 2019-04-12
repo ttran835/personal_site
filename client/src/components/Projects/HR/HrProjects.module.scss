@@ -1,0 +1,193 @@
+@import '../../App.module.scss';
+
+$modal-bg: #e3e2e0;
+
+$gray-300: #dee2e6;
+
+$transition-bg: #b0c9cb;
+
+.projectFont {
+  @include Ed-Med;
+  color: $gray-300;
+  margin: 0;
+}
+
+.cardMarginAndBg {
+  background-color: transparent;
+}
+
+.shoedidasImgBg {
+  height: 18rem;
+  margin: 2rem 0 2rem 0;
+  background: url('https://s3.amazonaws.com/personal-site-tim/projects/adidas.jpeg');
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.frontierImgBg {
+  height: 18rem;
+  margin: 2rem 0 2rem 0;
+  background: url('https://s3.amazonaws.com/personal-site-tim/projects/home_new.jpeg');
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+  @include Oswald;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+}
+
+.popUpModalHidden {
+  visibility: hidden;
+}
+
+.materialBtn {
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(240, 239, 239, 0.363) 100%
+    );
+  }
+  &:active {
+    background-color: rgba(240, 239, 239, 0.253) 100%;
+    background-size: 100%;
+    transition: background 0s;
+    border: 1px solid #000;
+  }
+  &:focus {
+    border: 1px solid #000;
+    outline: none;
+  }
+}
+
+.techStackIcons {
+  width: 2.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 0px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 3px;
+}
+
+.modalCardTechStack {
+  border: 1px solid $gray-300;
+  background-color: $card-bg-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.modalImg {
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.showDetails {
+  top: 5rem;
+  border: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: all 200ms;
+  text-align: initial;
+  transition: all 0.5s;
+  .isActive & {
+    top: 5rem;
+    border: 0;
+    font-size: 24px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 200ms;
+    text-align: initial;
+    transition: all 0.5s;
+    :hover > & {
+      top: 5rem;
+      border: 0;
+      font-size: 24px;
+      text-align: initial;
+      opacity: 1;
+    }
+  }
+}
+
+// .hideDetails {
+//   top: 5rem;
+//   border: 0;
+//   font-size: 24px;
+//   transition: height 200ms 200ms, opacity 200ms 0ms, visibility 200ms 0ms;
+//   visibility: hidden;
+//   text-align: initial;
+// }
+
+.githubBg {
+  background: url('https://s3.amazonaws.com/personal-site-tim/github_svg.svg');
+  background-size: cover;
+  height: 33px;
+  border: 1px solid #000;
+  opacity: 0.5;
+}
+
+.viewMore {
+  background: url('https://s3.amazonaws.com/personal-site-tim/eye-regular.svg');
+  background-size: auto;
+  height: 33px;
+  border: 1px solid #000;
+  opacity: 0.5;
+}
+
+.descriptionCardPosition {
+  position: relative;
+}
+
+.shoedidasImg {
+  width: 0;
+}
+
+.headingBg {
+  color: #fff;
+  transition: all 0.5s;
+  .isActive & {
+    background-color: $gray-300;
+    opacity: 0.5;
+    :hover > & {
+      opacity: 1;
+      background-color: $gray-300;
+      -webkit-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear;
+    }
+  }
+}
+
+.projectOverlayBg {
+  opacity: 1;
+  transition: all 0.5s;
+  height: 100%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    z-index: 1;
+    height: 100%;
+  }
+}

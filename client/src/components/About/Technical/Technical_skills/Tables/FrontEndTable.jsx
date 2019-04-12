@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../../../../css/components/Technical.css';
+import styles from '../../styles/Technical.module.scss';
 
 export default function FrontEndTable(props) {
   return (
@@ -33,10 +33,6 @@ export default function FrontEndTable(props) {
               <p className={styles.p}>ReactJS</p>
             </td>
             <td>
-              <div className={styles.angular} />
-              <p className={styles.p}>AngularJS</p>
-            </td>
-            <td>
               <div className={styles.jquery} />
               <p className={styles.p}>jQuery</p>
             </td>
@@ -44,15 +40,10 @@ export default function FrontEndTable(props) {
               <div className={styles.foundation} />
               <p className={styles.p}>Foundation6</p>
             </td>
-          </tr>
-          <tr>
             <td>
               <div className={styles.bootstrap} />
               <p className={styles.p}>Bootstrap</p>
             </td>
-            <td />
-            <td />
-            <td />
           </tr>
         </tbody>
       </table>

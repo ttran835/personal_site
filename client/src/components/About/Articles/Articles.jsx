@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Articles.module.scss';
 
 export default function Article(props) {
   return (
