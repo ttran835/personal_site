@@ -61,15 +61,16 @@ $jumbotron-bg: $tim-default-bg;
 .jumboTronBg {
   background-color: #fff;
   margin-bottom: 0;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   h1 {
+    @include Allerta;
+    font-size: 1.5rem;
+  }
+  span {
     @include DancingScript;
-
     font-size: 5em;
   }
-  h4 {
-    @include Allerta;
-  }
+
   table {
     @include Oswald;
   }

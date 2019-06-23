@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import styles from '../../HrProjects.module.scss';
+import styles from '../../../Projects.module.scss';
 import icons from '../../../../About/Technical/styles/Technical.module.scss';
 
 export default class Sdc extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import styles from '../../HrProjects.module.scss';
+import styles from '../../../Projects.module.scss';
 import icons from '../../../../About/Technical/styles/Technical.module.scss';
 
 export default class Shoedidas extends Component {
@@ -86,27 +86,6 @@ export default class Shoedidas extends Component {
                 seamlessly.
               </p>
             </div>
-
-            {/* <div className="container card-body">
-              <h6 className="card-title">Project Contributors:</h6>
-              <p className="card-body">
-                <a href="https://github.com/haydenbetts" target="_blank">
-                  Hayden Betts
-                </a>{' '}
-                <br />
-                <a href="https://github.com/omar-jandali" target="_blank">
-                  Omar Jandali
-                </a>{' '}
-                <br />
-                <a href="https://github.com/mlin367" target="_blank">
-                  Matthew Lin
-                </a>{' '}
-                <br />
-                <a href="https://github.com/ttran835 " target="_blank">
-                  Tim Tran
-                </a>
-              </p>
-            </div> */}
 
             <div className={`container card-body"`}>
               <h6 className="card-title">Demo Site</h6>

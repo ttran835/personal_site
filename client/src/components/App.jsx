@@ -11,7 +11,7 @@ import Technical from './About/Technical/Technical';
 import Articles from './About/Articles/Articles';
 
 //projects
-import HrProjects from '../components/Projects/HR/HrProjects';
+import HrProjects from '../components/Projects/Projects';
 
 import Footer from '../components/Footer/Footer';
 

@@ -155,11 +155,12 @@ footer {
 .jumboTronBg {
   background-color: #fff;
   margin-bottom: 0;
-  letter-spacing: 0.4px; }
+  letter-spacing: 0.2px; }
   .jumboTronBg h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.5rem; }
+  .jumboTronBg span {
     font-family: 'Dancing Script', cursive;
     font-size: 5em; }
-  .jumboTronBg h4 {
-    font-family: 'Allerta Stencil', sans-serif; }
   .jumboTronBg table {
     font-family: 'Oswald', sans-serif; }

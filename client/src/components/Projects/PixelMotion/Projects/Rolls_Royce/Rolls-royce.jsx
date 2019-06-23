@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import styles from '../../../Projects.module.scss';
+import styles from './Rolls-royce.module.scss';
 import icons from '../../../../About/Technical/styles/Technical.module.scss';
 
-export default class FrontierRealty extends Component {
+export default class RollsRoyce extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,8 +11,8 @@ export default class FrontierRealty extends Component {
       details: false,
     };
 
-    this.toggleDetails = this.toggleDetails.bind(this);
     this.toggle = this.toggle.bind(this);
+    this.toggleDetails = this.toggleDetails.bind(this);
   }
 
   toggleDetails(e) {
@@ -31,34 +31,33 @@ export default class FrontierRealty extends Component {
   render() {
     return (
       <div
-        className={` container-fluid px-0 ${styles.frontierImgBg} ${
+        className={`container-fluid px-0  ${styles.shoedidasImgBg} ${
           styles.isActive
         }`}
         onMouseEnter={this.toggleDetails}
         onMouseLeave={this.toggleDetails}
         onClick={this.toggle}
       >
-        <div className={`container-fluid px-0 ${styles.projectOverlayBg} `}>
-          <div className="row">
+        <div className={`container-fluid px-0 ${styles.projectOverlayBg}`}>
+          <div className={`row`}>
             <div className="col col-lg-8">
               <img
-                src="https://s3.amazonaws.com/personal-site-tim/projects/frontier.png"
+                src="https://s3-us-west-1.amazonaws.com/shoedidas-static/assets/img/shoedidas_white_5.svg"
                 className={`img-fluid ${styles.shoedidasImg}`}
                 id="Shoedidas"
-                alt="shoedidas project"
+                alt="Shoedidas project"
               />
             </div>
           </div>
-
-          <div className="container-fluid px-0 text-center">
-            <h1 className={styles.headingBg}>Frontier Realty</h1>
-
+          <div className={`container-fluid px-0 text-center `}>
+            <h1 className={styles.headingBg}>Rolls-Royce of Orange County</h1>
             <div
               className={`card ${styles.cardMarginAndBg} ${styles.showDetails}`}
             >
               <div className="container-fluid">
                 <p className={`card-text`}>
-                  Freelance Web Development contract for Frontier Realty
+                  A production website that was built and customized for
+                  Rolls-Royce of Orange County.
                 </p>
               </div>
             </div>
@@ -69,34 +68,42 @@ export default class FrontierRealty extends Component {
           size="lg"
           isOpen={this.state.modal}
           toggle={this.toggle}
-          className={`${this.props.className}`}
+          className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>Frontier Realty</ModalHeader>
-          <ModalBody>
-            <div className={`container card-body"`}>
-              <h6 className="card-title">Project Overview</h6>
-              <p className={`card-body  ${styles.p}`}>
-                An informative site designed and developed for Frontier Realty
-                to help with brand awareness and providing a way for clients to
-                learn more about the office.
-              </p>
-            </div>
+          <ModalHeader onMouseEnter={this.toggleIcons} toggle={this.toggle}>
+            Shoedidas
+          </ModalHeader>
+          <ModalBody onMouseEnter={this.toggleIcons}>
             <div className={`container card-body" ${styles.p}`}>
+              <h6 className="card-title">Project Overview</h6>
+              <p className={`card-body" ${styles.p}`} />
+            </div>
+
+            <div className={`container card-body"`}>
               <h6 className="card-title">Demo Site</h6>
-              <p className={`card-body  ${styles.p}`}>
-                This project is still in progress. The demo site currently shows
-                a static front-end for testing purposes.
-              </p>
-              <p className={`card-body  ${styles.p}`}>
+              <p className={`card-body ${styles.p}`}>
                 Please refer to this{' '}
-                <a href="https://datusername1.github.io/" target="_blank">
+                <a href="http://54.146.229.91/" target="_blank">
                   link
                 </a>{' '}
-                for a full look.
+                for a full look at all components proxied together.
               </p>
+
+              <p className={`card-body ${styles.p}`}>
+                This{' '}
+                <a href="http://54.146.229.91:3002" target="_blank">
+                  link
+                </a>{' '}
+                will lead to the components that we're developed by me.
+              </p>
+              <img
+                className={`img-fluid ${styles.modalImg}`}
+                src="https://media.giphy.com/media/jkZgVAHXtGHfRFuC65/giphy.gif"
+              />
             </div>
+
             <div className={`container-fluid ${styles.modalCardTechStack}`}>
-              <h6 className="card-title">Developed using:</h6>
+              <h6 className="card-title">Developed Using:</h6>
               <div className="row">
                 <table
                   className={`table table-bordered ${styles.tableNoMargin}`}
@@ -108,11 +115,8 @@ export default class FrontierRealty extends Component {
                         <p className={icons.p}>JavaScript</p>
                       </td>
                       <td>
-                        <img
-                          className="img-fluid"
-                          src="https://s3.amazonaws.com/personal-site-tim/skills/jekyll.png"
-                        />
-                        <p className={icons.p}>Jekyll</p>
+                        <div className={icons.react} />
+                        <p className={icons.p}>ReactJS</p>
                       </td>
                       <td>
                         <div className={icons.html5} />
