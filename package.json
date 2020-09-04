@@ -44,7 +44,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "json-parser": "^1.1.5",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.10",
     "postcss-loader": "^3.0.0",
     "postcss-scss": "^2.0.0",
